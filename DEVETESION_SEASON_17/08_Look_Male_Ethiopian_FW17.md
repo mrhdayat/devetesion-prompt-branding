@@ -1,0 +1,26 @@
+# LOOK 08: MALE (ETHIOPIAN)
+
+**A raw, unedited fashion week runway photograph, shot on an Arri Alexa 65 camera, cinematic documentary realism, faint authentic low-ISO photographic noise, deep rich contrast with subtle natural motion blur, lit by moody outdoor twilight evening lighting with a soft atmospheric glow, 85mm telephoto lens, shallow depth of field (beautifully blurred background). Medium-full body shot.**
+
+Dead-straight frontal eye-level medium-full body shot (cutting off just below the knees) of a unique 29-year-old A-list Ethiopian model-tier with deeply characterized commanding features COMPLETELY DISTINCT FROM ALL OTHER MODELS. He is captured mid-stride during a high-speed, aggressive catwalk for 'devetesion' FW17 'CRASH-TEST'.
+
+Facial Anatomy: A hyper-elongated, strictly rectangular facial structure. Severely hollowed, sunken cheeks that plunge violently inward beneath incredibly sharp cheekbones. Extremely deep-set, narrowed black eyes sitting deeply under a heavy, prominent brow ridge. A prominent, perfectly straight, sharp nose finalizing his intensely regal, intimidating profile.
+
+Skin is rendered purely photographically, DEVOID OF ANY AI PORCELAIN SMOOTHNESS. Deeply pigmented, flawless absolute-black skin showing raw human imperfections: VISIBLE distinct tracking pores, faint natural hyperpigmentation around the mouth, and a dramatic, blindingly reflective oily hydration shine catching the LED floor strips vividly.
+
+Hair is cut into an immaculate, incredibly tight low geometric fade, sharply lined up with mathematical precision at the temples, perfectly contrasting the organic chaos of the wet atmosphere.
+
+He is captured mid-stride in the immediate foreground with intense forward momentum. Fabric reacts brutally to the motion — a monumental, high-gloss warning-orange racing leather trench coat fiercely colliding with wide-leg black cashmere trousers.
+
+The model strictly dominates the foreground, filling 80% of the vertical frame. The cinematic lighting flawlessly illuminates him and the garments in gritty hyper-reality, while the background environment is chillingly illuminated by twilight fog.
+
+Background: The runway is set outdoors during a misty twilight on an immense, flawlessly smooth black asphalt expanse stretching endlessly toward the horizon. The minimalist catwalk is defined purely by two razor-thin, brilliantly glowing white LED light strips embedded completely flush into the pristine black tarmac. In the distant, moody outdoor background, the soft, out-of-focus geometric silhouettes of an exclusive, ultra-modern concrete architectural pavilion rise against the evening sky. The audience is completely exposed to the open evening air. Focus is absolute cinematic documentary runway photography realism, capturing the atmospheric grit and raw luxury of an exclusive, minimalist modern outdoor racing experience.
+
+AUDIENCE DYNAMICS (UNIQUE SCENE 08):
+The audience sits completely exposed in the open evening air on flawlessly sharp, minimalist black concrete benches perfectly parallel to the sleek asphalt. Attendees are dressed entirely in stark black luxury tailoring. On the front row, bathed in the crisp white LED floor lighting, an attendee is completely blurred as they violently shift their weight to lean closer to the passing model. Next to them, a guest watches completely immobile, their coat pulled tightly against the evening cold. The professional runway photographer kneels on the harsh wet asphalt, pointing a massive telephoto lens directly at the orange leather. The crowd is a fluid, moving entity, completely avoiding a static, frozen AI appearance.
+
+Outfit (devetesion) [MOTOR-CORE x EXPERIMENTAL COUTURE]: Designed from the FW17 'CRASH-TEST' palette. Intense high-fashion visibility merged with brutal tailoring. He wears a monumental, dramatically oversized double-breasted trench coat cut entirely from fiercely thick, high-gloss Warning-Orange motorcycle racing leather. The vivid orange leather is heavily scorched, distressed, and physically blackened at the massive, floor-sweeping hem, mimicking catastrophic high-speed friction burns. Instead of a traditional lapel, the coat's collar is constructed entirely from thick, aggressively thick shock-absorbing matte-black neoprene foam that is seamlessly baked directly into the orange leather without stitching or straps. The heavy overcoat is worn wide open over a bare, intensely sweating deep-black torso, paired with immensely wide, heavily pleated pristine jet-black worsted wool trousers. DEVETESION BRANDING: A MICROSCOPIC BLACK METAL 'DVTS' INLAY ON THE NEOPRENE COLLAR.
+
+Beauty & Accessories (Sparing & Thematic): Thematic Beauty: Completely bare makeup, emphasizing the intense oily sheen on his dark skin. He wears massive, aggressively thick-soled matte-black leather racing derbies that kick up highly-detailed, freezing water droplets from the wet asphalt. No accessories.
+
+No CGI, no 3D render, no AI plastic smoothing, no hyper-detailed illustration. Pure sophisticated Automotive Brutalism with commanding HIGH-FASHION MALE AURA, EXTREME KINETIC CATWALK MOTION, GRITTY PHOTOGRAPHIC REALISM throughout. Automatically enforce fixed camera angle and dynamic audience rules.

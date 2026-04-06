@@ -1,0 +1,26 @@
+# LOOK 03: FEMALE (SENEGALESE)
+
+**A raw, unedited fashion week runway photograph, shot on an Arri Alexa 65 camera, cinematic documentary realism, faint authentic low-ISO photographic noise, deep rich contrast with subtle natural motion blur, lit by moody outdoor twilight evening lighting with a soft atmospheric glow, 85mm telephoto lens, shallow depth of field (beautifully blurred background). Medium-full body shot.**
+
+Dead-straight frontal eye-level medium-full body shot (cutting off just below the knees) of a unique 25-year-old A-list Senegalese model-tier with deeply characterized commanding features COMPLETELY DISTINCT FROM ALL OTHER MODELS. She is captured mid-stride during a high-speed, aggressive catwalk for 'devetesion' FW17 'CRASH-TEST'.
+
+Facial Anatomy: An exceptionally sharp, regal, and fiercely elongated oval face. Prominent, high, uniquely rounded cheekbones contrasting with an incredibly sharp, pointed chin. Wide, penetratingly intense dark brown eyes framed by flawlessly arched, thick natural eyebrows. An extraordinarily long, elegant statuesque neck that dramatically emphasizes her high-fashion posture.
+
+Skin is rendered purely photographically, DEVOID OF ANY AI PORCELAIN SMOOTHNESS. Deeply pigmented absolute obsidian-black skin showing raw human imperfections: VISIBLE micro-pore textures along the T-zone, faint natural pigmentation variations, and an extreme, mesmerizing high-gloss oily hydration shine catching the twilight glow across her collarbones and jawline.
+
+Hair is completely absent. A meticulously smooth, flawlessly shaved bald head that gleams powerfully under the runway's LED floor lighting, emphasizing her exquisite skeletal structure.
+
+She is captured mid-stride in the immediate foreground with intense forward momentum. Fabric reacts brutally to the motion — a devastating clash of violently rigid matte-black airbag nylon erupting into fragile crimson red silk chiffon.
+
+The model strictly dominates the foreground, filling 80% of the vertical frame. The cinematic lighting flawlessly illuminates her and the garments in gritty hyper-reality, while the background environment is chillingly illuminated by twilight fog.
+
+Background: The runway is set outdoors during a misty twilight on an immense, flawlessly smooth black asphalt expanse stretching endlessly toward the horizon. The minimalist catwalk is defined purely by two razor-thin, brilliantly glowing white LED light strips embedded completely flush into the pristine black tarmac. In the distant, moody outdoor background, the soft, out-of-focus geometric silhouettes of an exclusive, ultra-modern concrete architectural pavilion rise against the evening sky. The audience is completely exposed to the open evening air. Focus is absolute cinematic documentary runway photography realism, capturing the atmospheric grit and raw luxury of an exclusive, minimalist modern outdoor racing experience.
+
+AUDIENCE DYNAMICS (UNIQUE SCENE 03):
+The audience sits completely exposed in the open evening air on flawlessly sharp, minimalist black concrete benches perfectly parallel to the sleek asphalt. Attendees are dressed entirely in stark black luxury tailoring. On the front row, bathed in the crisp white LED floor lighting, a high-profile guest clad in a heavy black leather trench raises a vintage film camera to capture the passing silhouette. Next to them, an attendee stares blankly, deeply mesmerized by the sheer crimson fabric. The expressionless security guard crosses his arms firmly across his chest. The crowd is a fluid, moving entity, completely avoiding a static, frozen AI appearance.
+
+Outfit (devetesion) [MOTOR-CORE x EXPERIMENTAL COUTURE]: Designed from the FW17 'CRASH-TEST' palette. A breathtaking contradiction of fragile haute couture and traumatic impact protection. The entirety of her torso is suffocated and fiercely bound inside a rigid, heavily sculpted protective shell corset made entirely from scorched, matte-black motorcycle airbag nylon. The airbag material has been permanently heat-molded and hardened into an aggressive, spine-protecting hourglass casing devoid of cheap straps or buckles. From directly beneath the violent airbag casing, the garment explodes outward into a devastatingly elegant, fluid, floor-sweeping gown made of ultra-delicate, semi-translucent crimson-red silk chiffon. The delicate crimson silk spills violently across her legs, catching the wind in heavily layered motion blur, and dragging sensually through the damp outdoor asphalt. DEVETESION BRANDING: A MICROSCOPIC GLOSSY BLACK 'DVTS' INLAY BRANDED DIRECTLY INTO THE NECK OF THE AIRBAG SHELL.
+
+Beauty & Accessories (Sparing & Thematic): Thematic Beauty: Completely bare face contrasting powerfully with a distinct, sharply lined jet-black inner eye pencil. She wears severely chunky, aerodynamic matte-black rubber thigh-high racing boots hidden mostly beneath the silk layers, splashing silently across the tarmac. No accessories. No jewelry.
+
+No CGI, no 3D render, no AI plastic smoothing, no hyper-detailed illustration. Pure sophisticated Automotive Brutalism with commanding HIGH-FASHION FEMALE AURA, EXTREME KINETIC CATWALK MOTION, GRITTY PHOTOGRAPHIC REALISM throughout. Automatically enforce fixed camera angle and dynamic audience rules.

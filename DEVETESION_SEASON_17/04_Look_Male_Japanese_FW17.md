@@ -1,0 +1,26 @@
+# LOOK 04: MALE (JAPANESE)
+
+**A raw, unedited fashion week runway photograph, shot on an Arri Alexa 65 camera, cinematic documentary realism, faint authentic low-ISO photographic noise, deep rich contrast with subtle natural motion blur, lit by moody outdoor twilight evening lighting with a soft atmospheric glow, 85mm telephoto lens, shallow depth of field (beautifully blurred background). Medium-full body shot.**
+
+Dead-straight frontal eye-level medium-full body shot (cutting off just below the knees) of a unique 27-year-old A-list Japanese model-tier with deeply characterized commanding features COMPLETELY DISTINCT FROM ALL OTHER MODELS. He is captured mid-stride during a high-speed, aggressive catwalk for 'devetesion' FW17 'CRASH-TEST'.
+
+Facial Anatomy: An immaculately sharp, terrifyingly structured square jawline paired with heavy, distinctly flat cheekbones. Severely angled, lethally precise monolid eyes gazing intently forward with absolute unreadable focus. A strong, remarkably straight nose bridge adding severe geometric balance to his profile.
+
+Skin is rendered purely photographically, DEVOID OF ANY AI PORCELAIN SMOOTHNESS. Pale, warm golden undertone skin showing raw human imperfections: VISIBLE rolling, textured acne scarring clustering authentically along the lower jaw and neck, faint dark circles, and a brilliant, highly reflective oily hydration shine catching the faint outdoor twilight.
+
+Hair is a masterpiece of precision cutting. Jet-black, ultra-thick straight hair cut into a severe, aggressively sharp architectural blunt bob stopping exactly at the ear lobes, brutally slicked flat against his skull with excessive pomade, creating a helmet-like shine.
+
+He is captured mid-stride in the immediate foreground with intense forward momentum. Fabric reacts brutally to the motion — heavily pleated billowing worsted wool trousers brutally contrasted by a severely cropped warning-neon-yellow motorcycle jacket.
+
+The model strictly dominates the foreground, filling 80% of the vertical frame. The cinematic lighting flawlessly illuminates him and the garments in gritty hyper-reality, while the background environment is chillingly illuminated by twilight fog.
+
+Background: The runway is set outdoors during a misty twilight on an immense, flawlessly smooth black asphalt expanse stretching endlessly toward the horizon. The minimalist catwalk is defined purely by two razor-thin, brilliantly glowing white LED light strips embedded completely flush into the pristine black tarmac. In the distant, moody outdoor background, the soft, out-of-focus geometric silhouettes of an exclusive, ultra-modern concrete architectural pavilion rise against the evening sky. The audience is completely exposed to the open evening air. Focus is absolute cinematic documentary runway photography realism, capturing the atmospheric grit and raw luxury of an exclusive, minimalist modern outdoor racing experience.
+
+AUDIENCE DYNAMICS (UNIQUE SCENE 04):
+The audience sits completely exposed in the open evening air on flawlessly sharp, minimalist black concrete benches perfectly parallel to the sleek asphalt. Attendees are dressed entirely in stark black luxury tailoring. On the front row, bathed in the crisp white LED floor lighting, an attendee gently wipes a droplet of evening mist from their glasses. Next to them, a guest sits completely still, hands resting elegantly upon their knees in the cold air. The burly security guard slightly tilts his head, listening to an earpiece. The crowd is a fluid, moving entity, completely avoiding a static, frozen AI appearance.
+
+Outfit (devetesion) [MOTOR-CORE x EXPERIMENTAL COUTURE]: Designed from the FW17 'CRASH-TEST' palette. Extreme high-fashion automotive tailoring executed flawlessly without cheap functional hardware. He wears impossibly wide, dramatically sweeping oversized trousers cut from pristine, heavy graphite-grey luxury worsted wool featuring razor-sharp, flawless vertical pleating. Contrasting this classical width is the torso—a hyper-fitted, aggressively shrunken and cropped racing jacket crafted entirely from high-gloss, ultra-thick, fiercely rigid warning-neon-yellow motorcycle leathers. The heavy neon jacket is completely devoid of zippers or buckles, featuring a flawless, sweeping asymmetrical front closure that snaps magnetically tight across the chest. The cropped leather jacket terminates high at the mid-ribs, exposing a brutal strip of his bare, violently sweating torso between the jacket and the heavy wool trousers. DEVETESION BRANDING: A MICROSCOPIC METAL 'DVTS' INLAY ON THE NEON LEATHER SHOULDER PAD.
+
+Beauty & Accessories (Sparing & Thematic): Thematic Beauty: Completely bare makeup, emphasizing the visceral reality of his scarred jawline. He wears ultra-modern, sharply pointed graphite-grey leather derbies merging into his trousers, completely devoid of laces. No accessories.
+
+No CGI, no 3D render, no AI plastic smoothing, no hyper-detailed illustration. Pure sophisticated Automotive Brutalism with commanding HIGH-FASHION MALE AURA, EXTREME KINETIC CATWALK MOTION, GRITTY PHOTOGRAPHIC REALISM throughout. Automatically enforce fixed camera angle and dynamic audience rules.

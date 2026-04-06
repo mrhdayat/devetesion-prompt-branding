@@ -1,0 +1,26 @@
+# LOOK 10: MALE (SOUTH KOREAN)
+
+**A raw, unedited fashion week runway photograph, shot on an Arri Alexa 65 camera, cinematic documentary realism, faint authentic low-ISO photographic noise, deep rich contrast with subtle natural motion blur, lit by moody outdoor twilight evening lighting with a soft atmospheric glow, 85mm telephoto lens, shallow depth of field (beautifully blurred background). Medium-full body shot.**
+
+Dead-straight frontal eye-level medium-full body shot (cutting off just below the knees) of a unique 25-year-old A-list South Korean model-tier with deeply characterized commanding features COMPLETELY DISTINCT FROM ALL OTHER MODELS. He is captured mid-stride during a high-speed, aggressive catwalk for 'devetesion' FW17 'CRASH-TEST'.
+
+Facial Anatomy: A strikingly round, smooth, and heavy lower jawline severely contrasted by fiercely sharp, violently angled upturned monolid eyes. A perfectly flat, extremely wide nose bridge. A distinct, deep vertical surgical scar cutting sharply and visibly straight through his left eyebrow, breaking the hair growth entirely.
+
+Skin is rendered purely photographically, DEVOID OF ANY AI PORCELAIN SMOOTHNESS. Incredibly pale, near-translucent skin showing raw human imperfections: VISIBLE distinct heavy dusting of deeply pigmented dark brown freckles completely blanketing his nose and wide cheeks. A brilliant, highly reflective oily sweat sheen turning his pale skin into a wet mirror against the dark evening.
+
+Hair is violently processed. Bleached platinum-white hair, cut sharply at shoulder-length, but left entirely drenched, wildly unkempt, and heavily matted against his sweaty cheeks and neck, sticking aggressively to his skin in thick, chaotic wet clumps.
+
+He is captured mid-stride in the immediate foreground with intense forward momentum. Fabric reacts brutally to the motion — a monumental, aggressively reflective foil emergency-racing-blanket puffer coat collapsing heavily over tight charcoal leather trousers.
+
+The model strictly dominates the foreground, filling 80% of the vertical frame. The cinematic lighting flawlessly illuminates him and the garments in gritty hyper-reality, while the background environment is chillingly illuminated by twilight fog.
+
+Background: The runway is set outdoors during a misty twilight on an immense, flawlessly smooth black asphalt expanse stretching endlessly toward the horizon. The minimalist catwalk is defined purely by two razor-thin, brilliantly glowing white LED light strips embedded completely flush into the pristine black tarmac. In the distant, moody outdoor background, the soft, out-of-focus geometric silhouettes of an exclusive, ultra-modern concrete architectural pavilion rise against the evening sky. The audience is completely exposed to the open evening air. Focus is absolute cinematic documentary runway photography realism, capturing the atmospheric grit and raw luxury of an exclusive, minimalist modern outdoor racing experience.
+
+AUDIENCE DYNAMICS (UNIQUE SCENE 10):
+The audience sits completely exposed in the open evening air on flawlessly sharp, minimalist black concrete benches perfectly parallel to the sleek asphalt. Attendees are dressed entirely in stark black luxury tailoring. On the front row, bathed in the crisp white LED floor lighting, an attendee shields their eyes directly with a flat black clutch bag, overwhelmed by the intense reflection of the silver foil coat. Next to them, a guest leans completely backward in their seat, maintaining a stoic, emotionless gaze. The robust security guard crosses their arms, their face entirely obscured by the deep twilight shadows. The crowd is a fluid, moving entity, completely avoiding a static, frozen AI appearance.
+
+Outfit (devetesion) [MOTOR-CORE x EXPERIMENTAL COUTURE]: Designed from the FW17 'CRASH-TEST' palette. An absolutely blinding collision of post-crash survival gear and haute couture. He wears an impossibly bulky, monumentally oversized floor-sweeping puffer overcoat specifically engineered entirely from the blinding, ultra-thin metallic silver heat-reflective foil used in emergency high-speed racing blankets. The hyper-reflective, relentlessly crinkling silver foil coat is meticulously tailored with the structured elegance of a Parisian opera coat, but inflates massively outward catching the wind. The blistering silver foil is worn violently open over his utterly bare, sweating, freckled chest. His lower half is locked into tightly fitted, charcoal-grey heavy motorcycle racing leathers featuring distinct aerodynamic ribbing. DEVETESION BRANDING: A MICROSCOPIC MATTE-BLACK 'DVTS' INLAY PRESSED DIRECTLY INTO THE CRISP SILVER FOIL LAPEL.
+
+Beauty & Accessories (Sparing & Thematic): Thematic Beauty: Completely bare face highlighting his heavily freckled skin and eyebrow scar. The tight charcoal-grey leather racing pants seamlessly transition and vanish directly into identical, aerodynamic knee-high charcoal racing boots without seams. No accessories.
+
+No CGI, no 3D render, no AI plastic smoothing, no hyper-detailed illustration. Pure sophisticated Automotive Brutalism with commanding HIGH-FASHION MALE AURA, EXTREME KINETIC CATWALK MOTION, GRITTY PHOTOGRAPHIC REALISM throughout. Automatically enforce fixed camera angle and dynamic audience rules.
