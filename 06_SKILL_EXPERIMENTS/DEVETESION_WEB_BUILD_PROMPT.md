@@ -11,18 +11,9 @@ Every designer, developer, and AI agent must read and enforce this document befo
 ### Identity
 
 **Brand:** DEVETESION (stylized: DEVETƎSION — third E mirrored)
-**Positioning:** Dark luxury fashion house. Motorsport Couture. Monolithic brutalism.
+**Positioning:** Dark luxury fashion house. Season-based collections. Monolithic brutalism.
 **Audience:** Creative class, 18-35, fashion-forward, designers, architects, photographers
 **Attitude:** Rebellious, uncompromising, editorial. Does not ask for permission. Does not try to be liked.
-
-### Voice Profile
-
-| Spectrum | Position |
-|----------|----------|
-| Formal ←→ Casual | 70% Formal |
-| Playful ←→ Serious | 85% Serious |
-| Minimal ←→ Elaborate | 60% Minimal |
-| Warm ←→ Cold | 80% Cold |
 
 ### 5 DOs
 1. Use short, declarative sentences — make statements, not suggestions
@@ -48,6 +39,231 @@ Every designer, developer, and AI agent must read and enforce this document befo
 | Command, demand, impose | We hope, we think, we believe |
 | Raw, unfiltered, direct | Amazing, incredible, spectacular |
 | Silence, shadow, concrete, water | Love, obsessed, incredible |
+
+---
+
+## PART 0.5: REQUIRED SKILLS — USE IN THIS ORDER
+
+Every task must use the correct skill for its phase. Do not skip phases. Do not use image/video/voice generation skills.
+
+### PHASE 1: Design — Structure & Visual System
+
+**Order of execution:**
+
+```
+1. ui-ux-designer        → Wireframes, layout architecture, UX flows
+2. product-design        → Visual system, design tokens, UI engineering, accessibility
+3. ui-ux-pro-max         → Audit against 168 research-backed UX principles
+```
+
+**How to use:**
+
+```
+skill: ui-ux-designer
+
+Build the wireframes and UX architecture for the DEVETESION website.
+
+MANDATORY: Read and enforce the entire DEVETESION_WEB_BUILD_PROMPT.md before designing.
+This is not a generic e-commerce site. Every rule in this document applies.
+
+PAGES: /, /collection, /look-detail, /archive, /membership
+
+Deliver: Wireframes (low-fi) → layout structure → user flow map
+```
+
+```
+skill: product-design
+
+Build the complete visual system for DEVETESION.
+
+MANDATORY: Read and enforce the entire DEVETESION_WEB_BUILD_PROMPT.md before designing.
+Use the color tokens, typography scale, and spacing system from Part 1 of this document.
+
+Deliver: High-fidelity designs for all 5 pages + design tokens + component specs
+```
+
+```
+skill: ui-ux-pro-max
+
+Audit the DEVETESION website designs against 168 UX principles.
+
+Deliver: Scored audit report with violations flagged and fix recommendations
+```
+
+---
+
+### PHASE 2: Development — Code
+
+**Order of execution:**
+
+```
+4. react-nextjs-development  → Next.js 14 App Router, Server Components, all pages
+5. tailwind-design-system    → Design tokens, component variants, responsive patterns
+```
+
+**How to use:**
+
+```
+skill: react-nextjs-development
+
+Build the DEVETESION website in Next.js 14 App Router.
+
+MANDATORY: Read and enforce the entire DEVETESION_WEB_BUILD_PROMPT.md before coding.
+Tech stack: Next.js 14 (App Router, Server Components), TypeScript strict, Tailwind CSS v4
+
+PAGES TO BUILD:
+- / — Homepage (one image, one word, one link)
+- /collection — Season lookbook grid
+- /collection/[look] — Individual look detail
+- /archive — Past seasons (viewable, not purchasable)
+- /membership — Exclusive access program
+
+Deliver: Complete, functional pages with server components, responsive layout, dark-only mode
+```
+
+```
+skill: tailwind-design-system
+
+Build the design system in Tailwind CSS v4 for DEVETESION.
+
+MANDATORY: Read and enforce the entire DEVETESION_WEB_BUILD_PROMPT.md before coding.
+Use the exact color tokens, typography, spacing, radius, and motion from Part 1.
+
+Deliver:
+- globals.css with all CSS custom properties
+- tailwind.config with theme tokens
+- Reusable component variants (button primary/secondary/ghost, nav, footer, image treatment)
+```
+
+---
+
+### PHASE 3: Polish — Animation, Refinement, Accessibility
+
+**Order of execution:**
+
+```
+6. animate            → Scroll reveals, hover states, page transitions, loading states
+7. polish             → Final quality pass — alignment, spacing, consistency, edge cases
+8. fixing-accessibility → Audit and fix all a11y issues (focus, contrast, keyboard nav)
+```
+
+**How to use:**
+
+```
+skill: animate
+
+Add purposeful motion to the DEVETESION website.
+
+MANDATORY: Read and enforce the entire DEVETESION_WEB_BUILD_PROMPT.md.
+Specifically: Part 3 (Interaction Design) — NO bouncy animations, opacity-only hovers, max 300ms.
+
+Add:
+- Scroll-driven reveals (elements fade in as user scrolls — heavy, deliberate)
+- Hover states on collection items (opacity shift only)
+- Page transitions (fast fade to dark, 200ms)
+- Loading states (dark skeleton screens, never spinners)
+
+Deliver: Framer Motion implementations for all interactive states
+```
+
+```
+skill: polish
+
+Final quality pass on the DEVETESION website.
+
+MANDATORY: Run the entire Part 9 (Enforcement Checklist) from DEVETESION_WEB_BUILD_PROMPT.md.
+
+Fix:
+- Alignment issues
+- Spacing inconsistencies
+- Copy that violates brand DNA
+- Edge cases (empty states, error states, sold-out pieces)
+- Mobile-specific issues (touch targets, safe areas)
+
+Deliver: Clean, production-ready code with all checklist items passing
+```
+
+```
+skill: fixing-accessibility
+
+Audit and fix all accessibility issues on the DEVETESION website.
+
+MANDATORY: Follow Part 7 (Accessibility) from DEVETESION_WEB_BUILD_PROMPT.md.
+
+Fix:
+- Focus ring visibility and styling
+- Keyboard navigation (Tab, Enter, Escape)
+- Aria labels on icon buttons
+- Alt text on images
+- Color contrast (WCAG AA minimum)
+- prefers-reduced-motion support
+
+Deliver: All items from accessibility checklist passing
+```
+
+---
+
+### PHASE 4: Content — Copy & Strategy (Optional, Run Before or After Build)
+
+```
+brand-guidelines     → Audit all copy for brand voice compliance
+content-creator      → Generate page-specific copy that matches brand DNA
+ad-creative          → Generate ad copy for paid campaigns (if launching)
+```
+
+**How to use:**
+
+```
+skill: brand-guidelines
+
+Audit all copy on the DEVETESION website for brand voice compliance.
+
+MANDATORY: Read Part 0 (Brand DNA) from DEVETESION_WEB_BUILD_PROMPT.md.
+Check: No banned words, no exclamation marks, no rhetorical questions, no hedging.
+
+Deliver: Audit report with every non-compliant copy flagged + corrected alternatives
+```
+
+```
+skill: content-creator
+
+Generate platform-specific content for DEVETESION launch.
+
+MANDATORY: Read Part 0 (Brand DNA) from DEVETESION_WEB_BUILD_PROMPT.md.
+
+Deliver:
+- Instagram captions for collection posts
+- Landing page hero copy
+- Email newsletter for collection drop
+All in DEVETESION brand voice: cold, declarative, no clichés
+```
+
+---
+
+### SKILL SUMMARY — FULL ORDER
+
+```
+Phase 1 (Design):
+  1 → ui-ux-designer
+  2 → product-design
+  3 → ui-ux-pro-max
+
+Phase 2 (Development):
+  4 → react-nextjs-development
+  5 → tailwind-design-system
+
+Phase 3 (Polish):
+  6 → animate
+  7 → polish
+  8 → fixing-accessibility
+
+Phase 4 (Content — optional):
+  9 → brand-guidelines
+  10 → content-creator
+  11 → ad-creative
+```
+
+**SKILLS TO NEVER USE:** Any image generation, video generation, or voice generation skills. This is a web build — text and code only.
 
 ---
 
@@ -102,7 +318,7 @@ Every designer, developer, and AI agent must read and enforce this document befo
   --text-lg: 18px;     /* Body — rare use */
   --text-base: 14px;   /* Body — default */
   --text-sm: 12px;     /* Captions, labels */
-  --text-xs: 10px;     {/* Reference marks */
+  --text-xs: 10px;     /* Reference marks */
 
   /* Tracking — always wide */
   --tracking-widest: 0.2em;
@@ -308,7 +524,7 @@ The following patterns are **banned** from the DEVETESION website. If you see on
 | Rounded cards with shadows | Every SaaS ever | Flat surfaces, hard edges, raw |
 | Gradient backgrounds | Warmth = cheap | Near-black. Always. |
 | Stock photography | Fake, lifeless | Real campaign photography only |
-| "Learn More" buttons | Weak, non-committal | "Shop S12" / "Enter" / "View" |
+| "Learn More" buttons | Weak, non-committal | "Shop [Season]" / "Enter" / "View" |
 | Hamburger menu on desktop | Lazy responsive pattern | Horizontal nav, 4 items max |
 | Breadcrumb navigation | Clutters the void | Simple back links only |
 | Search bar in header | E-commerce pattern | Search lives on collection page only |
@@ -330,30 +546,30 @@ The following patterns are **banned** from the DEVETESION website. If you see on
 ┌─────────────────────────────────────┐
 │                                     │
 │         [Full-bleed image]          │
-│         S12 campaign visual          │
+│         Current season visual        │
 │         occupies 70% of screen       │
 │                                     │
 │                                     │
-│              S12.                   │
+│         [SEASON IDENTIFIER]         │
 │                                     │
-│         [ Shop S12 ]                │
+│         [ Shop Collection ]         │
 │                                     │
 │                                     │
-│        DEVETESION · The Grid        │
+│       DEVETESION · The Grid         │
 └─────────────────────────────────────┘
 ```
 
 **Content:**
 - One hero image (current season campaign)
-- One word: "S12." (or current season)
-- One CTA button: "Shop S12"
+- One identifier: current season code (e.g., "S12.", "FW16.", etc.)
+- One CTA button: "Shop [Season]"
 - Bottom: minimal footer — "DEVETESION" + link to "The Grid"
 
 **No:** Navigation bar, logo animation, scrolling text, multiple CTAs, taglines
 
 **Copy:**
 ```
-S12.
+[S12.]
 
 [ Shop S12 ]
 
@@ -362,15 +578,15 @@ DEVETESION · The Grid
 
 ---
 
-### Page 2: COLLECTION `/s12`
+### Page 2: COLLECTION `/[season]`
 
-**Purpose:** Display all 30 looks. Dark grid. No fluff.
+**Purpose:** Display all looks for a season. Dark grid. No fluff.
 
 **Layout:**
 ```
 ┌─────────────────────────────────────┐
-│ S12 · MOTORESPORT COUTURE           │
-│ 30 looks · No restocks              │
+│ [SEASON] · [COLLECTION TITLE]       │
+│ [X] looks · No restocks             │
 ├─────────────────────────────────────┤
 │                                     │
 │  [Look 01]  [Look 02]  [Look 03]   │
@@ -393,8 +609,8 @@ DEVETESION · The Grid
 
 **Header:**
 ```
-S12 · MOTORSPORT COUTURE
-30 looks · No restocks
+[S12] · [MOTORSPORT COUTURE]
+[30] looks · No restocks
 ```
 
 **Copy rules:**
@@ -404,7 +620,7 @@ S12 · MOTORSPORT COUTURE
 
 ---
 
-### Page 3: LOOK DETAIL `/s12/01`
+### Page 3: LOOK DETAIL `/[season]/[look-number]`
 
 **Purpose:** One look. Full bleed. Details as architectural marks.
 
@@ -417,14 +633,15 @@ S12 · MOTORSPORT COUTURE
 │                                     │
 └─────────────────────────────────────┘
 ┌─────────────────────────────────────┐
-│ Look 01                             │
-│ Racing Suit — Bone White            │
-│ Technical fabric. Patchwork.        │
-│ DEVETƎSION chest branding.          │
+│ Look [01]                           │
+│ [Piece Name] — [Color/Material]     │
+│ [Detail line 1]. [Detail line 2].  │
+│ [Detail line 3].                    │
 │                                     │
 │ [ Add to Grid — Early Access ]      │
+│ [ or: Sold Out ]                    │
 │                                     │
-│ ← 02  |  01/30  |  12 →            │
+│ ← [prev]  |  [01]/[30]  |  [next] →│
 └─────────────────────────────────────┘
 ```
 
@@ -432,7 +649,7 @@ S12 · MOTORSPORT COUTURE
 - Full-bleed image (no crop, no zoom wheel)
 - Look number (large): "Look 01"
 - Piece name (medium): "Racing Suit — Bone White"
-- Details (small, monospace): "Technical fabric. Patchwork. DEVETƎSION chest branding."
+- Details (small, monospace): short descriptive fragments
 - CTA (if available): "Add to Grid — Early Access" or "Sold Out"
 - Navigation: previous/next look + counter
 
@@ -450,24 +667,21 @@ S12 · MOTORSPORT COUTURE
 │                                     │
 │ THE ARCHIVE                         │
 │                                     │
-│ S16 · Neo-Clergy            [View]  │
-│ FW16 · Flooded concrete             │
+│ [S16] · [Neo-Clergy]        [View]  │
+│ [FW16] · [Descriptor line]          │
 │                                     │
-│ S15 · [Title]               [View]  │
-│ [Season descriptor]                 │
+│ [S15] · [Title]             [View]  │
+│ [Descriptor line]                   │
 │                                     │
-│ S14 · [Title]               [View]  │
-│ [Season descriptor]                 │
-│                                     │
-│ S13 · [Title]               [View]  │
-│ [Season descriptor]                 │
+│ [S14] · [Title]             [View]  │
+│ [Descriptor line]                   │
 │                                     │
 │ ...all past seasons                 │
 │                                     │
 │ "Once the grid clears, it's gone."  │
 │                                     │
 ├─────────────────────────────────────┤
-│ DEVETESION · S12 · The Grid         │
+│ DEVETESION · [Current Season] · Grid│
 └─────────────────────────────────────┘
 ```
 
@@ -503,7 +717,7 @@ S12 · MOTORSPORT COUTURE
 │ Already a member? [ Enter ]         │
 │                                     │
 ├─────────────────────────────────────┤
-│ DEVETESION · S12 · Archive          │
+│ DEVETESION · [Current Season] · Arch│
 └─────────────────────────────────────┘
 ```
 
@@ -539,7 +753,7 @@ Already a member? [ Enter ]
 ```
 Top nav — 4 items max, horizontal, no hamburger on desktop:
 
-S12    Archive    The Grid    [Icon: Menu for mobile only]
+[Current Season]    Archive    The Grid    [Icon: Menu for mobile only]
 ```
 
 - No logo in nav (brand is in footer)
@@ -547,6 +761,7 @@ S12    Archive    The Grid    [Icon: Menu for mobile only]
 - No cart icon (handle in purchase flow)
 - Active state: underline, not bold
 - Sticky: NO — nav scrolls away with content
+- Season nav item updates automatically to current season
 
 ### Footer
 
@@ -554,7 +769,7 @@ S12    Archive    The Grid    [Icon: Menu for mobile only]
 3 lines max:
 
 DEVETESION
-S12 · Motorsport Couture
+[Current Season] · [Collection Title]
 The Grid · Archive
 ```
 
@@ -667,31 +882,31 @@ Always dark. Always.
 
 **Homepage:**
 ```
-S12.
-[ Shop S12 ]
+[SEASON IDENTIFIER].
+[ Shop SEASON ]
 DEVETESION · The Grid
 ```
 
 **Collection Header:**
 ```
-S12 · MOTORSPORT COUTURE
-30 looks · No restocks
+[SEASON] · [COLLECTION TITLE]
+[X] looks · No restocks
 ```
 
 **Look Detail:**
 ```
-Look 01
-Racing Suit — Bone White
-Technical fabric. Patchwork. DEVETƎSION chest branding.
-[ Add to Grid — Early Access ]
-← 02  |  01/30  |  12 →
+Look [NUMBER]
+[Piece Name] — [Color/Material]
+[Detail fragment 1]. [Detail fragment 2]. [Detail fragment 3].
+[ Add to Grid — Early Access / Sold Out ]
+← [prev]  |  [current]/[total]  |  [next] →
 ```
 
 **Archive:**
 ```
 THE ARCHIVE
-S16 · Neo-Clergy
-FW16 · Flooded concrete
+[SEASON] · [Title]
+[Descriptor line]
 [View]
 ...
 "Once the grid clears, it's gone."
@@ -712,7 +927,7 @@ Already a member? [ Enter ]
 **Footer (all pages):**
 ```
 DEVETESION
-S12 · Motorsport Couture
+[Current Season] · [Collection Title]
 The Grid · Archive
 ```
 
@@ -794,9 +1009,10 @@ Before any design or code is considered complete, verify every item:
 
 ### For AI Agents
 1. Read this entire document as context before any task
-2. Reference specific sections in your output
-3. Flag any deviation from this document
-4. Run Part 9 checklist as final validation
+2. Use the correct skill from Part 0.5 for the task phase
+3. Reference specific sections in your output
+4. Flag any deviation from this document
+5. Run Part 9 checklist as final validation
 
 ---
 
