@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flooded Concrete — DEVETESION Generative Art</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', -apple-system, sans-serif;
+      background: linear-gradient(135deg, #faf8f5 0%, #f0ece6 100%);
+      color: #1a1a1a;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 280px;
+      background: white;
+      padding: 24px;
+      box-shadow: 2px 0 20px rgba(0,0,0,0.06);
+      overflow-y: auto;
+      position: fixed;
+      height: 100vh;
+    }
+    .sidebar h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #1a1a1a;
+    }
+    .sidebar .subtitle {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .section {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .seed-display {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .seed-value {
+      font-family: 'SF Mono', 'Menlo', monospace;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+      flex: 1;
+    }
+    button {
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: 'Poppins', sans-serif;
+    }
+    button:hover { background: #333; }
+    button.secondary {
+      background: #f0f0f0;
+      color: #1a1a1a;
+    }
+    button.secondary:hover { background: #e0e0e0; }
+    .button-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .jump-input {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .jump-input input {
+      flex: 1;
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: 'SF Mono', monospace;
+    }
+    .control-group {
+      margin-bottom: 12px;
+    }
+    .control-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 6px;
+    }
+    .control-group input[type="range"] {
+      width: 100%;
+      height: 4px;
+      -webkit-appearance: none;
+      background: #e0e0e0;
+      border-radius: 2px;
+      outline: none;
+    }
+    .control-group input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      background: #1a1a1a;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .value-display {
+      font-family: 'SF Mono', monospace;
+      font-size: 11px;
+      color: #666;
+      float: right;
+    }
+    #canvas-container {
+      margin-left: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100vw - 280px);
+      min-height: 100vh;
+      padding: 40px;
+    }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h1>Flooded Concrete</h1>
+  <div class="subtitle">DEVETESION Generative Art</div>
+
+  <!-- SEED (FIXED) -->
+  <div class="section">
+    <div class="section-title">Seed</div>
+    <div class="seed-display">
+      <span class="seed-value" id="seed-display">42</span>
+    </div>
+    <div class="button-row">
+      <button class="secondary" onclick="prevSeed()">← Prev</button>
+      <button class="secondary" onclick="nextSeed()">Next →</button>
+    </div>
+    <div class="button-row">
+      <button onclick="randomSeed()">Random</button>
+    </div>
+    <div class="jump-input">
+      <input type="number" id="jump-input" placeholder="Seed #">
+      <button class="secondary" onclick="jumpSeed()">Go</button>
+    </div>
+  </div>
+
+  <!-- PARAMETERS (VARIABLE) -->
+  <div class="section">
+    <div class="section-title">Parameters</div>
+
+    <div class="control-group">
+      <label>Pillars <span class="value-display" id="pillars-val">5</span></label>
+      <input type="range" id="pillars" min="3" max="8" step="1" value="5" oninput="updateParam('pillars', this.value)">
+    </div>
+
+    <div class="control-group">
+      <label>Water Level <span class="value-display" id="water-val">0.35</span></label>
+      <input type="range" id="water" min="0.1" max="0.6" step="0.05" value="0.35" oninput="updateParam('water', this.value)">
+    </div>
+
+    <div class="control-group">
+      <label>Noise Detail <span class="value-display" id="noise-val">4</span></label>
+      <input type="range" id="noise" min="1" max="8" step="1" value="4" oninput="updateParam('noise', this.value)">
+    </div>
+
+    <div class="control-group">
+      <label>Droplet Count <span class="value-display" id="droplets-val">800</span></label>
+      <input type="range" id="droplets" min="200" max="2000" step="100" value="800" oninput="updateParam('droplets', this.value)">
+    </div>
+
+    <div class="control-group">
+      <label>Flash Intensity <span class="value-display" id="flash-val">0.8</span></label>
+      <input type="range" id="flash" min="0.2" max="1.0" step="0.1" value="0.8" oninput="updateParam('flash', this.value)">
+    </div>
+
+    <div class="control-group">
+      <label>Decay <span class="value-display" id="decay-val">0.3</span></label>
+      <input type="range" id="decay" min="0.05" max="0.6" step="0.05" value="0.3" oninput="updateParam('decay', this.value)">
+    </div>
+  </div>
+
+  <!-- COLORS (OPTIONAL) -->
+  <div class="section">
+    <div class="section-title">Palette</div>
+    <div class="control-group">
+      <label>Water Tone</label>
+      <input type="color" id="color-water" value="#0a0a0a" onchange="updateColor('water', this.value)">
+    </div>
+    <div class="control-group">
+      <label>Concrete Tone</label>
+      <input type="color" id="color-concrete" value="#e8e4df" onchange="updateColor('concrete', this.value)">
+    </div>
+    <div class="control-group">
+      <label>Shadow Tone</label>
+      <input type="color" id="color-shadow" value="#1a1a1a" onchange="updateColor('shadow', this.value)">
+    </div>
+  </div>
+
+  <!-- ACTIONS (FIXED) -->
+  <div class="section">
+    <div class="section-title">Actions</div>
+    <div class="button-row">
+      <button onclick="regenerate()">Regenerate</button>
+      <button class="secondary" onclick="resetParams()">Reset</button>
+    </div>
+    <div class="button-row">
+      <button class="secondary" onclick="downloadPNG()">Download PNG</button>
+    </div>
+  </div>
+</div>
+
+<div id="canvas-container"></div>
+
+<script>
+// ===== PARAMETERS =====
+let params = {
+  seed: 42,
+  pillars: 5,
+  water: 0.35,
+  noise: 4,
+  droplets: 800,
+  flash: 0.8,
+  decay: 0.3,
+  colors: {
+    water: '#0a0a0a',
+    concrete: '#e8e4df',
+    shadow: '#1a1a1a'
+  }
+};
+
+const defaults = JSON.parse(JSON.stringify(params));
+
+function updateParam(name, value) {
+  params[name] = parseFloat(value);
+  document.getElementById(name + '-val').textContent = value;
+  regenerate();
+}
+
+function updateColor(name, value) {
+  params.colors[name] = value;
+  regenerate();
+}
+
+// ===== SEED CONTROLS =====
+function prevSeed() {
+  params.seed = Math.max(1, params.seed - 1);
+  updateSeedDisplay();
+  regenerate();
+}
+
+function nextSeed() {
+  params.seed = Math.min(10000, params.seed + 1);
+  updateSeedDisplay();
+  regenerate();
+}
+
+function randomSeed() {
+  params.seed = Math.floor(Math.random() * 10000) + 1;
+  updateSeedDisplay();
+  regenerate();
+}
+
+function jumpSeed() {
+  const val = parseInt(document.getElementById('jump-input').value);
+  if (val && val > 0 && val <= 10000) {
+    params.seed = val;
+    updateSeedDisplay();
+    regenerate();
+  }
+}
+
+function updateSeedDisplay() {
+  document.getElementById('seed-display').textContent = params.seed;
+}
+
+function regenerate() {
+  randomSeed(params.seed);
+  noiseSeed(params.seed);
+  redraw();
+}
+
+function resetParams() {
+  Object.assign(params, JSON.parse(JSON.stringify(defaults)));
+  // Update UI
+  document.getElementById('pillars').value = defaults.pillars;
+  document.getElementById('pillars-val').textContent = defaults.pillars;
+  document.getElementById('water').value = defaults.water;
+  document.getElementById('water-val').textContent = defaults.water;
+  document.getElementById('noise').value = defaults.noise;
+  document.getElementById('noise-val').textContent = defaults.noise;
+  document.getElementById('droplets').value = defaults.droplets;
+  document.getElementById('droplets-val').textContent = defaults.droplets;
+  document.getElementById('flash').value = defaults.flash;
+  document.getElementById('flash-val').textContent = defaults.flash;
+  document.getElementById('decay').value = defaults.decay;
+  document.getElementById('decay-val').textContent = defaults.decay;
+  document.getElementById('color-water').value = defaults.colors.water;
+  document.getElementById('color-concrete').value = defaults.colors.concrete;
+  document.getElementById('color-shadow').value = defaults.colors.shadow;
+  regenerate();
+}
+
+function downloadPNG() {
+  saveCanvas('flooded-concrete-' + params.seed, 'png');
+}
+
+// ===== P5.JS ALGORITHM =====
+function setup() {
+  const canvas = createCanvas(min(windowWidth - 360, 900), min(windowWidth - 360, 900));
+  canvas.parent('canvas-container');
+  pixelDensity(1);
+  noLoop();
+}
+
+function draw() {
+  randomSeed(params.seed);
+  noiseSeed(params.seed);
+
+  const w = width;
+  const h = height;
+  const waterLine = h * (1 - params.water);
+
+  // Background - gradient from dark top to water
+  let cWater = color(params.colors.water);
+  let cConcrete = color(params.colors.concrete);
+  let cShadow = color(params.colors.shadow);
+
+  // Base: dark upper portion
+  background(cShadow);
+
+  // Concrete floor above water
+  noStroke();
+  for (let y = 0; y < waterLine; y++) {
+    let inter = map(y, 0, waterLine, 0, 1);
+    let c = lerpColor(cShadow, cConcrete, inter * 0.3);
+    stroke(c);
+    line(0, y, w, y);
+  }
+
+  // Water surface - noise-driven ripples
+  let spacing = w / (params.pillars + 1);
+
+  // PILLARS - vertical brutalist structures
+  for (let i = 0; i < params.pillars; i++) {
+    let px = spacing * (i + 1);
+    let pillarWidth = spacing * (0.3 + random(0.15));
+
+    // Main pillar body
+    noStroke();
+    let baseY = waterLine;
+
+    // Draw pillar above water
+    for (let y = 0; y < baseY; y++) {
+      for (let x = px - pillarWidth/2; x < px + pillarWidth/2; x++) {
+        // Noise-based decay on edges
+        let edgeDist = abs(x - px) / (pillarWidth/2);
+        let decayNoise = noise(x * 0.01, y * 0.01, params.seed * 0.001) * params.decay;
+
+        // Near water line, more decay
+        let waterProximity = map(y, baseY * 0.5, baseY, 0, 1);
+        let decayAmount = decayNoise * waterProximity * 2;
+
+        let brightness = 0.85 + random(-0.05, 0.05);
+        brightness = max(0, brightness - decayAmount);
+
+        let pc = lerpColor(cConcrete, cWater, decayAmount);
+        pc.setRed(pc.getRed() * brightness);
+        pc.setGreen(pc.getGreen() * brightness);
+        pc.setBlue(pc.getBlue() * brightness);
+
+        stroke(pc);
+        point(x, y);
+      }
+    }
+
+    // Pillar shadow on right side
+    for (let y = 0; y < baseY; y++) {
+      let shadowWidth = pillarWidth * 0.15;
+      for (let x = px + pillarWidth/2 - shadowWidth; x < px + pillarWidth/2; x++) {
+        let sc = lerpColor(cConcrete, cShadow, 0.4 + random(-0.1, 0.1));
+        stroke(sc);
+        point(x, y);
+      }
+    }
+
+    // Pillar edge highlight on left
+    for (let y = 0; y < baseY; y++) {
+      let hlWidth = 2;
+      for (let x = px - pillarWidth/2; x < px - pillarWidth/2 + hlWidth; x++) {
+        let hc = lerpColor(cConcrete, color(255), 0.15);
+        stroke(hc);
+        point(x, y);
+      }
+    }
+  }
+
+  // WATER - noise-driven surface with reflections
+  let waterDepth = h - waterLine;
+  for (let y = waterLine; y < h; y++) {
+    for (let x = 0; x < w; x += 2) {
+      // Layered noise for water texture
+      let n = 0;
+      for (let oct = 0; oct < params.noise; oct++) {
+        let freq = pow(2, oct);
+        n += noise(x * 0.005 * freq, y * 0.02 * freq, params.seed * 0.0001) / freq;
+      }
+      n = n / params.noise;
+
+      // Reflections of pillars in water
+      let reflection = 0;
+      for (let i = 0; i < params.pillars; i++) {
+        let px = spacing * (i + 1);
+        let distFromPillar = abs(x - px);
+        if (distFromPillar < spacing * 0.4) {
+          reflection += map(distFromPillar, 0, spacing * 0.4, 0.15, 0);
+        }
+      }
+
+      let waterBrightness = 0.1 + n * 0.15 + reflection;
+      let wc = lerpColor(cWater, color(40, 40, 45), waterBrightness);
+
+      // Ripple lines
+      let ripple = sin(y * 0.1 + n * 10) * 0.05;
+      wc.setRed(wc.getRed() + ripple * 20);
+      wc.setGreen(wc.getGreen() + ripple * 20);
+      wc.setBlue(wc.getBlue() + ripple * 25);
+
+      noStroke();
+      fill(wc);
+      rect(x, y, 2, 1);
+    }
+  }
+
+  // FLASH EFFECT - harsh direct light
+  if (params.flash > 0.3) {
+    let flashCenterX = w * (0.3 + random(0.4));
+    let flashCenterY = h * (0.1 + random(0.3));
+    let flashRadius = w * (0.3 + params.flash * 0.3);
+
+    // Flash glow
+    noStroke();
+    for (let y = max(0, flashCenterY - flashRadius); y < min(h, flashCenterY + flashRadius); y++) {
+      for (let x = max(0, flashCenterX - flashRadius); x < min(w, flashCenterX + flashRadius); x++) {
+        let d = dist(x, y, flashCenterX, flashCenterY);
+        if (d < flashRadius) {
+          let intensity = map(d, 0, flashRadius, 1, 0);
+          intensity = pow(intensity, 2) * params.flash;
+          if (intensity > 0.05) {
+            let fc = color(255, 255, 250, intensity * 40);
+            fill(fc);
+            rect(x, y, 1, 1);
+          }
+        }
+      }
+    }
+  }
+
+  // WATER DROPLETS - frozen mid-air by flash
+  let dropletCount = params.droplets;
+  noStroke();
+  for (let i = 0; i < dropletCount; i++) {
+    let dx = random(w);
+    let dy = random(waterLine * 0.2, waterLine + waterDepth * 0.5);
+
+    // Droplets cluster near pillars and water line
+    let nearestPillar = 0;
+    let nearestDist = Infinity;
+    for (let j = 0; j < params.pillars; j++) {
+      let px = spacing * (j + 1);
+      let d = abs(dx - px);
+      if (d < nearestDist) {
+        nearestDist = d;
+        nearestPillar = j;
+      }
+    }
+
+    // Higher density near pillars
+    if (random() > 0.5 && nearestDist < spacing * 0.5) {
+      dx = spacing * (nearestPillar + 1) + random(-spacing * 0.4, spacing * 0.4);
+    }
+
+    let dropletSize = random(1, 4);
+    let brightness = random(180, 255);
+    let alpha = random(40, 120);
+
+    // Flash-lit droplets are brighter
+    let flashDist = dist(dx, dy, flashCenterX, flashCenterY);
+    if (flashDist < flashRadius * 0.7) {
+      brightness = 255;
+      alpha = min(200, alpha + 50);
+    }
+
+    fill(brightness, brightness, brightness + 5, alpha);
+    ellipse(dx, dy, dropletSize, dropletSize * 1.3);
+  }
+
+  // GRAIN - film noise overlay
+  loadPixels();
+  for (let i = 0; i < pixels.length; i += 4) {
+    let grain = random(-15, 15);
+    pixels[i] = constrain(pixels[i] + grain, 0, 255);
+    pixels[i+1] = constrain(pixels[i+1] + grain, 0, 255);
+    pixels[i+2] = constrain(pixels[i+2] + grain, 0, 255);
+  }
+  updatePixels();
+
+  // VIGNETTE - dark edges
+  noStroke();
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      let dx = map(x, 0, w, -1, 1);
+      let dy = map(y, 0, h, -1, 1);
+      let vignette = 1 - (dx*dx + dy*dy) * 0.3;
+      vignette = constrain(vignette, 0.3, 1);
+
+      let idx = (y * w + x) * 4;
+      pixels[idx] *= vignette;
+      pixels[idx+1] *= vignette;
+      pixels[idx+2] *= vignette;
+    }
+  }
+  updatePixels();
+}
+
+function windowResized() {
+  resizeCanvas(min(windowWidth - 360, 900), min(windowWidth - 360, 900));
+  regenerate();
+}
+</script>
+
+</body>
+</html>
