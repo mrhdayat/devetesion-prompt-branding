@@ -11,10 +11,10 @@ Semua hasil akhir terlihat seperti editorial fashion sungguhan yang bisa muncul 
 ```
 07_PHOTOSHOOT_SEQUENCE/
 ├── README.md                      ← Dokumen ini (panduan lengkap)
-├── MASTER_PHOTOSHOOT_PROMPT.md    ← Prompt utama yang ditempel ke SETIAP look
-├── POSE_LIBRARY.md                ← 30 pose detail, satu per look
-├── SEQUENCE_SHOT_LIST.md          ← Urutan shot, framing, angle kamera per look
-├── COLOR_GRADE_SYSTEM.md          ← 4 pilihan color grade untuk konsistensi semua foto
+├── MASTER_PHOTOSHOOT_PROMPT.md    ← SATU prompt utama — upload 1 look, paste, generate
+├── POSE_LIBRARY.md                ← 30 pose detail, satu per look (opsional)
+├── SEQUENCE_SHOT_LIST.md          ← Urutan shot, framing, angle kamera per look (opsional)
+├── COLOR_GRADE_SYSTEM.md          ← Referensi color grade (default: Portra 400 Warm)
 └── WEB_LAYOUT_GUIDE.md            ← Cara arrange foto jadi moodboard & layout web app
 ```
 
@@ -25,319 +25,145 @@ Semua hasil akhir terlihat seperti editorial fashion sungguhan yang bisa muncul 
 Kamu punya 30 look dari Season 12 (atau season lain) yang sudah di-generate satu-satu. Masalahnya: kalau di-generate terpisah, hasilnya **tidak konsisten** — lighting beda, warna beda, style beda. Terlihat seperti random images, bukan satu photoshoot.
 
 **Sistem ini menyelesaikan masalah itu** dengan memastikan semua 30 foto berbagi DNA visual yang sama:
-- ✅ Lokasi yang sama
-- ✅ Lighting yang sama
-- ✅ Color grade yang sama
-- ✅ Photographer eye yang sama (lens, framing, angle)
-- ✅ Film treatment yang sama (grain, texture, post-production)
+- ✅ AI otomatis pilih lokasi yang cocok sama outfit (indoor / outdoor)
+- ✅ Lighting natural sesuai lokasi
+- ✅ Color grade konsisten (Portra 400 Warm)
+- ✅ Photographer eye yang sama (medium format, film grain, real skin texture)
+- ✅ Anti-AI enforcement — tidak boleh terlihat seperti AI
 
 Hasilnya: **30 foto yang terlihat seperti satu sesi pemotretan profesional di dunia nyata.**
 
 ---
 
-## 🔄 Alur Kerja Lengkap
+## 🔄 Alur Kerja — SUPER SIMPLE (3 Langkah)
 
-### TAHAP 1: Generate 30 Look Individual
+### Langkah 1: Upload 1 Foto Look
+Buka AI image generator (FLOW by Google, Midjourney, DALL-E, dll). Upload 1 foto look yang sudah kamu generate dari Season 12.
 
-Gunakan prompt Season 12 kamu (atau season manapun) untuk menghasilkan 30 foto individual — satu per look.
+### Langkah 2: Paste Prompt
+Copy **SELURUH isi** `MASTER_PHOTOSHOOT_PROMPT.md` (dari "STRICT IMAGE PRESERVATION MODE" sampai akhir). Paste di prompt generator. **Jangan ganti apapun.**
+
+### Langkah 3: Generate
+Klik generate. Hasilnya: foto yang sama, tapi sekarang terlihat seperti difoto profesional di lokasi real-world yang cocok dengan outfit.
+
+**Ulangi untuk 30 look.** Selesai.
+
+---
+
+## 🤖 Cara AI Memilih Lokasi
+
+AI akan **otomatis analisa outfit** dan pilih lokasi yang masuk akal:
+
+| Jenis Outfit | Lokasi yang Akan Dipilih AI |
+|--------------|---------------------------|
+| Racing suit, techwear, streetwear | Urban infrastructure — rooftop parking, underpass, loading dock |
+| Tailoring, formal, minimalist | Interior arsitektur — gallery, hotel lobby, modernist showroom |
+| Couture, avant-garde, voluminous | Grand interior — abandoned warehouse, disused theatre, vaulted hall |
+| Casual, knitwear, relaxed | Lived-in interior — loft apartment, sunlit studio, conservatory |
+| Outerwear, heavy coats, winter | Outdoor urban — city street, concrete plaza, harbor edge |
+
+**Semua lokasi real-world.** Bukan fantasy, bukan sci-fi, bukan abstract void.
 
 **Contoh:**
-- Look 01 → Racing Suit Bone White
-- Look 02 → Patchwork Jacket Charcoal
-- ...hingga Look 30
-
-**Output:** 30 file gambar individual.
+- Upload racing suit → AI pilih "rooftop parking deck, overcast sky, wet concrete"
+- Upload tailored suit → AI pilih "modernist gallery, skylight, white walls"
+- Upload draped gown → AI pilih "abandoned theatre, high ceilings, dramatic shadows"
 
 ---
 
-### TAHAP 2: Pilih Konfigurasi Photoshoot (Sekali Pilih, Pakai ke Semua Foto)
+## 🎨 Color Grade & Lighting
 
-Sebelum mulai, kamu harus memilih **3 pengaturan** yang akan diterapkan ke SEMUA 30 foto. Jangan ganti-ganti antar foto.
+**Default (otomatis):**
+- Color Grade: **Kodak Portra 400 Warm** — hangat, skin tone bagus, editorial
+- Lighting: **Natural sesuai lokasi** — kalau indoor + jendela = daylight soft, kalau outdoor = overcast, kalau parking garage = fluorescent
 
-#### Pilihan 1: Environment (Lokasi)
-Buka `MASTER_PHOTOSHOOT_PROMPT.md` → **Part C: Environment Lock**
+**Mau ganti color grade?** Buka `COLOR_GRADE_SYSTEM.md` — ada 3 pilihan:
+1. Kodak Portra 400 Warm (default, recommended)
+2. Fuji Pro 400H Cool (dingin, intelektual)
+3. Raw Flash — No Grade (mentah, straight out of camera)
 
-Pilih **SATU** dari 4 opsi:
-
-| Opsi | Nama | Vibe |
-|------|------|------|
-| 1 | Flooded Concrete Cathedral | Brutalist, air, pillar beton, flash keras |
-| 2 | Concrete Parking Structure | Parkiran beton, lampu neon, urban infrastructure |
-| 3 | Abandoned Industrial Warehouse | Gudang tua, bata ekspos, cahaya dari jendela tinggi |
-| 4 | Rooftop Parking Deck | Rooftop beton, langit mendatar, cityscape jauh |
-
-**Rekomendasi untuk S12:** Opsi 1 — Flooded Concrete Cathedral. Cocok dengan aesthetic "Motorsport Couture".
+Kalau mau ganti, edit bagian "LIGHTING AND COLOR GRADE" di `MASTER_PHOTOSHOOT_PROMPT.md`.
 
 ---
 
-#### Pilihan 2: Lighting (Pencahayaan)
-Buka `MASTER_PHOTOSHOOT_PROMPT.md` → **Part E: Lighting Specification**
-
-Pilih **SATU** dari 2 opsi:
-
-| Opsi | Nama | Karakter |
-|------|------|----------|
-| A | Harsh Direct Camera Flash | Flash keras, bayangan tajam, gelap di belakang |
-| B | Natural Overcast Daylight | Cahaya alami mendung, soft, rata, cool tone |
-
-**Rekomendasi untuk S12:** Opsi A — Harsh Direct Camera Flash. Memberikan energi paparazzi/confrontational yang cocok dengan motorsport.
-
----
-
-#### Pilihan 3: Color Grade
-Buka `COLOR_GRADE_SYSTEM.md`
-
-Pilih **SATU** dari 3 grade:
-
-| Grade | Nama | Karakter |
-|-------|------|----------|
-| 1 | Kodak Portra 400 Warm | Hangat, skin tone bagus, editorial fashion |
-| 2 | Fuji Pro 400H Cool | Dingin, intelektual, refined |
-| 3 | Raw Flash — No Grade | Mentah, langsung dari kamera, jujur |
-
-**Rekomendasi untuk S12:** Grade 1 — Kodak Portra 400 Warm. Paling meyakinkan sebagai foto editorial sungguhan.
-
----
-
-### TAHAP 3: Retouch Setiap Look dengan Photoshoot Treatment
-
-Untuk SETIAP dari 30 look, lakukan langkah ini:
-
-#### Langkah per Look:
-
-1. **Buka AI image generator** (FLOW by Google, Midjourney, DALL-E, dll)
-
-2. **Upload foto look** yang sudah di-generate di Tahap 1
-
-3. **Paste prompt ini secara berurutan:**
-
-```
-[PART 1] MASTER_PHOTOSHOOT_PROMPT.md (seluruh isi file, dengan pilihan environment, lighting, grade yang sudah kamu tentukan)
-
-[PART 2] Pose yang sesuai dari POSE_LIBRARY.md (contoh: untuk Look 01, copy POSE 01 — THE STRIDE)
-
-[PART 3] Framing & angle dari SEQUENCE_SHOT_LIST.md (contoh: untuk Look 01: "Medium-full, eye level slightly low, HIGH energy")
-```
-
-4. **Generate**
-
-5. **Simpan hasilnya** sebagai versi photoshoot dari look tersebut
-
-6. **Ulangi** untuk look berikutnya
-
-#### Contoh Konkret untuk Look 01:
-
-```
-[Upload foto Look 01]
-
-[Paste seluruh MASTER_PHOTOSHOOT_PROMPT.md dengan pilihan:]
-- Environment: OPTION 1 — FLOODED CONCRETE CATHEDRAL
-- Lighting: SETUP A — HARSH DIRECT CAMERA FLASH
-- Grade: GRADE 1 — KODAK PORTRA 400 WARM
-
-[Paste POSE 01 dari POSE_LIBRARY.md:]
-POSE: Model walking directly toward camera with purposeful, aggressive stride.
-- Weight on front foot, back foot pushing off
-- Arms swinging naturally with walk — front arm slightly forward, back arm trailing
-...
-
-[Paste dari SEQUENCE_SHOT_LIST.md:]
-Shot Type: Medium-full
-Framing: Mid-thigh to head + 10% headroom
-Camera Angle: Eye level, slightly low
-Energy: HIGH
-
-[Generate]
-```
-
-**Hasil:** Foto Look 01 yang sekarang terlihat seperti difoto profesional di flooded concrete cathedral dengan flash keras dan color grade Portra 400.
-
-Ulangi proses yang sama untuk Look 02 sampai Look 30, masing-masing dengan pose dan framing yang berbeda tapi environment + lighting + grade yang **sama persis**.
-
----
-
-### TAHAP 4: Validasi Konsistensi
-
-Setelah semua 30 foto selesai di-generate:
-
-1. **Buat grid 6×5** — letakkan semua 30 foto berdampingan
-2. **Periksa:**
-   - [ ] Semua foto punya color cast yang sama (hangat/dingin/netral)?
-   - [ ] Blacks konsisten (semua sedikit lifted, atau semua crushed)?
-   - [ ] Highlights behave sama (semua warm, atau semua netral)?
-   - [ ] Grain terlihat dan similar di semua foto?
-   - [ ] Tidak ada satu foto yang "menonjol" warnanya?
-   - [ ] Skin tone konsisten di semua model?
-
-3. **Kalau ada yang beda** → re-generate foto tersebut dengan color grade lebih eksplisit disebutkan di prompt.
-
----
-
-### TAHAP 5: Arrange jadi Moodboard & Web Layout
-
-Buka `WEB_LAYOUT_GUIDE.md`. Kamu punya beberapa pilihan layout:
-
-#### Moodboard (untuk presentasi/internal review)
-
-| Layout | Deskripsi | Cocok Untuk |
-|--------|-----------|-------------|
-| The Grid | 6 kolom × 5 baris, semua foto sama besar | Internal review, press kit |
-| Hero + Grid | Look 01 full-width, sisanya grid di bawah | Landing page lookbook |
-| Sequence Strip | 3 baris × 10 foto, horizontal scroll | Instagram carousel (3x carousel) |
-| Editorial Spread | Ukuran foto campur — ada yang 2 kolom, ada yang 1 | Zine cetak, premium web |
-
-#### Web App Layout (untuk website)
-
-| Layout | Deskripsi | Cocok Untuk |
-|--------|-----------|-------------|
-| Collection Page | Grid 3 kolom (desktop), klik → detail | Halaman koleksi / e-commerce |
-| Look Detail | Full-bleed image + info di bawah | Halaman detail per look |
-| Horizontal Gallery | Scroll horizontal, satu foto per layar | Gallery experience |
-| Stories Format | Full-screen, tap untuk next | Mobile stories format |
-| Archive Page | List season dengan 3 thumbnail preview | Halaman arsip season sebelumnya |
-
-Semua layout menggunakan aspect ratio **4:5** (portrait editorial standard) — sudah diatur di `MASTER_PHOTOSHOOT_PROMPT.md`.
-
----
-
-## 📖 Penjelasan Detail Setiap File
+## 📋 Penjelasan Detail Setiap File
 
 ### `MASTER_PHOTOSHOOT_PROMPT.md`
+**Apa isinya:** SATU prompt lengkap yang mengandung:
+- Identity Lock — wajah & outfit tidak berubah
+- Photographer Treatment — spesifikasi kamera, lens, film, anti-AI enforcement
+- Autonomous Environment Selection — AI analisa outfit, pilih lokasi yang cocok
+- Lighting & Color Grade — Portra 400 warm, natural lighting
+- Pose & Framing — pose tetap sama, framing 4:5 portrait
+- Output Specification — harus terlihat seperti Vogue/Dazed
 
-**Apa isinya:** Prompt utama yang mengandung:
-- **Part A:** Identity Lock — wajah & outfit model tidak berubah
-- **Part B:** Photographer Treatment — spesifikasi kamera, lens, film stock, anti-AI enforcement
-- **Part C:** Environment Lock — 4 pilihan lokasi (pilih 1, pakai untuk semua foto)
-- **Part D:** Camera Frame Specification — aspect ratio 4:5, framing conventions
-- **Part E:** Lighting Specification — 3 pilihan lighting (pilih 1, pakai untuk semua foto)
-- **Part F:** Post-Production / Color Grade — 4 pilihan grade (pilih 1, pakai untuk semua foto)
-- **Part G:** Output Specification — standar output (harus terlihat seperti Vogue/Dazed/System)
-
-**Kapan dipakai:** DI-TEMPER di awal setiap kali kamu mau retouch satu look jadi photoshoot.
-
----
+**Kapan dipakai:** DI-TEMPER seluruhnya setiap kali mau retouch 1 look jadi photoshoot.
 
 ### `POSE_LIBRARY.md`
+**Apa isinya:** 30 pose detail — satu untuk setiap look. Ditulis sebagai arahan fotografer ke model.
 
-**Apa isinya:** 30 pose detail — satu untuk setiap look. Setiap pose ditulis sebagai arahan fotografer profesional ke model.
-
-Contoh:
-- Pose 01: "THE STRIDE" — model berjalan agresif ke kamera
-- Pose 07: "THE SLUMP" — model merosot di dinding, exhausted
-- Pose 15: "THE PIVOT" — model berputar, caught mid-rotation
-- Pose 30: "THE FINALE" — model diam sempurna, center, pernyataan terakhir
-
-**Distribusi energi:**
-- Look 01-05: High → Medium (opening energy)
-- Look 06-10: Medium → Low (exploring the space)
-- Look 11-15: Medium (middle range, variety)
-- Look 16-20: Low → Medium (quiet middle)
-- Look 21-25: Medium → High (building to climax)
-- Look 26-30: High → STILL (finale, resolution, silence)
-
-Ini memastikan sequence terasa seperti fashion show sungguhan — mulai kuat, explore, temukan rhythm, bangun ke klimaks, berakhir diam.
-
-**Kapan dipakai:** Copy pose yang sesuai (Pose 01 untuk Look 01, dst) dan tempel setelah master prompt.
-
----
+**Kapan dipakai:** OPSIONAL. Kalau kamu mau generate look DENGAN pose spesifik, baca pose yang sesuai dan tambahkan deskripsi pose ke prompt sebelum generate look aslinya.
 
 ### `SEQUENCE_SHOT_LIST.md`
+**Apa isinya:** Tabel shot-by-shot — framing, camera angle, energy level untuk setiap look.
 
-**Apa isinya:** Tabel shot-by-shot untuk semua 30 look, berisi:
-- Shot Type (Full body, Medium-full, Medium, Close-up)
-- Framing detail (berapa % headroom, cut point di mana)
-- Camera Angle (Eye level, slightly low, dead-on, 45°, perpendicular)
-- Energy level (HIGH, MEDIUM, LOW, STILL)
-- Notes (konteks tambahan per shot)
-
-Juga ada:
-- Master Camera Specs (lens 80mm, aperture f/4-5.6, ISO 400, dll)
-- Sequence Flow — arc emosional dari look 01 sampai 30
-- Framing Reference (diagram visual untuk setiap shot type)
-- Camera Angle Reference (penjelasan setiap angle)
-
-**Kapan dipakai:** Baca framing & angle untuk look yang sedang kamu kerjakan, tempel setelah pose.
-
----
+**Kapan dipakai:** OPSIONAL. Referensi kalau kamu mau tahu shot type dan angle yang direkomendasikan per look.
 
 ### `COLOR_GRADE_SYSTEM.md`
+**Apa isinya:** 3 color grade lengkap dengan parameter teknis + perbandingan.
 
-**Apa isinya:** 4 color grade lengkap dengan parameter teknis:
-- Color temperature, tint, contrast curve
-- Saturation per channel (reds, oranges, yellows, greens, blues, purples)
-- Grain pattern (amount, size, roughness)
-- Sharpening settings
-- Vignette amount
-
-Juga ada:
-- Perbandingan antar grade dalam tabel
-- Cara apply di AI generation vs post-processing
-- Consistency checklist
-- Rekomendasi grade untuk S12
-
-**Kapan dipakai:** Pilih grade di awal, baca parameter detailnya, masukkan ke prompt.
-
----
+**Kapan dipakai:** Kalau kamu mau ganti color grade dari default Portra 400 Warm. Baca, pilih grade, copy parameternya ke master prompt.
 
 ### `WEB_LAYOUT_GUIDE.md`
+**Apa isinya:** 4 moodboard layout + 5 web app layout + CSS examples + responsive behavior.
 
-**Apa isinya:**
-- 4 moodboard layout (Grid, Hero+Grid, Sequence Strip, Editorial Spread)
-- 5 web app layout (Collection Page, Look Detail, Horizontal Gallery, Stories, Archive)
-- Responsive behavior (desktop, tablet, mobile)
-- Image optimization specs (WebP, sizes, responsive markup)
-- CSS layout examples pakai Tailwind CSS
-- Lazy loading strategy
-
-**Kapan dipakai:** Setelah semua 30 foto selesai, gunakan guide ini untuk arrange jadi moodboard atau web layout.
+**Kapan dipakai:** Setelah semua 30 foto selesai, pakai guide ini untuk arrange jadi moodboard atau layout web.
 
 ---
 
 ## ⚠️ Aturan Penting
 
 ### JANGAN Lakukan Ini:
-- ❌ Ganti environment antar foto — semua foto harus satu lokasi
-- ❌ Ganti lighting antar foto — semua foto harus satu lighting setup
-- ❌ Ganti color grade antar foto — ini yang bikin sequence konsisten
-- ❌ Gunakan pose yang sama untuk banyak look — setiap look harus beda pose
+- ❌ Edit prompt secara sembarangan — pakai apa adanya
+- ❌ Ganti color grade antar foto — semua foto harus sama
 - ❌ Skip identity lock — tanpa ini, AI akan ubah wajah/outfit model
+- ❌ Upload gambar yang bukan look fashion — prompt ini khusus fashion photography
 
 ### HARUS Lakukan Ini:
-- ✅ Pilih environment, lighting, grade SEKALI di awal
-- ✅ Pakai konfigurasi yang sama untuk SEMUA 30 foto
-- ✅ Ganti pose dan framing per look (sesuai library & shot list)
-- ✅ Validasi konsistensi setelah semua 30 foto selesai
-- ✅ Re-generate foto yang warnanya tidak match
+- ✅ Pakai SELURUH prompt — jangan potong-potong
+- ✅ Upload look yang sudah di-generate sebelumnya (bukan foto random)
+- ✅ Validasi hasil — pastikan tidak terlihat AI-generated
+- ✅ Re-generate kalau ada foto yang warnanya tidak match
 
 ---
 
 ## 🔧 Tips Tambahan
 
 ### Kalau Hasil Terlihat Terlalu "AI"
-- Tambahkan penekanan di prompt: "This must NOT look AI-generated. It must pass as a real photograph from a real editorial fashion shoot."
-- Pastikan film grain disebutkan eksplisit
-- Pastikan skin texture disebutkan: "real skin texture — pores, fine hairs, micro-variation visible"
-- Kalau pakai FLOW/Midjourney, tambahkan parameter realism: `--v 6 --style raw --s 50` (Midjourney)
+- Pastikan prompt tidak diubah — terutama bagian "ANTI-AI ENFORCEMENT"
+- Tambahkan di akhir prompt: "This must NOT look AI-generated. It must pass as a real photograph from a real editorial fashion shoot."
+- Kalau pakai Midjourney: tambahkan `--v 6 --style raw --s 50`
 
-### Kalau Warna Tidak Konsisten
-- Sebutkan color grade LEBIH eksplisit di prompt
-- Tambahkan: "This image must have the EXACT same color grading as all other images in this sequence: [deskripsikan grade]"
+### Kalau Lokasi yang Dipilih AI Tidak Cocok
+- AI mungkin salah baca outfit. Coba deskripsikan outfit lebih jelas di bagian atas prompt:
+  "The outfit is: [deskripsi singkat outfit]"
+- Atau override manual dengan tambahkan: "IGNORE the decision tree. Use this location: [deskripsi lokasi kamu]"
+
+### Kalau Warna Tidak Konsistensi Antar Foto
+- Pastikan bagian "LIGHTING AND COLOR GRADE" tidak diubah
 - Batch-compare semua foto dalam grid — yang menonjol harus di-re-generate
-
-### Kalau Pose Tidak Terbaca
-- Pastikan pose deskripsi cukup detail — kalau AI tidak mengikuti, tambahkan konteks visual
-- Contoh: alih-alih "model leaning", tulis "model leaning against a concrete pillar, right shoulder making contact, weight entirely on right side, left leg extended"
+- Kalau perlu, tambahkan lebih eksplisit: "This image must have the EXACT same color grading as all other images: Kodak Portra 400 warm"
 
 ---
 
 ## 📊 Ringkasan Cepat
 
-| Tahap | Aksi | File yang Dipakai |
-|-------|------|-------------------|
-| 1 | Generate 30 look individual | Prompt Season 12 kamu |
-| 2 | Pilih environment + lighting + grade | MASTER_PHOTOSHOOT_PROMPT.md, COLOR_GRADE_SYSTEM.md |
-| 3 | Retouch setiap look (30x) | MASTER + POSE_LIBRARY + SEQUENCE_SHOT_LIST |
-| 4 | Validasi konsistensi | COLOR_GRADE_SYSTEM.md (consistency checklist) |
+| Langkah | Aksi | File yang Dipakai |
+|---------|------|-------------------|
+| 1 | Upload 1 look foto | Foto dari Season 12 |
+| 2 | Paste seluruh prompt | MASTER_PHOTOSHOOT_PROMPT.md |
+| 3 | Generate | AI image generator |
+| 4 | Ulangi 30x | — |
 | 5 | Arrange jadi layout | WEB_LAYOUT_GUIDE.md |
 
 ---
@@ -345,36 +171,46 @@ Juga ada:
 ## 🎬 Contoh Workflow Lengkap (Look 01)
 
 ```
-1. Generate Look 01 dari prompt Season 12 kamu
-   → Dapat foto: model dalam racing suit bone white
+1. Kamu sudah punya foto Look 01 dari Season 12:
+   → Model dalam racing suit bone white
 
-2. Buka AI image generator (FLOW/Midjourney/DALL-E)
+2. Buka FLOW by Google (atau Midjourney/DALL-E)
 
 3. Upload foto Look 01
 
-4. Paste prompt:
-
-   [Seluruh MASTER_PHOTOSHOOT_PROMPT.md dengan:]
-   - Environment: OPTION 1 (Flooded Concrete Cathedral)
-   - Lighting: SETUP A (Harsh Direct Camera Flash)
-   - Grade: GRADE 1 (Kodak Portra 400 Warm)
-
-   [Pose 01 dari POSE_LIBRARY.md:]
-   "POSE: Model walking directly toward camera with purposeful, aggressive stride..."
-
-   [Shot info dari SEQUENCE_SHOT_LIST.md:]
-   "Shot Type: Medium-full | Framing: Mid-thigh to head + 10% headroom | Angle: Eye level, slightly low"
+4. Paste SELURUH isi MASTER_PHOTOSHOOT_PROMPT.md
+   → Jangan ganti apapun
+   → AI otomatis analisa: "ini racing suit" → pilih "rooftop parking deck"
 
 5. Generate
-   → Dapat foto: model dalam racing suit, berjalan agresif di flooded concrete cathedral,
-     dengan flash keras, color grade Portra 400, terlihat seperti Vogue editorial
+   → Hasil: model dalam racing suit di rooftop beton, langit mendatar,
+     color grade Portra 400 warm, terlihat seperti Vogue editorial
 
 6. Simpan sebagai "S12_Look_01_Photoshoot.png"
 
-7. Ulangi untuk Look 02-30
+7. Ulangi untuk Look 02 sampai 30
 ```
 
 Setelah 30 foto selesai → arrange pakai layout dari WEB_LAYOUT_GUIDE.md.
+
+---
+
+## 💡 Perbedaan dengan 05_PHOTOSHOOT_OPTIONS
+
+| | `05_PHOTOSHOOT_OPTIONS` | `07_PHOTOSHOOT_SEQUENCE` |
+|---|------------------------|---------------------------|
+| **Tujuan** | Generate foto GROUP dari multi-model | Generate foto INDIVIDUAL per look |
+| **Lokasi** | Kamu pilih manual (studio/outdoor/indoor) | AI otomatis pilih berdasarkan outfit |
+| **Jumlah model** | Multi-model (2-6 orang) | 1 model per foto |
+| **Output** | 1 foto group | 30 foto individual sequence |
+| **Kapan dipakai** | Awal — generate look pertama kali | Kedua — retouch look jadi photoshoot |
+
+**Workflow lengkap:**
+```
+Season 12 prompts → generate 30 look individual
+→ 07_PHOTOSHOOT_SEQUENCE → retouch 30 look jadi photoshoot quality
+→ WEB_LAYOUT_GUIDE → arrange jadi moodboard / web layout
+```
 
 ---
 

@@ -1,30 +1,41 @@
 # MASTER PHOTOSHOOT PROMPT
 
-**This is the core prompt. Prepend it to EVERY look image you want to retouch into the photoshoot sequence.**
+**Ini adalah SATU-SATUNYA prompt yang kamu butuhkan.**
+
+Upload 1 foto look → paste prompt ini → generate. AI otomatis analisa outfit, pilih lokasi yang cocok, dan render ulang sebagai foto photoshoot profesional.
 
 ---
 
-## PART A: IDENTITY LOCK — MANDATORY
+## CARA PAKAI (3 Langkah)
+
+### Langkah 1: Upload 1 Foto Look
+Upload foto model yang sudah di-generate dari Season 12 (atau season manapun).
+
+### Langkah 2: Paste Prompt Ini
+Copy SELURUH prompt di bawah ini. Jangan ganti apapun kecuali yang ditandai `[PILIH DI SINI]`.
+
+### Langkah 3: Generate
+Hasilnya: foto yang sama terlihat seperti difoto profesional di lokasi real-world yang cocok dengan outfit.
+
+**Ulangi untuk semua 30 look.** Setiap look akan dapat lokasi yang berbeda tapi tetap konsisten secara lighting + color grade.
+
+---
+
+## PROMPT — COPY DARI SINI
 
 ```
 STRICT IMAGE PRESERVATION MODE (ABSOLUTE — NO EXCEPTION):
 
-- This uploaded image is ONE HUMAN MODEL wearing a specific outfit.
+This uploaded image is ONE HUMAN MODEL wearing a specific outfit.
 - DO NOT alter the model's face — identity, expression, skin texture must remain EXACTLY as uploaded.
 - DO NOT alter the outfit — garment color, cut, texture, branding must remain EXACTLY as uploaded.
 - DO NOT apply AI beauty filters, smoothing, or skin retouching.
 - DO NOT generate new faces, bodies, or clothing.
 
-HARD RULE:
-The uploaded image IS the source truth. The output must be the SAME person in the SAME outfit,
-now placed into a real-world photoshoot environment with professional photographer treatment.
-```
+The uploaded image IS the source truth.
 
----
+————————————————————
 
-## PART B: PHOTOGRAPHER TREATMENT
-
-```
 PHOTOGRAPHER TREATMENT — REAL-WORLD FASHION PHOTOGRAPHY:
 
 Treat this image as if it was captured by a professional fashion photographer during an actual
@@ -32,20 +43,20 @@ on-location editorial photoshoot. NOT AI-generated. NOT a render. NOT digital ar
 
 A real photograph taken with:
 - Camera: Hasselblad H6D-100c or Phase One XF IQ4 (medium format digital back)
-- Lens: 80mm f/2.8 HC (standard portrait) OR 120mm f/4 Macro HC (detail shots)
-- Film/Digital: Digital capture processed to emulate Kodak Portra 400 or Fuji Pro 400H film stock
+- Lens: 80mm f/2.8 HC (standard portrait)
+- Film: Digital capture processed to emulate Kodak Portra 400 film stock
 - Retouching: Minimal — only exposure correction and color grading. NO skin smoothing. NO body reshaping.
 
 PHOTOGRAPHIC QUALITIES TO INJECT:
 1. Film grain structure visible at 100% — Kodak Portra 400 grain pattern (fine, slightly warm)
 2. Natural depth of field — subject sharp, background falling off gradually (not instant blur)
-3. Subtle lens characteristics — very slight vignette at edges, minimal chromatic aberration in highlights
+3. Subtle lens characteristics — very slight vignette at edges
 4. Real skin texture — pores, fine hairs, micro-variation in tone visible. NO porcelain smoothness.
 5. Fabric texture legible — weave, weight, drape of clothing clearly readable
-6. Natural light interaction — light behaves physically: reflects, absorbs, scatters on real surfaces
-7. Imperfect exposure — highlights may clip slightly in brightest areas, shadows crush subtly in deepest dark
-8. Color rendering: skin tones warm but accurate, fabrics true to color under the lighting conditions
-9. Very slight motion micro-blur on extremities if model is mid-stride (hands, fabric edges, hair)
+6. Natural light interaction — light behaves physically on real surfaces
+7. Imperfect exposure — highlights may clip slightly, shadows crush subtly
+8. Color rendering: skin tones warm but accurate, fabrics true to color
+9. Very slight motion micro-blur on extremities if model is mid-movement
 10. The image should look PRINTED — like it could appear in Vogue, Dazed, or System Magazine
 
 ANTI-AI ENFORCEMENT:
@@ -55,178 +66,99 @@ ANTI-AI ENFORCEMENT:
 - NO beauty filters — skin must show real texture, pores, natural variation
 - NO HDR effect — contrast is natural, not cranked up for "drama"
 - NO over-saturation — colors are true to what the camera captured under the lighting
-```
 
----
+————————————————————
 
-## PART C: ENVIRONMENT LOCK
+AUTONOMOUS ENVIRONMENT SELECTION:
 
-```
-ENVIRONMENT — SINGLE LOCATION PHOTOSHOOT:
+You must AUTONOMOUSLY ANALYZE the uploaded outfit and SELECT a real-world location that
+logically matches the fashion styling. Do NOT default to the same location every time.
+Do NOT choose fantasy locations. The location must be a real place that exists in the real world.
 
-All images in this photoshoot sequence were captured in ONE location during ONE session.
-This means the background, lighting, and environmental qualities MUST be consistent with:
+DECISION TREE — Analyze the outfit, then choose:
 
-LOCATION: [Choose ONE from below and use for ALL images in the sequence]
+IF the outfit is: racing gear, techwear, sportswear, utility, tactical, streetwear
+→ SELECT: Urban infrastructure — concrete parking structure, rooftop parking deck,
+  underpass, loading dock, industrial corridor, gas station forecourt.
+  Something raw, functional, not designed for fashion.
 
-OPTION 1 — FLOODED CONCRETE CATHEDRAL:
-Vast cavernous space. Floor partially submerged in still, dark water reflecting overhead concrete.
-Massive square concrete pillars rising into darkness above. Harsh direct camera flash from photographer's
-position creating hard light on subject with deep shadow behind. Water surface shows ripple reflections.
-The aesthetic of a brutalist underground space, partially flooded. Flash photography frozen mid-action.
+IF the outfit is: tailoring, formal, structured, elegant, minimalist
+→ SELECT: Interior architectural space — modernist gallery, heritage mansion lobby,
+  minimalist showroom, hotel corridor, private members' club interior.
+  A space with intention in its design, even if empty.
 
-OPTION 2 — CONCRETE PARKING STRUCTURE:
-Multi-level concrete parking garage. Exposed ceiling with visible pipe runs and fluorescent light fixtures
-(mostly off, providing ambient fill). Sloped concrete floor with painted parking lines and directional arrows.
-Concrete pillars at regular intervals. Harsh overhead fluorescent tubes creating flat, unflattering light.
-The aesthetic of urban infrastructure repurposed as fashion venue. Shot during daytime — natural light
-enters from open edges of the structure, mixing with the fluorescent overhead.
+IF the outfit is: couture, avant-garde, experimental, draped, voluminous
+→ SELECT: Grand interior space — abandoned industrial warehouse with high ceilings,
+  disused theatre, empty church, vaulted concrete hall.
+  Architecture that matches the drama of the garment.
 
-OPTION 3 — ABANDONED INDUSTRIAL WAREHOUSE:
-Former factory floor. Exposed brick walls with old industrial windows (broken, some boarded up).
-Concrete floor stained with decades of oil and chemical spills. Metal support beams overhead.
-Daylight entering through high windows creating dramatic shafts of light through dust-filled air.
-The aesthetic of industrial archaeology — a working space that stopped working and was never repurposed.
-Models positioned within the raw, unrenovated space.
+IF the outfit is: casual, knitwear, relaxed, layered, everyday
+→ SELECT: Lived-in interior — loft apartment with large windows, sunlit studio space,
+  conservatory, sunroom with plants.
+  Warm, personal, intimate but still editorial.
 
-OPTION 4 — ROOFTOP PARKING DECK:
-Open-air concrete rooftop at urban edge. Low concrete parapet walls. Painted parking lines,
-drainage grates, ventilation units visible. City skyline or industrial landscape in distant background.
-Overcast sky providing flat, even, directionless light. Wet patches on concrete from recent rain.
-The aesthetic of the in-between spaces of the city — places designed for cars, not people.
+IF the outfit is: outerwear, heavy coats, boots, winter, protective
+→ SELECT: Outdoor urban — city street corner, concrete plaza, pedestrian bridge,
+  harbor edge, parking structure rooftop.
+  Overcast sky, urban landscape in distance, wet ground from recent rain.
 
-[CHOOSE ONE. Use the SAME option for every image in the sequence.]
-```
+RULES FOR LOCATION SELECTION:
+- Must be a REAL place that could exist — not fantasy, not sci-fi, not abstract
+- Must be specific and detailed — not "a room" but "a gallery with polished concrete
+  floors, white walls with track lighting, and a skylight casting soft directional light"
+- Must be consistent with the outfit's energy — brutalist clothes in brutalist space,
+  soft clothes in soft light
+- Must have visible environmental detail — not a blank void, not a seamless backdrop
+- Must show signs of real architecture or civilization — not empty nature, not desert
 
----
+Describe the chosen location in the output with specific, readable detail.
 
-## PART D: CAMERA FRAME SPECIFICATION
+————————————————————
 
-```
-CAMERA FRAME — MEDIUM FORMAT PORTRAIT:
+LIGHTING AND COLOR GRADE:
 
-Composition and framing follow professional fashion photography conventions:
+Apply this consistent post-production treatment to ALL images:
 
-ASPECT RATIO: 4:5 (portrait/vertical) — standard for fashion editorial
-- Width:Height ratio of 4:5. This is the standard Instagram/editorial portrait ratio.
-
-FRAMING OPTIONS (vary per shot — see POSE_LIBRARY.md and SEQUENCE_SHOT_LIST.md):
-- Full body: Head to toe visible, 10% headroom above, 10% floor below feet
-- Medium-full: Mid-thigh to top of head, generous headroom
-- Medium: Waist to top of head
-- Close-up: Chest to top of head (for detail shots of garment upper body)
-
-SUBJECT PLACEMENT:
-- Subject occupies 40-60% of frame height depending on shot type
-- NEVER centered perfectly — always slightly left or right of center (rule of thirds violation intentional)
-- Eye line at approximately 40% from top of frame (not 50% — slightly higher is more editorial)
-
-BACKGROUND TREATMENT:
-- Background is always visible and readable — not blown out, not crushed to black
-- Environmental details legible even when out of focus
-- Depth of field: f/4 to f/5.6 — enough blur to separate subject from background, enough sharpness
-  to read the environment
-```
-
----
-
-## PART E: LIGHTING SPECIFICATION
-
-```
-LIGHTING — CONSISTENT ACROSS SEQUENCE:
-
-All images share the same lighting DNA. Choose ONE lighting setup and apply to ALL images:
-
-LIGHTING SETUP A — HARSH DIRECT CAMERA FLASH:
-- On-camera flash (or flash on bracket directly above lens axis)
-- Creates hard, direct illumination on subject with sharp shadow edges
-- Shadow thrown directly behind subject onto background
-- Highlights on flash-facing side slightly hot (near clipping but not clipped)
-- Shadow side of face falls into deep shadow — minimal fill
-- Background beyond flash range falls into darkness
-- The "paparazzi" or "party photographer" flash look — unflattering but compelling
-- Catchlight: single round specular highlight in each eye (the flash itself)
-
-LIGHTING SETUP B — NATURAL OVERCAST DAYLIGHT:
-- Open shade — no direct sun, no direct artificial light
-- Large soft light source (the entire overcast sky) creating wraparound illumination
-- Very soft shadows — barely perceptible on faces, slightly more defined on ground
-- Even exposure across entire frame — no hotspot, no crushed areas
-- Color temperature: cool daylight (~6500K), slightly blue cast in shadows
-- Catchlight: large soft rectangle or oval in each eye (the sky through open structure)
-
-[CHOOSE ONE. Use the SAME lighting for every image in the sequence.]
-```
-
----
-
-## PART F: POST-PRODUCTION / COLOR GRADE
-
-```
-POST-PRODUCTION — CONSISTENT COLOR GRADE:
-
-All images processed with the same color grading pipeline. Choose ONE grade:
-
-GRADE 1 — KODAK PORTRA 400 WARM:
+COLOR GRADE: Kodak Portra 400 warm editorial
 - Warm color cast overall (slight orange/amber shift)
-- Skin tones rendered warm and flattering
-- Blacks slightly lifted (not pure black, more like very dark brown)
-- Highlights warm (not pure white, slight cream tone)
+- Skin tones rendered warm and accurate
+- Blacks slightly lifted (dark brown, not pure black)
+- Highlights warm (cream tone, not pure white)
 - Fine, warm grain structure visible throughout
-- Contrast curve: gentle S-curve — shadows slightly crushed, highlights slightly compressed
-- The look of a professional fashion editorial shot on Portra 400, scanned on a Noritsu
+- Gentle S-curve contrast — shadows slightly crushed, highlights slightly compressed
+- Minimal sharpening, barely perceptible vignette
+- The look of a professional fashion editorial scanned on a Noritsu HS-1800
 
-GRADE 2 — FUJI PRO 400H COOL:
-- Cool color cast overall (slight blue/green shift)
-- Skin tones rendered accurate but slightly cool
-- Blacks deep and neutral (pure black)
-- Highlights cool (pure white with slight blue shift)
-- Fine, cool grain structure — less visible than Portra but present
-- Contrast curve: flatter than Portra — more shadow detail, less punch
-- The look of a refined, intellectual fashion editorial on Fuji stock
+LIGHTING: Match the lighting to the chosen environment naturally.
+- Indoor with windows: soft directional daylight through glass
+- Indoor with practical lights: fluorescent or pendant lighting, realistic falloff
+- Outdoor: overcast natural daylight, no direct sun
+- Flash: only if the environment suggests it (parking garage, surveillance-style)
 
-GRADE 3 — RAW FLASH — NO GRADE:
-- Minimal color correction — what the camera captured is what you get
-- No warm or cool cast shift — neutral color temperature
-- Blacks crushed slightly (direct flash naturally crushes shadows)
-- Highlights may clip in small areas (flash specular reflections)
-- Visible flash fall-off — light drops off rapidly with distance
-- Grain: digital ISO noise at ISO 400 — fine, neutral, not warm or cool
-- The look of a direct flash photograph straight out of camera, no processing
+The lighting must feel physically plausible for the chosen location.
 
-GRADE 4 — CCTV / SURVEILLANCE:
-- Desaturated, slightly green-grey color cast
-- Low contrast — flat, compressed tonal range
-- Visible compression artifacts (JPEG blockiness at edges)
-- Slightly low resolution feel — not sharp, slightly soft overall
-- Color range limited — mostly greys, muted colors, no vibrancy
-- The look of a security camera still that someone elevated to editorial
+————————————————————
 
-[CHOOSE ONE. Use the SAME grade for every image in the sequence.]
-```
+POSE AND FRAMING:
 
----
+Keep the model's pose as it appears in the uploaded image. Do NOT change the pose.
+Do NOT reposition the model's body, arms, legs, or head.
 
-## PART G: OUTPUT SPECIFICATION
+Framing: 4:5 aspect ratio (portrait/vertical) — standard fashion editorial.
+- If the uploaded image is full body → output is full body
+- If the uploaded image is medium → output is medium
+- Maintain the same crop and composition as the source image
 
-```
+————————————————————
+
 OUTPUT:
 
-A photorealistic fashion photograph that could appear in:
-- Vogue (editorial spread)
-- Dazed Magazine (feature)
-- System Magazine (cover story)
-- i-D Magazine (spread)
+A photorealistic fashion photograph that could appear in Vogue, Dazed, System Magazine,
+or i-D Magazine. The image must look like it was captured by a professional fashion
+photographer during a real on-location editorial photoshoot.
 
-The image should look like it was:
-- Captured on a medium format digital camera
-- Shot by a professional fashion photographer
-- During an actual on-location photoshoot session
-- Post-processed with consistent color grading across the entire sequence
-
-CRITICAL: The image must NOT look AI-generated. If shown to a fashion editor,
-they should not be able to tell it was created by AI. It should pass as
-a real photograph from a real editorial fashion shoot.
+CRITICAL: If shown to a fashion editor, they should NOT be able to tell this was AI-generated.
+It must pass as a real photograph from a real fashion shoot.
 
 Aspect ratio: 4:5 (portrait)
 Resolution: highest available
@@ -235,17 +167,92 @@ Quality: maximum detail, no upscaling artifacts
 
 ---
 
-## HOW TO USE THIS PROMPT
+## PROMPT SELESAI — JANGAN COPY DI BAWAH INI
 
-1. **Choose ONE option** from Part C (Environment)
-2. **Choose ONE option** from Part E (Lighting)
-3. **Choose ONE option** from Part F (Color Grade)
-4. **Copy this entire prompt** with your choices filled in
-5. **Upload a generated look image** (from your Season 12 prompts)
-6. **Append the specific pose** from POSE_LIBRARY.md
-7. **Append the specific framing** from SEQUENCE_SHOT_LIST.md
-8. **Generate**
+---
 
-The output is your photoshoot-treated version of that look.
+## CONTOH PENGGUNAAN
 
-Repeat for all 30 looks. All will share the same environment, lighting, and color grade DNA.
+### Contoh 1: Look Racing Suit
+
+```
+[Upload foto Look 01 — Racing Suit Bone White]
+
+[Paste seluruh prompt di atas]
+
+[Generate]
+
+→ AI analisa: "ini racing suit" → pilih "rooftop parking deck" → render dengan
+  Portra 400 warm grade → hasil: foto racing suit di rooftop beton, langit mendatar,
+  terlihat seperti Vogue editorial
+```
+
+### Contoh 2: Look Tailoring
+
+```
+[Upload foto Look 05 — Tailored Suit Charcoal]
+
+[Paste seluruh prompt di atas]
+
+[Generate]
+
+→ AI analisa: "ini tailoring formal" → pilih "modernist gallery interior" → render
+  dengan Portra 400 warm grade → hasil: foto tailored suit di galeri putih dengan
+  skylight, terlihat seperti System Magazine
+```
+
+### Contoh 3: Look Couture
+
+```
+[Upload foto Look 20 — Draped Gown Black]
+
+[Paste seluruh prompt di atas]
+
+[Generate]
+
+→ AI analisa: "ini couture voluminous" → pilih "abandoned theatre with high ceilings"
+  → render dengan Portra 400 warm grade → hasil: foto draped gown di teater tua
+  dengan langit-langit tinggi, terlihat seperti Dazed editorial
+```
+
+---
+
+## FAQ
+
+**Q: Apakah saya harus pilih lokasi manual?**
+A: Tidak. AI otomatis analisa outfit dan pilih lokasi yang cocok. Kamu tinggal upload + paste.
+
+**Q: Kalau saya mau semua look di lokasi yang sama?**
+A: Tambahkan kalimat ini di bagian AUTONOMOUS ENVIRONMENT SELECTION:
+"IGNORE the decision tree above. ALL images must be shot in: [deskripsikan lokasi kamu]."
+
+**Q: Lighting dan color grade bisa diganti?**
+A: Bisa. Edit bagian LIGHTING AND COLOR GRADE sesuai selera. Tapi rekomendasi: pakai
+Portra 400 warm untuk semua — ini yang paling meyakinkan sebagai foto editorial asli.
+
+**Q: Pose model berubah?**
+A: Tidak. Prompt sudah specify: "Keep the model's pose as it appears. Do NOT change the pose."
+AI hanya render ulang lingkungan + lighting + color grade, tidak mengubah pose.
+
+**Q: Mau beda pose?**
+A: Upload foto dengan pose yang sudah berbeda, atau gunakan POSE_LIBRARY.md di folder ini
+sebagai referensi sebelum generate look aslinya.
+
+---
+
+## WORKFLOW LENGKAP 30 LOOK
+
+```
+Look 01 → Upload → Paste prompt → Generate → Save
+Look 02 → Upload → Paste prompt → Generate → Save
+Look 03 → Upload → Paste prompt → Generate → Save
+...
+Look 30 → Upload → Paste prompt → Generate → Save
+
+Semua 30 foto akan dapat lokasi berbeda (sesuai outfit) tapi color grade sama (Portra 400 warm).
+Hasilnya: sequence yang terlihat seperti satu photoshoot profesional multi-location.
+```
+
+---
+
+DEVETƎSION. Built, not born.
