@@ -73,13 +73,12 @@ Pilih **SATU** dari 4 opsi:
 #### Pilihan 2: Lighting (Pencahayaan)
 Buka `MASTER_PHOTOSHOOT_PROMPT.md` → **Part E: Lighting Specification**
 
-Pilih **SATU** dari 3 opsi:
+Pilih **SATU** dari 2 opsi:
 
 | Opsi | Nama | Karakter |
 |------|------|----------|
 | A | Harsh Direct Camera Flash | Flash keras, bayangan tajam, gelap di belakang |
 | B | Natural Overcast Daylight | Cahaya alami mendung, soft, rata, cool tone |
-| C | Mixed Practical + Daylight | Campuran cahaya jendela + neon, split warm/cool |
 
 **Rekomendasi untuk S12:** Opsi A — Harsh Direct Camera Flash. Memberikan energi paparazzi/confrontational yang cocok dengan motorsport.
 
@@ -88,14 +87,13 @@ Pilih **SATU** dari 3 opsi:
 #### Pilihan 3: Color Grade
 Buka `COLOR_GRADE_SYSTEM.md`
 
-Pilih **SATU** dari 4 grade:
+Pilih **SATU** dari 3 grade:
 
 | Grade | Nama | Karakter |
 |-------|------|----------|
 | 1 | Kodak Portra 400 Warm | Hangat, skin tone bagus, editorial fashion |
 | 2 | Fuji Pro 400H Cool | Dingin, intelektual, refined |
 | 3 | Raw Flash — No Grade | Mentah, langsung dari kamera, jujur |
-| 4 | CCTV / Surveillance | Desaturasi, kompresi, lo-fi |
 
 **Rekomendasi untuk S12:** Grade 1 — Kodak Portra 400 Warm. Paling meyakinkan sebagai foto editorial sungguhan.
 

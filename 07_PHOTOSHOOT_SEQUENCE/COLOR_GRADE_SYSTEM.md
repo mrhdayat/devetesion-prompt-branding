@@ -126,44 +126,6 @@ VIGNETTE: -15 (flash fall-off is real — edges are naturally darker)
 
 ---
 
-### GRADE 4: CCTV / SURVEILLANCE
-
-**The look:** Security camera still elevated to editorial. Desaturated, compressed, degraded.
-
-```
-COLOR TEMPERATURE: +100 (slight warm shift from cheap sensor)
-TINT: +15 toward green (cheap sensors lean green)
-CONTRAST: Low — compressed tonal range
-  - Shadows: lifted (+15) — cheap cameras can't hold deep blacks
-  - Midtones: compressed (-10)
-  - Highlights: compressed (-10)
-SATURATION: -30 (heavily desaturated)
-  - Reds: -30
-  - Oranges: -30
-  - Yellows: -20
-  - Greens: -20
-  - Blues: -30
-  - Purples: -30
-GRAIN: Digital compression noise
-  - Amount: 40 (heavy)
-  - Size: 1.0 (large, blocky)
-  - Roughness: 0.3 (harsh)
-SHARPENING: Over-sharpened (cheap cameras over-process)
-  - Amount: 40
-  - Radius: 1.2
-  - Detail: 60
-  - Masking: 0 (sharpens everything including noise)
-VIGNETTE: -20 (cheap lenses have heavy falloff)
-ADDITIONAL: Slight JPEG compression artifacts visible at edges
-  - Simulate with: low-quality JPEG re-save at 75% quality
-```
-
-**Best for:** Lo-fi surveillance aesthetic, clinical/institutional campaigns, anti-fashion.
-
-**Reference images:** Wolfgang Tillmans surveillance work, Thomas Ruff JPEG series, CCTV footage.
-
----
-
 ## HOW TO APPLY THE GRADE
 
 ### In AI Image Generation (FLOW, Midjourney, DALL-E)
@@ -200,14 +162,14 @@ If one image looks different → re-generate it with the grade more explicitly s
 
 ## GRADE COMPARISON
 
-| Quality | Portra 400 | Fuji 400H | Raw Flash | CCTV |
-|---------|-----------|-----------|-----------|------|
-| Warmth | Warm | Cool | Neutral | Slight warm + green |
-| Contrast | Medium | Low-Medium | High | Low |
-| Saturation | +5 | 0 | +10 | -30 |
-| Grain | Fine, warm | Fine, cool | Digital noise | Heavy, blocky |
-| Vibe | Editorial | Intellectual | Raw | Surveillance |
-| Best for | Campaign | Archive | Flash paparazzi | Lo-fi |
+| Quality | Portra 400 | Fuji 400H | Raw Flash |
+|---------|-----------|-----------|-----------|
+| Warmth | Warm | Cool | Neutral |
+| Contrast | Medium | Low-Medium | High |
+| Saturation | +5 | 0 | +10 |
+| Grain | Fine, warm | Fine, cool | Digital noise |
+| Vibe | Editorial | Intellectual | Raw |
+| Best for | Campaign | Archive | Flash paparazzi |
 
 ---
 

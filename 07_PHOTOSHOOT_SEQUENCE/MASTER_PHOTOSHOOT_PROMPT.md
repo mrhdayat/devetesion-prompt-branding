@@ -155,15 +155,6 @@ LIGHTING SETUP B — NATURAL OVERCAST DAYLIGHT:
 - Color temperature: cool daylight (~6500K), slightly blue cast in shadows
 - Catchlight: large soft rectangle or oval in each eye (the sky through open structure)
 
-LIGHTING SETUP C — MIXED PRACTICAL + DAYLIGHT:
-- Primary: natural daylight entering from one direction (window, open edge of structure)
-- Secondary: practical fluorescent overhead tubes providing dim ambient fill
-- Key light is the daylight — directional, creating defined shadows
-- Fill is the fluorescent — dim, greenish, barely lifting shadows
-- Mixed color temperature: warm daylight on lit side, greenish fluorescent in shadows
-- Creates a split lighting effect — warm on one side, cool-green on the other
-- Catchlight: directional window light in eyes, plus faint overhead reflection
-
 [CHOOSE ONE. Use the SAME lighting for every image in the sequence.]
 ```
 
