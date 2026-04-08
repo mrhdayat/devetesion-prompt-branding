@@ -18,9 +18,9 @@ Upload 1 foto look → isi Season Config → paste prompt → generate.
 **4. Location Mode:** Pilih 1 dari 2 (lihat penjelasan di bawah)
 **5. Pose Mode:** Pilih 1 dari 2 (lihat penjelasan di bawah)
 
-### Per Look — Upload + Paste + Tambahkan Pose
+### Per Look — Upload + Paste + Tambahkan Pose + Camera Angle
 
-Upload 1 look → paste seluruh prompt → tambahkan pose direction → generate.
+Upload 1 look → paste seluruh prompt → tambahkan pose direction + camera angle → generate.
 
 ---
 
@@ -55,13 +55,35 @@ Upload 1 look → paste seluruh prompt → tambahkan pose direction → generate
 | **Keep** | Pose mengikuti foto yang di-upload | Pose sama seperti foto sumber |
 | **Direction** | Kamu tambahkan instruksi pose per look | Setiap look dapat pose berbeda — seperti fotografer mengarahkan model |
 
+### Camera Angle Mode (WAJIB — Pilih 1 per Season)
+
+**INI YANG MEMBUKA PERBEDAAN ANTARA AI SLOP DAN EDITORIAL ASLI.**
+
+| Mode | Cara Kerja | Hasil |
+|------|-----------|-------|
+| **Varied** | Camera angle berbeda per look — distribusi: 6 high angle, 4 low angle, 8 eye-level 3/4, 6 front-on, 4 top-down, 2 ground level | Setiap foto punya angle unik — terlihat seperti real photoshoot |
+| **Fixed** | Semua 30 look pakai camera angle yang sama | Monoton — tidak direkomendasikan |
+
+**Distribusi 30 look untuk Varied mode:**
+
+| Camera Angle | Jumlah | Vibe |
+|-------------|--------|------|
+| High angle looking down | 6 looks | Dynamic, Y2K, hands reaching |
+| Low angle looking up | 4 looks | Powerful, towering, architectural |
+| Eye level 3/4 angle | 8 looks | Contemplative, editorial |
+| Eye level front-on | 6 looks | Confrontational, portrait |
+| Top-down bird's eye | 4 looks | Sculptural, geometric |
+| Ground level | 2 looks | Cinematic, urban, raw |
+
 ### Contoh Season Config Berbeda
 
-| Season | Grade | Lighting | Location | Pose | Hasil |
-|--------|-------|----------|----------|------|-------|
-| S12 Motorsport Couture | Portra 400 Warm | Natural Match | Force: Rooftop Parking | Direction: 30 pose berbeda | Satu lokasi, 30 pose berbeda — seperti real photoshoot |
-| S13 Street Utility | Raw Flash | Harsh Flash | Auto | Keep | Lokasi beda, pose ikut foto sumber, vibe raw |
-| S14 Minimal Tailoring | Fuji Cool | Natural Match | Force: Gallery | Direction: 30 pose berbeda | Satu lokasi gallery, 30 pose berbeda |
+| Season | Grade | Lighting | Location | Pose | Camera Angle | Hasil |
+|--------|-------|----------|----------|------|-------------|-------|
+| S12 Motorsport Couture | Portra 400 Warm | Natural Match | Force: Rooftop | Direction | Varied | Satu lokasi, 30 pose + angle berbeda — seperti real photoshoot |
+| S13 Street Utility | Raw Flash | Harsh Flash | Auto | Keep | Varied | Lokasi beda, pose ikut foto, angle bervariasi, vibe raw |
+| S14 Minimal Tailoring | Fuji Cool | Natural Match | Force: Gallery | Direction | Varied | Satu lokasi gallery, 30 pose + angle berbeda |
+
+**PENTING:** Camera Angle Mode HARUS "Varied" untuk menghindari AI slop.
 
 ---
 
@@ -79,6 +101,7 @@ COLOR GRADE: [Portra 400 Warm / Fuji 400H Cool / Raw Flash No Grade]
 LIGHTING: [Natural Match / Harsh Flash]
 LOCATION MODE: [Auto / Force]
 POSE MODE: [Keep / Direction]
+CAMERA ANGLE MODE: [Varied / Fixed]
 
 ═══════════════════════════════════════════════════
 ```
@@ -96,6 +119,32 @@ The uploaded image IS the source truth.
 
 ————————————————————
 
+ANTI-AI SLOP ENFORCEMENT — STRICTLY FORBIDDEN:
+
+The following are BANNED. If any appear in the output, the output is invalid:
+
+- Perfectly symmetrical faces or bodies
+- Porcelain-smooth skin with no visible texture, pores, or micro-variation
+- Plastic, doll-like, or mannequin appearance
+- Overly perfect lighting with no natural shadows or imperfections
+- Generic "fashion model" poses that look stock or templated
+- All photos shot from the same camera angle (especially eye-level front view)
+- Identical framing, composition, or body language across images
+- Excessive sharpening or HDR-like contrast
+- Over-saturated colors that don't match real-world capture
+- Perfectly centered subjects with no compositional tension
+- "AI glow" — unnatural luminosity or bloom on skin or highlights
+
+REAL PHOTOGRAPHY MUST HAVE:
+- Slight asymmetry in facial features and body positioning
+- Visible skin texture: pores, fine hairs, micro-variation in tone
+- Natural imperfections: slight focus breathing, minor noise in shadows
+- Physically plausible lighting with real shadow falloff
+- Unique camera angles and compositions per image
+- Editorial, intentional posing that feels directed, not random
+
+————————————————————
+
 PHOTOGRAPHER TREATMENT — REAL-WORLD FASHION PHOTOGRAPHY:
 
 Treat this image as if it was captured by a professional fashion photographer during an actual
@@ -103,28 +152,51 @@ on-location editorial photoshoot. NOT AI-generated. NOT a render. NOT digital ar
 
 A real photograph taken with:
 - Camera: Hasselblad H6D-100c or Phase One XF IQ4 (medium format digital back)
-- Lens: 80mm f/2.8 HC (standard portrait)
+- Lens: 80mm f/2.8 HC (standard portrait) OR 50mm f/2.8 HC (wider shots)
 - Retouching: Minimal — only exposure correction and color grading. NO skin smoothing. NO body reshaping.
 
 PHOTOGRAPHIC QUALITIES TO INJECT:
 1. Film grain structure visible — matching the chosen color grade (see SEASON CONFIG)
 2. Natural depth of field — subject sharp, background falling off gradually (not instant blur)
-3. Subtle lens characteristics — very slight vignette at edges
+3. Subtle lens characteristics — very slight vignette at edges, minimal chromatic aberration in highlights
 4. Real skin texture — pores, fine hairs, micro-variation in tone visible. NO porcelain smoothness.
 5. Fabric texture legible — weave, weight, drape of clothing clearly readable
-6. Natural light interaction — light behaves physically on real surfaces
-7. Imperfect exposure — highlights may clip slightly, shadows crush subtly
+6. Natural light interaction — light behaves physically: reflects, absorbs, scatters on real surfaces
+7. Imperfect exposure — highlights may clip slightly in brightest areas, shadows crush subtly in deepest dark
 8. Color rendering: skin tones accurate, fabrics true to color under the chosen grade
-9. Very slight motion micro-blur on extremities if model is mid-movement
+9. Very slight motion micro-blur on extremities if model is mid-movement (hands, fabric edges, hair)
 10. The image should look PRINTED — like it could appear in Vogue, Dazed, or System Magazine
 
-ANTI-AI ENFORCEMENT:
-- NO "AI look" — no oversharpening, no plastic skin, no perfect symmetry
-- NO CGI rendering — surfaces should look photographed, not rendered
-- NO digital perfection — real photos have flaws: slight noise in shadows, minor focus breathing
-- NO beauty filters — skin must show real texture, pores, natural variation
-- NO HDR effect — contrast is natural, not cranked up for "drama"
-- NO over-saturation — colors are true to what the camera captured under the lighting
+————————————————————
+
+CAMERA ANGLE APPLICATION:
+
+Apply the camera angle mode specified in SEASON CONFIG.
+
+IF CAMERA ANGLE MODE IS "Fixed":
+Use the same camera angle for ALL images in this season.
+Camera angle: [specify: eye-level front-on / high angle / low angle / etc.]
+
+IF CAMERA ANGLE MODE IS "Varied":
+Each image in this sequence MUST have a DIFFERENT camera angle.
+The distribution across 30 looks must be:
+- 6 looks: High angle looking down (camera above model at 45-60 degrees, fisheye/wide-angle feel,
+  hands reaching toward camera, dramatic perspective distortion)
+- 4 looks: Low angle looking up (camera below model at knee/shin level, model towering,
+  sky/ceiling visible above, legs elongated)
+- 8 looks: Eye level at 3/4 angle (camera at model's eye height but model NOT facing directly —
+  body at 30-60 degrees to lens, looking past camera or away, one shoulder closer than other)
+- 6 looks: Eye level front-on (camera at model's eye height, model facing camera directly,
+  both shoulders equidistant, direct eye contact)
+- 4 looks: Top-down bird's eye (camera directly above at 90 degrees, looking straight down,
+  model sitting/lying on ground, geometric composition)
+- 2 looks: Ground level (camera parallel to ground, pavement fills lower frame,
+  long shadows visible, cinematic urban energy)
+
+The specific camera angle for THIS look will be provided separately.
+Do NOT default to eye-level front view. Do NOT use the same angle twice in a row.
+
+Camera angle for THIS look: [specify angle here, or let AI choose from the distribution above]
 
 ————————————————————
 
@@ -142,22 +214,27 @@ DECISION TREE — Analyze the outfit, then choose:
 IF the outfit is: racing gear, techwear, sportswear, utility, tactical, streetwear
 → SELECT: Urban infrastructure — concrete parking structure, rooftop parking deck,
   underpass, loading dock, industrial corridor, gas station forecourt.
+  Something raw, functional, not designed for fashion.
 
 IF the outfit is: tailoring, formal, structured, elegant, minimalist
 → SELECT: Interior architectural space — modernist gallery, heritage mansion lobby,
   minimalist showroom, hotel corridor, private members' club interior.
+  A space with intention in its design, even if empty.
 
 IF the outfit is: couture, avant-garde, experimental, draped, voluminous
 → SELECT: Grand interior space — abandoned industrial warehouse with high ceilings,
   disused theatre, empty church, vaulted concrete hall.
+  Architecture that matches the drama of the garment.
 
 IF the outfit is: casual, knitwear, relaxed, layered, everyday
 → SELECT: Lived-in interior — loft apartment with large windows, sunlit studio space,
   conservatory, sunroom with plants.
+  Warm, personal, intimate but still editorial.
 
 IF the outfit is: outerwear, heavy coats, boots, winter, protective
 → SELECT: Outdoor urban — city street corner, concrete plaza, pedestrian bridge,
   harbor edge, parking structure rooftop.
+  Overcast sky, urban landscape in distance, wet ground from recent rain.
 
 IF LOCATION MODE IS "Force":
 ALL images in this season must be shot in the EXACT SAME location specified below.
@@ -169,12 +246,15 @@ sloped concrete floor, concrete pillars at regular intervals. Daylight enters fr
 open edge of the structure. The aesthetic of urban infrastructure."]
 
 Describe this exact location in every image. Same pillars, same floor, same lighting fixtures,
-same environment. The ONLY thing that changes between images is the model's pose and outfit.
+same environment. The ONLY things that change between images are the model's pose, camera angle,
+and outfit.
 
 RULES FOR ALL LOCATIONS:
 - Must be a REAL place that could exist — not fantasy, not sci-fi, not abstract
 - Must be specific and detailed — not "a room" but "a gallery with polished concrete
   floors, white walls with track lighting, and a skylight casting soft directional light"
+- Must be consistent with the outfit's energy — brutalist clothes in brutalist space,
+  soft clothes in soft light
 - Must have visible environmental detail — not a blank void, not a seamless backdrop
 - Must show signs of real architecture or civilization — not empty nature, not desert
 
@@ -199,15 +279,15 @@ is provided, apply it to reposition the model's body while keeping their face id
 and outfit EXACTLY as uploaded.
 
 POSE DIRECTION FOR THIS LOOK:
-[Tempel pose spesifik di sini. Lihat contoh di bawah.]
+[Tempel pose spesifik di sini. Gunakan POSE_ANGLE_LIBRARY_30.md sebagai referensi.]
 
-Pose direction examples:
-- "Model walking directly toward camera with purposeful stride, weight on front foot,
-  arms swinging naturally, direct eye contact, torso slightly leaned forward"
-- "Model standing dead-center, feet planted shoulder-width, arms hanging naturally
-  at sides, chin slightly down, eyes looking up at camera"
-- "Model leaning against a concrete pillar, right shoulder making contact, weight
-  entirely on right side, left leg extended, hand in pocket, head turned toward camera"
+The pose must be:
+- Specific and detailed — not "standing" but "standing with weight on left leg, hip popped,
+  right hand in pocket, left arm hanging naturally, head tilted slightly toward right shoulder"
+- Editorial and intentional — not random or generic
+- Physically plausible — the body must be in a position a real human can hold
+- Dynamic — avoid stiff, mannequin-like stances
+- Matched to the camera angle — the pose should work with the chosen angle
 
 ————————————————————
 
@@ -295,9 +375,9 @@ Quality: maximum detail, no upscaling artifacts
 
 ---
 
-## CARA PAKAI: SATU LOKASI + 30 POSE BERBEDA
+## CARA PAKAI: SATU LOKASI + 30 POSE BERBEDA + 6 CAMERA ANGLE
 
-Ini yang kamu mau: semua 30 foto di **lokasi yang sama** tapi **pose beda-beda**.
+Ini yang kamu mau: semua 30 foto di **lokasi yang sama**, tapi **pose beda** dan **camera angle beda**.
 
 ### Langkah 1: Isi Season Config
 
@@ -310,6 +390,7 @@ COLOR GRADE: Portra 400 Warm
 LIGHTING: Natural Match
 LOCATION MODE: Force
 POSE MODE: Direction
+CAMERA ANGLE MODE: Varied
 ═══════════════════════════════════════════════════
 ```
 
@@ -327,21 +408,17 @@ Contoh lokasi yang bisa kamu pilih:
 
 Pilih SATU. Tulis deskripsi detail. Ini akan dipakai untuk SEMUA 30 look.
 
-### Langkah 3: Siapkan 30 Pose
+### Langkah 3: Siapkan 30 Pose + 6 Camera Angle
 
-Buka `POSE_LIBRARY.md` di folder ini. Ada 30 pose siap pakai. Atau tulis sendiri.
+Buka `POSE_ANGLE_LIBRARY_30.md` di folder ini. Ada 30 pose dengan camera angle spesifik.
 
-Contoh beberapa pose:
-
-| Look | Pose |
-|------|------|
-| 01 | Model berjalan langsung ke kamera, stride agresif |
-| 02 | Model berdiri center, kaki shoulder-width, tangan di sisi |
-| 03 | Model bersandar di pillar, berat di satu sisi |
-| 04 | Model caught mid-turn, lihat ke belakang |
-| 05 | Model crouching rendah, energi animal |
-| ... | ... |
-| 30 | Model berdiri diam sempurna, center, pernyataan terakhir |
+Distribusi 30 look:
+- Look 01-06: High angle looking down
+- Look 07-10: Low angle looking up
+- Look 11-18: Eye level 3/4 angle
+- Look 19-24: Eye level front-on
+- Look 25-28: Top-down bird's eye
+- Look 29-30: Ground level
 
 ### Langkah 4: Generate Setiap Look
 
@@ -350,20 +427,22 @@ Untuk Look 01:
   1. Upload foto Look 01
   2. Paste seluruh prompt (dengan Season Config)
   3. Di bagian "FORCED LOCATION": isi deskripsi lokasi kamu
-  4. Di bagian "POSE DIRECTION FOR THIS LOOK": paste Pose 01
-  5. Generate
+  4. Di bagian "POSE DIRECTION FOR THIS LOOK": paste Pose 01 dari POSE_ANGLE_LIBRARY_30.md
+  5. Di bagian "Camera angle for THIS look": "High angle looking down at 60 degrees, fisheye energy"
+  6. Generate
 
 Untuk Look 02:
   1. Upload foto Look 02
   2. Paste seluruh prompt (DENGAN Season Config yang SAMA)
   3. FORCED LOCATION: SAMA PERSIS (jangan diganti)
   4. POSE DIRECTION FOR THIS LOOK: paste Pose 02 (BEDA dari Look 01)
-  5. Generate
+  5. Camera angle for THIS look: "High angle looking down at 45 degrees" (BEDA dari Look 01)
+  6. Generate
 
-Ulangi sampai Look 30.
+Ulangi sampai Look 30. Setiap look punya pose DAN camera angle berbeda.
 ```
 
-**Hasil:** 30 foto di lokasi yang sama persis, tapi pose berbeda-beda — persis seperti real photoshoot.
+**Hasil:** 30 foto di lokasi yang sama persis, tapi pose berbeda-beda DAN camera angle berbeda-beda — persis seperti real photoshoot oleh fotografer profesional.
 
 ---
 
@@ -378,6 +457,7 @@ COLOR GRADE: Portra 400 Warm
 LIGHTING: Natural Match
 LOCATION MODE: Force
 POSE MODE: Direction
+CAMERA ANGLE MODE: Varied
 ═══════════════════════════════════════════════════
 
 [Paste seluruh prompt]
@@ -392,110 +472,90 @@ intervals. Daylight enters from the open edge of the structure, casting soft
 directional light across the space. The aesthetic of urban infrastructure
 repurposed as a fashion venue.
 
+[Di bagian CAMERA ANGLE, isi:]
+Camera angle for THIS look: High angle looking down at approximately 60 degrees.
+Camera positioned above the model looking down. Slight wide-angle/fisheye distortion.
+Model appears smaller from above, hands appear larger due to perspective.
+
 [Di bagian POSE DIRECTION FOR THIS LOOK, isi:]
 POSE DIRECTION FOR THIS LOOK:
-Model walking directly toward camera with a purposeful, aggressive stride.
-Weight on front foot, back foot pushing off. Arms swinging naturally with walk.
-Shoulders squared to camera, direct eye contact. Torso slightly leaned forward
-into the stride. Garment caught mid-movement — fabric flowing behind from forward
-momentum.
+Model reaching both hands toward the camera lens, fingers spread. Body crouching
+slightly, knees bent, torso leaning forward. Direct, confrontational eye contact
+looking up at camera. The hands dominate the foreground — fingers appear large
+and prominent due to the perspective.
 
 [Generate]
 ```
 
 ---
 
-## CONTOH LENGKAP: Look 02
+## DAFTAR 30 POSE + CAMERA ANGLE SINGKAT
 
-```
-═══════════════════════════════════════════════════
-SEASON CONFIG (SAMA PERSIS — jangan diubah)
-═══════════════════════════════════════════════════
-SEASON: S12
-COLOR GRADE: Portra 400 Warm
-LIGHTING: Natural Match
-LOCATION MODE: Force
-POSE MODE: Direction
-═══════════════════════════════════════════════════
+Untuk referensi cepat. Detail lengkap ada di `POSE_ANGLE_LIBRARY_30.md`.
 
-[Paste seluruh prompt]
-
-[Upload foto Look 02 — Patchwork Jacket Charcoal]
-
-[Di bagian FORCED LOCATION, isi SAMA PERSIS:]
-FORCED LOCATION: A multi-level concrete parking garage. Exposed ceiling with visible
-pipe runs and fluorescent light fixtures (mostly off). Sloped concrete floor with
-painted yellow parking lines and directional arrows. Concrete pillars at regular
-intervals. Daylight enters from the open edge of the structure, casting soft
-directional light across the space. The aesthetic of urban infrastructure
-repurposed as a fashion venue.
-
-[Di bagian POSE DIRECTION FOR THIS LOOK, isi BERBEDA:]
-POSE DIRECTION FOR THIS LOOK:
-Model standing dead-center, feet planted shoulder-width, confrontational stance.
-Weight distributed evenly on both feet. Arms hanging naturally at sides, fingers
-slightly curled. Chin slightly down, eyes looking up at camera. Shoulders relaxed
-but squared. Garment shown in its full, resting state — no movement, pure silhouette.
-
-[Generate]
-```
-
-Perhatikan: Season Config sama, FORCED LOCATION sama, tapi POSE DIRECTION berbeda.
-
----
-
-## DAFTAR 30 POSE SINGKAT
-
-Untuk referensi cepat. Detail lengkap ada di `POSE_LIBRARY.md`.
-
-| Look | Pose | Energi |
-|------|------|--------|
-| 01 | THE STRIDE — berjalan agresif ke kamera | HIGH |
-| 02 | THE STANCE — berdiri center, confrontational | HIGH |
-| 03 | THE LEAN — bersandar di pillar/dinding | MEDIUM |
-| 04 | THE TURN — caught mid-turn, lihat belakang | MEDIUM |
-| 05 | THE CROUCH — crouching rendah, animal energy | MEDIUM |
-| 06 | THE REACH — meraih ke atas, tubuh elongated | MEDIUM |
-| 07 | THE SLUMP — merosot di dinding, exhausted | LOW |
-| 08 | THE PROWL — berjalan lateral, profile view | MEDIUM |
-| 09 | THE PLANT — boxer stance, agresif | HIGH |
-| 10 | THE DRAG — dragging sesuatu, tension | MEDIUM |
-| 11 | THE PERCH — duduk/berdiri di permukaan tinggi | MEDIUM |
-| 12 | THE CROSS — tangan交叉 di dada, contained | MEDIUM |
-| 13 | THE SPREAD — kaki lebar, tangan terbuka, territorial | HIGH |
-| 14 | THE HUNCH — bungkuk ke depan, hands in pockets | LOW |
-| 15 | THE PIVOT — berputar mid-rotation | MEDIUM |
-| 16 | THE SINK — lowering ke bawah, halfway | MEDIUM |
-| 17 | THE REST — santai, one hand on hip | LOW |
-| 18 | THE RECLINE — bersandar 45°, almost lying | LOW |
-| 19 | THE MARCH — high-knee walk, military energy | HIGH |
-| 20 | THE CONTRAPPOSTO — classical S-curve, hip popped | MEDIUM |
-| 21 | THE BRACE — kedua tangan di dinding, pushing | MEDIUM |
-| 22 | THE SLINK — low, smooth, predatory movement | MEDIUM |
-| 23 | THE ARCH — lengkung ke belakang, chest open | MEDIUM |
-| 24 | THE FOLD — duduk di tanah, knees to chest | LOW |
-| 25 | THE STRIDE REVERSE — berjalan menjauh, lihat belakang | MEDIUM |
-| 26 | THE ELEVATE — berdiri di tiptoe, reaching height | MEDIUM |
-| 27 | THE SHIELD — one arm across body, defensive | MEDIUM |
-| 28 | THE SWAY — weight shifting, S-curve, rhythmic | MEDIUM |
-| 29 | THE LUNGE — lunging forward, full commit | HIGH |
-| 30 | THE FINALE — diam sempurna, center, final statement | STILL |
+| Look | Pose | Camera Angle | Energi |
+|------|------|-------------|--------|
+| 01 | Hands reaching toward camera | High angle looking down | HIGH |
+| 02 | Hands reaching V2 | High angle looking down | HIGH |
+| 03 | Hands reaching V3 | High angle looking down | HIGH |
+| 04 | Crouching compact | High angle looking down | HIGH |
+| 05 | Crouching variant | High angle looking down | MEDIUM |
+| 06 | Crouching alert | High angle looking down | MEDIUM |
+| 07 | Wide stance | Low angle looking up | HIGH |
+| 08 | Wide stance V2 (lunge) | Low angle looking up | HIGH |
+| 09 | Wide stance V3 (max spread) | Low angle looking up | HIGH |
+| 10 | One leg lifted | Low angle looking up | HIGH |
+| 11 | Standing hip pop | Eye level 3/4 angle | MEDIUM |
+| 12 | Standing contrapposto | Eye level 3/4 angle | MEDIUM |
+| 13 | Standing arms crossed | Eye level 3/4 angle | MEDIUM |
+| 14 | Leaning against wall | Eye level 3/4 angle | LOW |
+| 15 | Leaning bracing | Eye level 3/4 angle | LOW |
+| 16 | Leaning reclining | Eye level 3/4 angle | LOW |
+| 17 | Head tilted looking away | Eye level 3/4 angle | LOW |
+| 18 | Swaying mid-motion | Eye level 3/4 angle | MEDIUM |
+| 19 | Hand framing face | Eye level front-on | LOW |
+| 20 | Hand framing V2 (window) | Eye level front-on | LOW |
+| 21 | Hand framing V3 (beauty) | Eye level front-on | LOW |
+| 22 | Standing still | Eye level front-on | MEDIUM |
+| 23 | One foot raised | Eye level front-on | MEDIUM |
+| 24 | Walking toward camera | Eye level front-on | MEDIUM |
+| 25 | Sitting legs spread | Top-down bird's eye | MEDIUM |
+| 26 | Sitting crossed | Top-down bird's eye | MEDIUM |
+| 27 | Sitting meditative | Top-down bird's eye | MEDIUM |
+| 28 | Lying on back | Top-down bird's eye | MEDIUM |
+| 29 | Walking lateral | Ground level | MEDIUM |
+| 30 | Crouching ground | Ground level | HIGH |
 
 ---
 
 ## FAQ
 
-**Q: Lokasi sama tapi pose beda-beda — bisa?**
-A: Bisa. Set `LOCATION MODE: Force` + `POSE MODE: Direction`. Tulis lokasi yang sama di setiap generate, ganti pose direction per look.
+**Q: Kenapa hasil generate sebelumnya terlihat jelek dan selalu front view?**
+A: Karena prompt sebelumnya TIDAK mengontrol camera angle. AI default ke eye-level front view
+untuk semua foto. Sekarang prompt punya CAMERA ANGLE MODE yang memaksa variasi angle.
 
-**Q: Kalau mau lokasi beda tapi pose beda juga?**
-A: Set `LOCATION MODE: Auto` + `POSE MODE: Direction`. AI pilih lokasi berdasarkan outfit, kamu tambah pose direction per look.
+**Q: Apa bedanya "AI slop" dengan foto editorial asli?**
+A: AI slop punya: kulit plastik, simetri sempurna, lighting terlalu perfect, semua foto dari
+angle yang sama. Editorial asli punya: skin texture real, slight asymmetry, natural shadows,
+camera angle bervariasi. Prompt sekarang punya "ANTI-AI SLOP ENFORCEMENT" yang memaksa
+karakteristik foto real.
 
-**Q: Kalau mau lokasi sama dan pose sama (ikut foto sumber)?**
-A: Set `LOCATION MODE: Force` + `POSE MODE: Keep`. Semua foto di satu lokasi, pose ikut foto yang di-upload.
+**Q: Lokasi sama tapi pose dan angle beda-beda — bisa?**
+A: Bisa. Set `LOCATION MODE: Force` + `POSE MODE: Direction` + `CAMERA ANGLE MODE: Varied`.
+Semua foto di satu lokasi, tapi setiap foto punya pose DAN camera angle berbeda.
 
-**Q: Pose direction harus ditulis sendiri atau bisa copy dari POSE_LIBRARY.md?**
-A: Bisa copy langsung dari `POSE_LIBRARY.md`. Setiap pose sudah ditulis detail sebagai arahan fotografer.
+**Q: Kalau mau lokasi beda, pose beda, DAN angle beda?**
+A: Set `LOCATION MODE: Auto` + `POSE MODE: Direction` + `CAMERA ANGLE MODE: Varied`.
+AI pilih lokasi berdasarkan outfit, kamu tentukan pose dan angle per look.
+
+**Q: Pose direction harus ditulis sendiri atau bisa copy dari POSE_ANGLE_LIBRARY_30.md?**
+A: Bisa copy langsung dari `POSE_ANGLE_LIBRARY_30.md`. Setiap pose sudah ditulis detail
+dengan camera angle spesifik.
+
+**Q: Camera angle mode HARUS "Varied"?**
+A: Sangat disarankan. Kalau pakai "Fixed", semua foto akan punya angle yang sama —
+yang bikin terlihat monoton dan sangat "AI". "Varied" memastikan 6 jenis angle berbeda
+tersebar di 30 look.
 
 ---
 
