@@ -11,10 +11,10 @@ Semua hasil akhir terlihat seperti editorial fashion sungguhan yang bisa muncul 
 ```
 07_PHOTOSHOOT_SEQUENCE/
 ├── README.md                      ← Dokumen ini (panduan lengkap)
-├── MASTER_PHOTOSHOOT_PROMPT.md    ← SATU prompt utama — upload 1 look, paste, generate
+├── MASTER_PHOTOSHOOT_PROMPT.md    ← SATU prompt utama — Season Config + prompt lengkap
 ├── POSE_LIBRARY.md                ← 30 pose detail, satu per look (opsional)
 ├── SEQUENCE_SHOT_LIST.md          ← Urutan shot, framing, angle kamera per look (opsional)
-├── COLOR_GRADE_SYSTEM.md          ← Referensi color grade (default: Portra 400 Warm)
+├── COLOR_GRADE_SYSTEM.md          ← Referensi detail color grade (opsional)
 └── WEB_LAYOUT_GUIDE.md            ← Cara arrange foto jadi moodboard & layout web app
 ```
 
@@ -22,12 +22,12 @@ Semua hasil akhir terlihat seperti editorial fashion sungguhan yang bisa muncul 
 
 ## 🎯 Tujuan Sistem Ini
 
-Kamu punya 30 look dari Season 12 (atau season lain) yang sudah di-generate satu-satu. Masalahnya: kalau di-generate terpisah, hasilnya **tidak konsisten** — lighting beda, warna beda, style beda. Terlihat seperti random images, bukan satu photoshoot.
+Kamu punya 30 look dari satu season yang sudah di-generate satu-satu. Masalahnya: kalau di-generate terpisah, hasilnya **tidak konsisten** — lighting beda, warna beda, style beda. Terlihat seperti random images, bukan satu photoshoot.
 
 **Sistem ini menyelesaikan masalah itu** dengan memastikan semua 30 foto berbagi DNA visual yang sama:
 - ✅ AI otomatis pilih lokasi yang cocok sama outfit (indoor / outdoor)
-- ✅ Lighting natural sesuai lokasi
-- ✅ Color grade konsisten (Portra 400 Warm)
+- ✅ Color grade konsisten dalam 1 season (tapi beda season bisa beda)
+- ✅ Lighting konsisten dalam 1 season (tapi beda season bisa beda)
 - ✅ Photographer eye yang sama (medium format, film grain, real skin texture)
 - ✅ Anti-AI enforcement — tidak boleh terlihat seperti AI
 
@@ -35,15 +35,56 @@ Hasilnya: **30 foto yang terlihat seperti satu sesi pemotretan profesional di du
 
 ---
 
-## 🔄 Alur Kerja — SUPER SIMPLE (3 Langkah)
+## 🔄 Alur Kerja — Season Config + Generate
+
+### Langkah 0: Isi Season Config (Sekali Per Season)
+
+Di bagian paling atas `MASTER_PHOTOSHOOT_PROMPT.md`, ada **Season Config Block**:
+
+```
+SEASON: [nama season]
+COLOR GRADE: [pilih 1]
+LIGHTING: [pilih 1]
+```
+
+**Color Grade (pilih 1 per season):**
+
+| Grade | Vibe | Cocok Untuk |
+|-------|------|-------------|
+| Portra 400 Warm | Hangat, editorial, skin tone bagus | Season yang mau terlihat expensive, luxurious |
+| Fuji 400H Cool | Dingin, intelektual, refined | Season yang mau terlihat minimalist, detached |
+| Raw Flash No Grade | Mentah, straight out of camera | Season yang mau terlihat raw, confrontational |
+
+**Lighting (pilih 1 per season):**
+
+| Lighting | Karakter |
+|----------|----------|
+| Natural Match | AI sesuaikan lighting dengan lokasi — indoor = daylight soft, outdoor = overcast |
+| Harsh Flash | Direct camera flash ke SEMUA foto — energy paparazzi, raw |
+
+**Contoh config per season:**
+
+| Season | Color Grade | Lighting | Hasil |
+|--------|------------|----------|-------|
+| S12 Motorsport Couture | Portra 400 Warm | Natural Match | Expensive, editorial, hangat |
+| S13 Street Utility | Raw Flash No Grade | Harsh Flash | Raw, confrontational, documentary |
+| S14 Minimal Tailoring | Fuji 400H Cool | Natural Match | Dingin, intelektual, refined |
+
+**Dalam 1 season** → semua foto konsisten.
+**Antar season** → bisa beda vibe total.
+
+---
 
 ### Langkah 1: Upload 1 Foto Look
-Buka AI image generator (FLOW by Google, Midjourney, DALL-E, dll). Upload 1 foto look yang sudah kamu generate dari Season 12.
+
+Buka AI image generator (FLOW by Google, Midjourney, DALL-E, dll). Upload 1 foto look yang sudah kamu generate dari Season yang sedang dikerjakan.
 
 ### Langkah 2: Paste Prompt
-Copy **SELURUH isi** `MASTER_PHOTOSHOOT_PROMPT.md` (dari "STRICT IMAGE PRESERVATION MODE" sampai akhir). Paste di prompt generator. **Jangan ganti apapun.**
+
+Copy **SELURUH isi** `MASTER_PHOTOSHOOT_PROMPT.md` (dari Season Config sampai akhir). Paste di prompt generator. **Jangan ganti apapun** kecuali Season Config.
 
 ### Langkah 3: Generate
+
 Klik generate. Hasilnya: foto yang sama, tapi sekarang terlihat seperti difoto profesional di lokasi real-world yang cocok dengan outfit.
 
 **Ulangi untuk 30 look.** Selesai.
@@ -71,29 +112,16 @@ AI akan **otomatis analisa outfit** dan pilih lokasi yang masuk akal:
 
 ---
 
-## 🎨 Color Grade & Lighting
-
-**Default (otomatis):**
-- Color Grade: **Kodak Portra 400 Warm** — hangat, skin tone bagus, editorial
-- Lighting: **Natural sesuai lokasi** — kalau indoor + jendela = daylight soft, kalau outdoor = overcast, kalau parking garage = fluorescent
-
-**Mau ganti color grade?** Buka `COLOR_GRADE_SYSTEM.md` — ada 3 pilihan:
-1. Kodak Portra 400 Warm (default, recommended)
-2. Fuji Pro 400H Cool (dingin, intelektual)
-3. Raw Flash — No Grade (mentah, straight out of camera)
-
-Kalau mau ganti, edit bagian "LIGHTING AND COLOR GRADE" di `MASTER_PHOTOSHOOT_PROMPT.md`.
-
----
-
 ## 📋 Penjelasan Detail Setiap File
 
 ### `MASTER_PHOTOSHOOT_PROMPT.md`
 **Apa isinya:** SATU prompt lengkap yang mengandung:
+- Season Config — diisi sekali per season (color grade + lighting)
 - Identity Lock — wajah & outfit tidak berubah
 - Photographer Treatment — spesifikasi kamera, lens, film, anti-AI enforcement
 - Autonomous Environment Selection — AI analisa outfit, pilih lokasi yang cocok
-- Lighting & Color Grade — Portra 400 warm, natural lighting
+- Color Grade Application — sesuai Season Config
+- Lighting Application — sesuai Season Config
 - Pose & Framing — pose tetap sama, framing 4:5 portrait
 - Output Specification — harus terlihat seperti Vogue/Dazed
 
@@ -112,7 +140,7 @@ Kalau mau ganti, edit bagian "LIGHTING AND COLOR GRADE" di `MASTER_PHOTOSHOOT_PR
 ### `COLOR_GRADE_SYSTEM.md`
 **Apa isinya:** 3 color grade lengkap dengan parameter teknis + perbandingan.
 
-**Kapan dipakai:** Kalau kamu mau ganti color grade dari default Portra 400 Warm. Baca, pilih grade, copy parameternya ke master prompt.
+**Kapan dipakai:** Kalau kamu mau tau detail teknis setiap grade (bukan wajib — Season Config sudah cukup).
 
 ### `WEB_LAYOUT_GUIDE.md`
 **Apa isinya:** 4 moodboard layout + 5 web app layout + CSS examples + responsive behavior.
@@ -124,16 +152,15 @@ Kalau mau ganti, edit bagian "LIGHTING AND COLOR GRADE" di `MASTER_PHOTOSHOOT_PR
 ## ⚠️ Aturan Penting
 
 ### JANGAN Lakukan Ini:
-- ❌ Edit prompt secara sembarangan — pakai apa adanya
-- ❌ Ganti color grade antar foto — semua foto harus sama
+- ❌ Ganti Season Config di tengah season — semua 30 look harus sama config-nya
 - ❌ Skip identity lock — tanpa ini, AI akan ubah wajah/outfit model
 - ❌ Upload gambar yang bukan look fashion — prompt ini khusus fashion photography
 
 ### HARUS Lakukan Ini:
+- ✅ Isi Season Config SEKALI di awal sebelum generate look pertama
 - ✅ Pakai SELURUH prompt — jangan potong-potong
 - ✅ Upload look yang sudah di-generate sebelumnya (bukan foto random)
 - ✅ Validasi hasil — pastikan tidak terlihat AI-generated
-- ✅ Re-generate kalau ada foto yang warnanya tidak match
 
 ---
 
@@ -149,10 +176,9 @@ Kalau mau ganti, edit bagian "LIGHTING AND COLOR GRADE" di `MASTER_PHOTOSHOOT_PR
   "The outfit is: [deskripsi singkat outfit]"
 - Atau override manual dengan tambahkan: "IGNORE the decision tree. Use this location: [deskripsi lokasi kamu]"
 
-### Kalau Warna Tidak Konsistensi Antar Foto
-- Pastikan bagian "LIGHTING AND COLOR GRADE" tidak diubah
-- Batch-compare semua foto dalam grid — yang menonjol harus di-re-generate
-- Kalau perlu, tambahkan lebih eksplisit: "This image must have the EXACT same color grading as all other images: Kodak Portra 400 warm"
+### Mau Semua Look di Season yang Sama Lokasinya
+- Tambahkan di Season Config: "FORCE LOCATION: [deskripsikan lokasi]"
+- Atau edit bagian AUTONOMOUS ENVIRONMENT SELECTION: "IGNORE the decision tree above. ALL images must be shot in: [deskripsikan lokasi]."
 
 ---
 
@@ -160,7 +186,8 @@ Kalau mau ganti, edit bagian "LIGHTING AND COLOR GRADE" di `MASTER_PHOTOSHOOT_PR
 
 | Langkah | Aksi | File yang Dipakai |
 |---------|------|-------------------|
-| 1 | Upload 1 look foto | Foto dari Season 12 |
+| 0 | Isi Season Config (sekali per season) | MASTER_PHOTOSHOOT_PROMPT.md |
+| 1 | Upload 1 look foto | Foto dari Season kamu |
 | 2 | Paste seluruh prompt | MASTER_PHOTOSHOOT_PROMPT.md |
 | 3 | Generate | AI image generator |
 | 4 | Ulangi 30x | — |
@@ -168,30 +195,55 @@ Kalau mau ganti, edit bagian "LIGHTING AND COLOR GRADE" di `MASTER_PHOTOSHOOT_PR
 
 ---
 
-## 🎬 Contoh Workflow Lengkap (Look 01)
+## 🎬 Contoh Workflow Lengkap
+
+### Season 12 — Portra 400 Warm + Natural Match
 
 ```
-1. Kamu sudah punya foto Look 01 dari Season 12:
-   → Model dalam racing suit bone white
+1. Isi Season Config di MASTER_PHOTOSHOOT_PROMPT.md:
+   SEASON: S12
+   COLOR GRADE: Portra 400 Warm
+   LIGHTING: Natural Match
 
 2. Buka FLOW by Google (atau Midjourney/DALL-E)
 
-3. Upload foto Look 01
+3. Upload foto Look 01 (Racing Suit Bone White)
 
 4. Paste SELURUH isi MASTER_PHOTOSHOOT_PROMPT.md
-   → Jangan ganti apapun
-   → AI otomatis analisa: "ini racing suit" → pilih "rooftop parking deck"
 
 5. Generate
-   → Hasil: model dalam racing suit di rooftop beton, langit mendatar,
-     color grade Portra 400 warm, terlihat seperti Vogue editorial
+   → AI analisa: "ini racing suit" → pilih "rooftop parking deck"
+   → Lighting: natural overcast (Natural Match)
+   → Color grade: Portra 400 warm
+   → Hasil: foto racing suit di rooftop beton, langit mendatar, tone hangat,
+     terlihat seperti Vogue editorial
 
 6. Simpan sebagai "S12_Look_01_Photoshoot.png"
 
-7. Ulangi untuk Look 02 sampai 30
+7. Ulangi untuk Look 02 sampai 30 — config SAMA, lokasi BEDA sesuai outfit
 ```
 
-Setelah 30 foto selesai → arrange pakai layout dari WEB_LAYOUT_GUIDE.md.
+### Season 13 — Raw Flash + Harsh Flash
+
+```
+1. GANTI Season Config:
+   SEASON: S13
+   COLOR GRADE: Raw Flash No Grade
+   LIGHTING: Harsh Flash
+
+2. Upload foto Look 01 Season 13
+
+3. Paste SELURUH isi MASTER_PHOTOSHOOT_PROMPT.md
+
+4. Generate
+   → AI analisa outfit → pilih lokasi
+   → Lighting: HARSH FLASH (override natural, semua foto dapat flash treatment)
+   → Color grade: Raw Flash (no correction, straight out of camera)
+   → Hasil: raw, confrontational, seperti paparazzi photograph
+   → Vibe BEDA total dari S12
+```
+
+Setelah semua 30 foto selesai → arrange pakai layout dari WEB_LAYOUT_GUIDE.md.
 
 ---
 
@@ -203,12 +255,12 @@ Setelah 30 foto selesai → arrange pakai layout dari WEB_LAYOUT_GUIDE.md.
 | **Lokasi** | Kamu pilih manual (studio/outdoor/indoor) | AI otomatis pilih berdasarkan outfit |
 | **Jumlah model** | Multi-model (2-6 orang) | 1 model per foto |
 | **Output** | 1 foto group | 30 foto individual sequence |
-| **Kapan dipakai** | Awal — generate look pertama kali | Kedua — retouch look jadi photoshoot |
+| **Kapan dipakai** | Awal — generate look pertama kali | Kedua — retouch look jadi photoshoot quality |
 
 **Workflow lengkap:**
 ```
-Season 12 prompts → generate 30 look individual
-→ 07_PHOTOSHOOT_SEQUENCE → retouch 30 look jadi photoshoot quality
+Season prompts → generate 30 look individual
+→ 07_PHOTOSHOOT_SEQUENCE → retouch 30 look jadi photoshoot quality (dengan Season Config)
 → WEB_LAYOUT_GUIDE → arrange jadi moodboard / web layout
 ```
 

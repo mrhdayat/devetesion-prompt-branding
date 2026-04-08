@@ -2,26 +2,70 @@
 
 **Ini adalah SATU-SATUNYA prompt yang kamu butuhkan.**
 
-Upload 1 foto look → paste prompt ini → generate. AI otomatis analisa outfit, pilih lokasi yang cocok, dan render ulang sebagai foto photoshoot profesional.
+Upload 1 foto look → isi Season Config → paste prompt → generate.
+
+**Season Config diisi SEKALI per season.** Semua 30 look di season itu ikut config yang sama. Ganti config di season berikutnya kalau mau vibe berbeda.
 
 ---
 
-## CARA PAKAI (3 Langkah)
+## CARA PAKAI
 
-### Langkah 1: Upload 1 Foto Look
-Upload foto model yang sudah di-generate dari Season 12 (atau season manapun).
+### Sebelum Mulai Season Baru — Isi Season Config (di bagian paling atas prompt)
 
-### Langkah 2: Paste Prompt Ini
-Copy SELURUH prompt di bawah ini. Jangan ganti apapun kecuali yang ditandai `[PILIH DI SINI]`.
+**1. Season:** Nama season (contoh: S12, S13, FW16)
+**2. Color Grade:** Pilih SATU dari 3 (lihat tabel di bawah)
+**3. Lighting:** Pilih SATU dari 2
 
-### Langkah 3: Generate
-Hasilnya: foto yang sama terlihat seperti difoto profesional di lokasi real-world yang cocok dengan outfit.
+### Per Look — Upload + Paste
 
-**Ulangi untuk semua 30 look.** Setiap look akan dapat lokasi yang berbeda tapi tetap konsisten secara lighting + color grade.
+Upload 1 look → paste seluruh prompt → generate. Jangan ubah apapun.
+
+---
+
+## PILIHAN SEASON CONFIG
+
+### Color Grade (Pilih 1 per Season)
+
+| Grade | Nama | Vibe | Cocok Untuk |
+|-------|------|------|-------------|
+| 1 | **Portra 400 Warm** | Hangat, editorial fashion, skin tone bagus | Season yang mau terlihat expensive, luxurious, editorial |
+| 2 | **Fuji 400H Cool** | Dingin, intelektual, refined | Season yang mau terlihat intellectual, minimalist, detached |
+| 3 | **Raw Flash No Grade** | Mentah, straight out of camera | Season yang mau terlihat raw, confrontational, documentary |
+
+### Lighting (Pilih 1 per Season)
+
+| Lighting | Karakter | Cocok Untuk |
+|----------|----------|-------------|
+| 1 | **Natural Match** — AI sesuaikan dengan lokasi | Season yang mau natural, realistis |
+| 2 | **Harsh Flash** — Direct camera flash ke semua foto | Season yang mau energy paparazzi, raw, confrontational |
+
+### Contoh Season Config Berbeda
+
+| Season | Color Grade | Lighting | Hasil |
+|--------|------------|----------|-------|
+| S12 Motorsport Couture | Portra 400 Warm | Natural Match | Expensive, editorial, warm |
+| S13 Street Utility | Raw Flash No Grade | Harsh Flash | Raw, documentary, confrontational |
+| S14 Minimal Tailoring | Fuji 400H Cool | Natural Match | Cool, intellectual, refined |
+
+Setiap season punya personality berbeda. Dalam satu season — semua foto konsisten.
 
 ---
 
 ## PROMPT — COPY DARI SINI
+
+---
+
+```
+═══════════════════════════════════════════════════
+SEASON CONFIG — INI YANG DIISE PER SEASON
+═══════════════════════════════════════════════════
+
+SEASON: [isi nama season, contoh: S12]
+COLOR GRADE: [pilih: Portra 400 Warm / Fuji 400H Cool / Raw Flash No Grade]
+LIGHTING: [pilih: Natural Match / Harsh Flash]
+
+═══════════════════════════════════════════════════
+```
 
 ```
 STRICT IMAGE PRESERVATION MODE (ABSOLUTE — NO EXCEPTION):
@@ -44,18 +88,17 @@ on-location editorial photoshoot. NOT AI-generated. NOT a render. NOT digital ar
 A real photograph taken with:
 - Camera: Hasselblad H6D-100c or Phase One XF IQ4 (medium format digital back)
 - Lens: 80mm f/2.8 HC (standard portrait)
-- Film: Digital capture processed to emulate Kodak Portra 400 film stock
 - Retouching: Minimal — only exposure correction and color grading. NO skin smoothing. NO body reshaping.
 
 PHOTOGRAPHIC QUALITIES TO INJECT:
-1. Film grain structure visible at 100% — Kodak Portra 400 grain pattern (fine, slightly warm)
+1. Film grain structure visible — matching the chosen color grade (see SEASON CONFIG)
 2. Natural depth of field — subject sharp, background falling off gradually (not instant blur)
 3. Subtle lens characteristics — very slight vignette at edges
 4. Real skin texture — pores, fine hairs, micro-variation in tone visible. NO porcelain smoothness.
 5. Fabric texture legible — weave, weight, drape of clothing clearly readable
 6. Natural light interaction — light behaves physically on real surfaces
 7. Imperfect exposure — highlights may clip slightly, shadows crush subtly
-8. Color rendering: skin tones warm but accurate, fabrics true to color
+8. Color rendering: skin tones accurate, fabrics true to color under the chosen grade
 9. Very slight motion micro-blur on extremities if model is mid-movement
 10. The image should look PRINTED — like it could appear in Vogue, Dazed, or System Magazine
 
@@ -115,27 +158,58 @@ Describe the chosen location in the output with specific, readable detail.
 
 ————————————————————
 
-LIGHTING AND COLOR GRADE:
+COLOR GRADE APPLICATION:
 
-Apply this consistent post-production treatment to ALL images:
+Apply the color grade specified in SEASON CONFIG.
 
-COLOR GRADE: Kodak Portra 400 warm editorial
+IF COLOR GRADE IS "Portra 400 Warm":
 - Warm color cast overall (slight orange/amber shift)
 - Skin tones rendered warm and accurate
 - Blacks slightly lifted (dark brown, not pure black)
 - Highlights warm (cream tone, not pure white)
 - Fine, warm grain structure visible throughout
 - Gentle S-curve contrast — shadows slightly crushed, highlights slightly compressed
-- Minimal sharpening, barely perceptible vignette
 - The look of a professional fashion editorial scanned on a Noritsu HS-1800
 
-LIGHTING: Match the lighting to the chosen environment naturally.
+IF COLOR GRADE IS "Fuji 400H Cool":
+- Cool color cast overall (slight blue/green shift)
+- Skin tones accurate but slightly cool
+- Blacks deep and neutral (pure black)
+- Highlights cool (pure white with slight blue shift)
+- Fine, cool grain — less visible than Portra
+- Flatter contrast — more shadow detail, less punch
+- The look of a refined, intellectual fashion editorial on Fuji stock
+
+IF COLOR GRADE IS "Raw Flash No Grade":
+- Minimal color correction — what the camera captured is what you get
+- No warm or cool cast shift — neutral color temperature
+- Blacks crushed slightly (direct flash naturally crushes shadows)
+- Highlights may clip in small areas (flash specular reflections)
+- Visible flash fall-off — light drops off rapidly with distance
+- Grain: digital ISO noise at ISO 400 — fine, neutral
+- The look of a direct flash photograph straight out of camera, no processing
+
+————————————————————
+
+LIGHTING APPLICATION:
+
+Apply the lighting specified in SEASON CONFIG.
+
+IF LIGHTING IS "Natural Match":
+- Match the lighting to the chosen environment naturally
 - Indoor with windows: soft directional daylight through glass
 - Indoor with practical lights: fluorescent or pendant lighting, realistic falloff
 - Outdoor: overcast natural daylight, no direct sun
-- Flash: only if the environment suggests it (parking garage, surveillance-style)
+- The lighting must feel physically plausible for the chosen location
 
-The lighting must feel physically plausible for the chosen location.
+IF LIGHTING IS "Harsh Flash":
+- Apply harsh direct on-camera flash to ALL images regardless of environment
+- Hard, direct illumination with sharp shadow edges
+- Shadow thrown directly behind subject onto background
+- Highlights on flash-facing side slightly hot (near clipping but not clipped)
+- Background beyond flash range falls into darkness
+- Catchlight: single round specular highlight in each eye
+- This overrides the natural lighting of the environment — everything gets the flash treatment
 
 ————————————————————
 
@@ -173,85 +247,124 @@ Quality: maximum detail, no upscaling artifacts
 
 ## CONTOH PENGGUNAAN
 
-### Contoh 1: Look Racing Suit
+### Season 12 — Portra 400 Warm + Natural Match
+
+```
+═══════════════════════════════════════════════════
+SEASON CONFIG
+═══════════════════════════════════════════════════
+SEASON: S12
+COLOR GRADE: Portra 400 Warm
+LIGHTING: Natural Match
+═══════════════════════════════════════════════════
+
+[Paste seluruh prompt di bawahnya]
+```
 
 ```
 [Upload foto Look 01 — Racing Suit Bone White]
-
-[Paste seluruh prompt di atas]
-
 [Generate]
 
-→ AI analisa: "ini racing suit" → pilih "rooftop parking deck" → render dengan
-  Portra 400 warm grade → hasil: foto racing suit di rooftop beton, langit mendatar,
-  terlihat seperti Vogue editorial
+→ AI analisa: "racing suit" → pilih "rooftop parking deck" → lighting: overcast natural
+  → color grade: Portra 400 warm → hasil: racing suit di rooftop, langit mendatar,
+  tone hangat, seperti Vogue editorial
 ```
 
-### Contoh 2: Look Tailoring
+### Season 13 — Raw Flash + Harsh Flash
 
 ```
-[Upload foto Look 05 — Tailored Suit Charcoal]
+═══════════════════════════════════════════════════
+SEASON CONFIG
+═══════════════════════════════════════════════════
+SEASON: S13
+COLOR GRADE: Raw Flash No Grade
+LIGHTING: Harsh Flash
+═══════════════════════════════════════════════════
 
-[Paste seluruh prompt di atas]
+[Paste seluruh prompt di bawahnya]
+```
 
+```
+[Upload foto Look 01 — Season 13]
 [Generate]
 
-→ AI analisa: "ini tailoring formal" → pilih "modernist gallery interior" → render
-  dengan Portra 400 warm grade → hasil: foto tailored suit di galeri putih dengan
-  skylight, terlihat seperti System Magazine
+→ AI analisa outfit → pilih lokasi → lighting: HARSH FLASH (override natural)
+  → color grade: Raw Flash (no correction) → hasil: raw, confrontational,
+  seperti paparazzi photograph
 ```
 
-### Contoh 3: Look Couture
+### Season 14 — Fuji Cool + Natural Match
 
 ```
-[Upload foto Look 20 — Draped Gown Black]
+═══════════════════════════════════════════════════
+SEASON CONFIG
+═══════════════════════════════════════════════════
+SEASON: S14
+COLOR GRADE: Fuji 400H Cool
+LIGHTING: Natural Match
+═══════════════════════════════════════════════════
 
-[Paste seluruh prompt di atas]
+[Paste seluruh prompt di bawahnya]
+```
 
+```
+[Upload foto Look 01 — Season 14]
 [Generate]
 
-→ AI analisa: "ini couture voluminous" → pilih "abandoned theatre with high ceilings"
-  → render dengan Portra 400 warm grade → hasil: foto draped gown di teater tua
-  dengan langit-langit tinggi, terlihat seperti Dazed editorial
+→ AI analisa outfit → pilih lokasi → lighting: natural match
+  → color grade: Fuji 400H cool → hasil: dingin, intelektual, refined,
+  seperti System Magazine
+```
+
+---
+
+## WORKFLOW 30 LOOK — PER SEASON
+
+```
+Season S12:
+  Config: Portra 400 Warm + Natural Match
+  Look 01 → Upload → Paste prompt → Generate → Save
+  Look 02 → Upload → Paste prompt → Generate → Save
+  ...
+  Look 30 → Upload → Paste prompt → Generate → Save
+  → Semua 30 foto: warm, natural lighting, lokasi berbeda sesuai outfit
+
+Season S13:
+  Config: Raw Flash + Harsh Flash (BEDA dari S12)
+  Look 01 → Upload → Paste prompt → Generate → Save
+  ...
+  → Semua 30 foto: raw, harsh flash, lokasi berbeda sesuai outfit
+  → Vibe BEDA dari S12
+
+Season S14:
+  Config: Fuji Cool + Natural Match (BEDA dari S12 dan S13)
+  Look 01 → Upload → Paste prompt → Generate → Save
+  ...
+  → Semua 30 foto: cool, natural lighting, lokasi berbeda sesuai outfit
+  → Vibe BEDA dari S12 dan S13
 ```
 
 ---
 
 ## FAQ
 
-**Q: Apakah saya harus pilih lokasi manual?**
-A: Tidak. AI otomatis analisa outfit dan pilih lokasi yang cocok. Kamu tinggal upload + paste.
+**Q: Apakah lighting dan color grade akan sama terus di semua season?**
+A: Tidak. Kamu yang tentukan di Season Config. Kalau S12 pakai Portra 400 Warm, S13 bisa
+pakai Raw Flash, S14 bisa pakai Fuji Cool. Setiap season bisa beda vibe. Dalam satu season —
+semua foto konsisten. Antar season — bisa beda total.
 
-**Q: Kalau saya mau semua look di lokasi yang sama?**
-A: Tambahkan kalimat ini di bagian AUTONOMOUS ENVIRONMENT SELECTION:
-"IGNORE the decision tree above. ALL images must be shot in: [deskripsikan lokasi kamu]."
+**Q: Apakah lokasi yang dipilih AI akan sama terus?**
+A: Tidak. AI analisa outfit setiap foto. Racing suit → rooftop, tailoring → gallery,
+couture → theatre. Tapi lighting dan color grade-nya konsisten (dari Season Config).
+Jadi: lokasi beda, vibe sama.
 
-**Q: Lighting dan color grade bisa diganti?**
-A: Bisa. Edit bagian LIGHTING AND COLOR GRADE sesuai selera. Tapi rekomendasi: pakai
-Portra 400 warm untuk semua — ini yang paling meyakinkan sebagai foto editorial asli.
+**Q: Mau semua look di season yang sama lokasinya?**
+A: Tambahkan di bagian AUTONOMOUS ENVIRONMENT SELECTION:
+"IGNORE the decision tree above. ALL images must be shot in: [deskripsikan lokasi]."
 
 **Q: Pose model berubah?**
-A: Tidak. Prompt sudah specify: "Keep the model's pose as it appears. Do NOT change the pose."
-AI hanya render ulang lingkungan + lighting + color grade, tidak mengubah pose.
-
-**Q: Mau beda pose?**
-A: Upload foto dengan pose yang sudah berbeda, atau gunakan POSE_LIBRARY.md di folder ini
-sebagai referensi sebelum generate look aslinya.
-
----
-
-## WORKFLOW LENGKAP 30 LOOK
-
-```
-Look 01 → Upload → Paste prompt → Generate → Save
-Look 02 → Upload → Paste prompt → Generate → Save
-Look 03 → Upload → Paste prompt → Generate → Save
-...
-Look 30 → Upload → Paste prompt → Generate → Save
-
-Semua 30 foto akan dapat lokasi berbeda (sesuai outfit) tapi color grade sama (Portra 400 warm).
-Hasilnya: sequence yang terlihat seperti satu photoshoot profesional multi-location.
-```
+A: Tidak. Prompt sudah specify: "Keep the model's pose as it appears." AI hanya render
+ulang lingkungan + lighting + color grade.
 
 ---
 
