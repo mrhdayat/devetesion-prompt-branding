@@ -10,15 +10,17 @@ Upload 1 foto look → isi Season Config → paste prompt → generate.
 
 ## CARA PAKAI
 
-### Sebelum Mulai Season Baru — Isi Season Config (di bagian paling atas prompt)
+### Sebelum Mulai Season Baru — Isi Season Config
 
 **1. Season:** Nama season (contoh: S12, S13, FW16)
-**2. Color Grade:** Pilih SATU dari 3 (lihat tabel di bawah)
+**2. Color Grade:** Pilih SATU dari 3
 **3. Lighting:** Pilih SATU dari 2
+**4. Location Mode:** Pilih 1 dari 2 (lihat penjelasan di bawah)
+**5. Pose Mode:** Pilih 1 dari 2 (lihat penjelasan di bawah)
 
-### Per Look — Upload + Paste
+### Per Look — Upload + Paste + Tambahkan Pose
 
-Upload 1 look → paste seluruh prompt → generate. Jangan ubah apapun.
+Upload 1 look → paste seluruh prompt → tambahkan pose direction → generate.
 
 ---
 
@@ -39,15 +41,27 @@ Upload 1 look → paste seluruh prompt → generate. Jangan ubah apapun.
 | 1 | **Natural Match** — AI sesuaikan dengan lokasi | Season yang mau natural, realistis |
 | 2 | **Harsh Flash** — Direct camera flash ke semua foto | Season yang mau energy paparazzi, raw, confrontational |
 
+### Location Mode (Pilih 1 per Season)
+
+| Mode | Cara Kerja | Hasil |
+|------|-----------|-------|
+| **Auto** | AI analisa outfit, pilih lokasi berbeda per look | Setiap look dapat lokasi berbeda yang cocok sama outfit |
+| **Force** | Kamu tentukan SATU lokasi, semua 30 look di lokasi yang sama | Semua foto di tempat yang sama — seperti one-location photoshoot sungguhan |
+
+### Pose Mode (Pilih 1 per Season)
+
+| Mode | Cara Kerja | Hasil |
+|------|-----------|-------|
+| **Keep** | Pose mengikuti foto yang di-upload | Pose sama seperti foto sumber |
+| **Direction** | Kamu tambahkan instruksi pose per look | Setiap look dapat pose berbeda — seperti fotografer mengarahkan model |
+
 ### Contoh Season Config Berbeda
 
-| Season | Color Grade | Lighting | Hasil |
-|--------|------------|----------|-------|
-| S12 Motorsport Couture | Portra 400 Warm | Natural Match | Expensive, editorial, warm |
-| S13 Street Utility | Raw Flash No Grade | Harsh Flash | Raw, documentary, confrontational |
-| S14 Minimal Tailoring | Fuji 400H Cool | Natural Match | Cool, intellectual, refined |
-
-Setiap season punya personality berbeda. Dalam satu season — semua foto konsisten.
+| Season | Grade | Lighting | Location | Pose | Hasil |
+|--------|-------|----------|----------|------|-------|
+| S12 Motorsport Couture | Portra 400 Warm | Natural Match | Force: Rooftop Parking | Direction: 30 pose berbeda | Satu lokasi, 30 pose berbeda — seperti real photoshoot |
+| S13 Street Utility | Raw Flash | Harsh Flash | Auto | Keep | Lokasi beda, pose ikut foto sumber, vibe raw |
+| S14 Minimal Tailoring | Fuji Cool | Natural Match | Force: Gallery | Direction: 30 pose berbeda | Satu lokasi gallery, 30 pose berbeda |
 
 ---
 
@@ -57,12 +71,14 @@ Setiap season punya personality berbeda. Dalam satu season — semua foto konsis
 
 ```
 ═══════════════════════════════════════════════════
-SEASON CONFIG — INI YANG DIISE PER SEASON
+SEASON CONFIG — ISI PER SEASON
 ═══════════════════════════════════════════════════
 
 SEASON: [isi nama season, contoh: S12]
-COLOR GRADE: [pilih: Portra 400 Warm / Fuji 400H Cool / Raw Flash No Grade]
-LIGHTING: [pilih: Natural Match / Harsh Flash]
+COLOR GRADE: [Portra 400 Warm / Fuji 400H Cool / Raw Flash No Grade]
+LIGHTING: [Natural Match / Harsh Flash]
+LOCATION MODE: [Auto / Force]
+POSE MODE: [Keep / Direction]
 
 ═══════════════════════════════════════════════════
 ```
@@ -112,8 +128,11 @@ ANTI-AI ENFORCEMENT:
 
 ————————————————————
 
-AUTONOMOUS ENVIRONMENT SELECTION:
+LOCATION APPLICATION:
 
+Apply the location mode specified in SEASON CONFIG.
+
+IF LOCATION MODE IS "Auto":
 You must AUTONOMOUSLY ANALYZE the uploaded outfit and SELECT a real-world location that
 logically matches the fashion styling. Do NOT default to the same location every time.
 Do NOT choose fantasy locations. The location must be a real place that exists in the real world.
@@ -123,38 +142,72 @@ DECISION TREE — Analyze the outfit, then choose:
 IF the outfit is: racing gear, techwear, sportswear, utility, tactical, streetwear
 → SELECT: Urban infrastructure — concrete parking structure, rooftop parking deck,
   underpass, loading dock, industrial corridor, gas station forecourt.
-  Something raw, functional, not designed for fashion.
 
 IF the outfit is: tailoring, formal, structured, elegant, minimalist
 → SELECT: Interior architectural space — modernist gallery, heritage mansion lobby,
   minimalist showroom, hotel corridor, private members' club interior.
-  A space with intention in its design, even if empty.
 
 IF the outfit is: couture, avant-garde, experimental, draped, voluminous
 → SELECT: Grand interior space — abandoned industrial warehouse with high ceilings,
   disused theatre, empty church, vaulted concrete hall.
-  Architecture that matches the drama of the garment.
 
 IF the outfit is: casual, knitwear, relaxed, layered, everyday
 → SELECT: Lived-in interior — loft apartment with large windows, sunlit studio space,
   conservatory, sunroom with plants.
-  Warm, personal, intimate but still editorial.
 
 IF the outfit is: outerwear, heavy coats, boots, winter, protective
 → SELECT: Outdoor urban — city street corner, concrete plaza, pedestrian bridge,
   harbor edge, parking structure rooftop.
-  Overcast sky, urban landscape in distance, wet ground from recent rain.
 
-RULES FOR LOCATION SELECTION:
+IF LOCATION MODE IS "Force":
+ALL images in this season must be shot in the EXACT SAME location specified below.
+Do NOT vary the location between images. Every single image uses this one location.
+
+FORCED LOCATION: [deskripsikan lokasi di sini, contoh: "A multi-level concrete parking
+garage with exposed ceiling pipes, fluorescent light fixtures, painted parking lines on
+sloped concrete floor, concrete pillars at regular intervals. Daylight enters from the
+open edge of the structure. The aesthetic of urban infrastructure."]
+
+Describe this exact location in every image. Same pillars, same floor, same lighting fixtures,
+same environment. The ONLY thing that changes between images is the model's pose and outfit.
+
+RULES FOR ALL LOCATIONS:
 - Must be a REAL place that could exist — not fantasy, not sci-fi, not abstract
 - Must be specific and detailed — not "a room" but "a gallery with polished concrete
   floors, white walls with track lighting, and a skylight casting soft directional light"
-- Must be consistent with the outfit's energy — brutalist clothes in brutalist space,
-  soft clothes in soft light
 - Must have visible environmental detail — not a blank void, not a seamless backdrop
 - Must show signs of real architecture or civilization — not empty nature, not desert
 
-Describe the chosen location in the output with specific, readable detail.
+————————————————————
+
+POSE APPLICATION:
+
+Apply the pose mode specified in SEASON CONFIG.
+
+IF POSE MODE IS "Keep":
+Keep the model's pose as it appears in the uploaded image. Do NOT change the pose.
+Do NOT reposition the model's body, arms, legs, or head.
+
+IF POSE MODE IS "Direction":
+Apply the specific pose direction provided below for THIS look.
+Each look in this season will have its own pose direction, creating variety
+across the sequence — just like a real photographer directing different poses
+during a single photoshoot session.
+
+The pose direction will be provided separately for each look. When a pose direction
+is provided, apply it to reposition the model's body while keeping their face identity
+and outfit EXACTLY as uploaded.
+
+POSE DIRECTION FOR THIS LOOK:
+[Tempel pose spesifik di sini. Lihat contoh di bawah.]
+
+Pose direction examples:
+- "Model walking directly toward camera with purposeful stride, weight on front foot,
+  arms swinging naturally, direct eye contact, torso slightly leaned forward"
+- "Model standing dead-center, feet planted shoulder-width, arms hanging naturally
+  at sides, chin slightly down, eyes looking up at camera"
+- "Model leaning against a concrete pillar, right shoulder making contact, weight
+  entirely on right side, left leg extended, hand in pocket, head turned toward camera"
 
 ————————————————————
 
@@ -213,10 +266,7 @@ IF LIGHTING IS "Harsh Flash":
 
 ————————————————————
 
-POSE AND FRAMING:
-
-Keep the model's pose as it appears in the uploaded image. Do NOT change the pose.
-Do NOT reposition the model's body, arms, legs, or head.
+FRAMING:
 
 Framing: 4:5 aspect ratio (portrait/vertical) — standard fashion editorial.
 - If the uploaded image is full body → output is full body
@@ -245,9 +295,11 @@ Quality: maximum detail, no upscaling artifacts
 
 ---
 
-## CONTOH PENGGUNAAN
+## CARA PAKAI: SATU LOKASI + 30 POSE BERBEDA
 
-### Season 12 — Portra 400 Warm + Natural Match
+Ini yang kamu mau: semua 30 foto di **lokasi yang sama** tapi **pose beda-beda**.
+
+### Langkah 1: Isi Season Config
 
 ```
 ═══════════════════════════════════════════════════
@@ -256,115 +308,194 @@ SEASON CONFIG
 SEASON: S12
 COLOR GRADE: Portra 400 Warm
 LIGHTING: Natural Match
+LOCATION MODE: Force
+POSE MODE: Direction
 ═══════════════════════════════════════════════════
-
-[Paste seluruh prompt di bawahnya]
 ```
 
-```
-[Upload foto Look 01 — Racing Suit Bone White]
-[Generate]
+### Langkah 2: Tentukan Lokasi (Pakai untuk Semua 30 Look)
 
-→ AI analisa: "racing suit" → pilih "rooftop parking deck" → lighting: overcast natural
-  → color grade: Portra 400 warm → hasil: racing suit di rooftop, langit mendatar,
-  tone hangat, seperti Vogue editorial
+Contoh lokasi yang bisa kamu pilih:
+
+| Nama Lokasi | Deskripsi |
+|-------------|-----------|
+| Rooftop Parking | Beton terbuka, langit mendatar, garis parkir, tiang beton |
+| Concrete Gallery | Galeri putih, lantai beton poles, skylight |
+| Abandoned Warehouse | Gudang tua, bata ekspos, jendela tinggi, cahaya dari atas |
+| Parking Garage | Parkiran beton, pipa langit-langit, lampu neon, lantai miring |
+| Hotel Corridor | Lorong hotel, karpet gelap, lampu dinding, pintu kamar |
+
+Pilih SATU. Tulis deskripsi detail. Ini akan dipakai untuk SEMUA 30 look.
+
+### Langkah 3: Siapkan 30 Pose
+
+Buka `POSE_LIBRARY.md` di folder ini. Ada 30 pose siap pakai. Atau tulis sendiri.
+
+Contoh beberapa pose:
+
+| Look | Pose |
+|------|------|
+| 01 | Model berjalan langsung ke kamera, stride agresif |
+| 02 | Model berdiri center, kaki shoulder-width, tangan di sisi |
+| 03 | Model bersandar di pillar, berat di satu sisi |
+| 04 | Model caught mid-turn, lihat ke belakang |
+| 05 | Model crouching rendah, energi animal |
+| ... | ... |
+| 30 | Model berdiri diam sempurna, center, pernyataan terakhir |
+
+### Langkah 4: Generate Setiap Look
+
+```
+Untuk Look 01:
+  1. Upload foto Look 01
+  2. Paste seluruh prompt (dengan Season Config)
+  3. Di bagian "FORCED LOCATION": isi deskripsi lokasi kamu
+  4. Di bagian "POSE DIRECTION FOR THIS LOOK": paste Pose 01
+  5. Generate
+
+Untuk Look 02:
+  1. Upload foto Look 02
+  2. Paste seluruh prompt (DENGAN Season Config yang SAMA)
+  3. FORCED LOCATION: SAMA PERSIS (jangan diganti)
+  4. POSE DIRECTION FOR THIS LOOK: paste Pose 02 (BEDA dari Look 01)
+  5. Generate
+
+Ulangi sampai Look 30.
 ```
 
-### Season 13 — Raw Flash + Harsh Flash
+**Hasil:** 30 foto di lokasi yang sama persis, tapi pose berbeda-beda — persis seperti real photoshoot.
+
+---
+
+## CONTOH LENGKAP: Look 01
 
 ```
 ═══════════════════════════════════════════════════
 SEASON CONFIG
 ═══════════════════════════════════════════════════
-SEASON: S13
-COLOR GRADE: Raw Flash No Grade
-LIGHTING: Harsh Flash
-═══════════════════════════════════════════════════
-
-[Paste seluruh prompt di bawahnya]
-```
-
-```
-[Upload foto Look 01 — Season 13]
-[Generate]
-
-→ AI analisa outfit → pilih lokasi → lighting: HARSH FLASH (override natural)
-  → color grade: Raw Flash (no correction) → hasil: raw, confrontational,
-  seperti paparazzi photograph
-```
-
-### Season 14 — Fuji Cool + Natural Match
-
-```
-═══════════════════════════════════════════════════
-SEASON CONFIG
-═══════════════════════════════════════════════════
-SEASON: S14
-COLOR GRADE: Fuji 400H Cool
+SEASON: S12
+COLOR GRADE: Portra 400 Warm
 LIGHTING: Natural Match
+LOCATION MODE: Force
+POSE MODE: Direction
 ═══════════════════════════════════════════════════
 
-[Paste seluruh prompt di bawahnya]
-```
+[Paste seluruh prompt]
 
-```
-[Upload foto Look 01 — Season 14]
+[Upload foto Look 01 — Racing Suit Bone White]
+
+[Di bagian FORCED LOCATION, isi:]
+FORCED LOCATION: A multi-level concrete parking garage. Exposed ceiling with visible
+pipe runs and fluorescent light fixtures (mostly off). Sloped concrete floor with
+painted yellow parking lines and directional arrows. Concrete pillars at regular
+intervals. Daylight enters from the open edge of the structure, casting soft
+directional light across the space. The aesthetic of urban infrastructure
+repurposed as a fashion venue.
+
+[Di bagian POSE DIRECTION FOR THIS LOOK, isi:]
+POSE DIRECTION FOR THIS LOOK:
+Model walking directly toward camera with a purposeful, aggressive stride.
+Weight on front foot, back foot pushing off. Arms swinging naturally with walk.
+Shoulders squared to camera, direct eye contact. Torso slightly leaned forward
+into the stride. Garment caught mid-movement — fabric flowing behind from forward
+momentum.
+
 [Generate]
-
-→ AI analisa outfit → pilih lokasi → lighting: natural match
-  → color grade: Fuji 400H cool → hasil: dingin, intelektual, refined,
-  seperti System Magazine
 ```
 
 ---
 
-## WORKFLOW 30 LOOK — PER SEASON
+## CONTOH LENGKAP: Look 02
 
 ```
-Season S12:
-  Config: Portra 400 Warm + Natural Match
-  Look 01 → Upload → Paste prompt → Generate → Save
-  Look 02 → Upload → Paste prompt → Generate → Save
-  ...
-  Look 30 → Upload → Paste prompt → Generate → Save
-  → Semua 30 foto: warm, natural lighting, lokasi berbeda sesuai outfit
+═══════════════════════════════════════════════════
+SEASON CONFIG (SAMA PERSIS — jangan diubah)
+═══════════════════════════════════════════════════
+SEASON: S12
+COLOR GRADE: Portra 400 Warm
+LIGHTING: Natural Match
+LOCATION MODE: Force
+POSE MODE: Direction
+═══════════════════════════════════════════════════
 
-Season S13:
-  Config: Raw Flash + Harsh Flash (BEDA dari S12)
-  Look 01 → Upload → Paste prompt → Generate → Save
-  ...
-  → Semua 30 foto: raw, harsh flash, lokasi berbeda sesuai outfit
-  → Vibe BEDA dari S12
+[Paste seluruh prompt]
 
-Season S14:
-  Config: Fuji Cool + Natural Match (BEDA dari S12 dan S13)
-  Look 01 → Upload → Paste prompt → Generate → Save
-  ...
-  → Semua 30 foto: cool, natural lighting, lokasi berbeda sesuai outfit
-  → Vibe BEDA dari S12 dan S13
+[Upload foto Look 02 — Patchwork Jacket Charcoal]
+
+[Di bagian FORCED LOCATION, isi SAMA PERSIS:]
+FORCED LOCATION: A multi-level concrete parking garage. Exposed ceiling with visible
+pipe runs and fluorescent light fixtures (mostly off). Sloped concrete floor with
+painted yellow parking lines and directional arrows. Concrete pillars at regular
+intervals. Daylight enters from the open edge of the structure, casting soft
+directional light across the space. The aesthetic of urban infrastructure
+repurposed as a fashion venue.
+
+[Di bagian POSE DIRECTION FOR THIS LOOK, isi BERBEDA:]
+POSE DIRECTION FOR THIS LOOK:
+Model standing dead-center, feet planted shoulder-width, confrontational stance.
+Weight distributed evenly on both feet. Arms hanging naturally at sides, fingers
+slightly curled. Chin slightly down, eyes looking up at camera. Shoulders relaxed
+but squared. Garment shown in its full, resting state — no movement, pure silhouette.
+
+[Generate]
 ```
+
+Perhatikan: Season Config sama, FORCED LOCATION sama, tapi POSE DIRECTION berbeda.
+
+---
+
+## DAFTAR 30 POSE SINGKAT
+
+Untuk referensi cepat. Detail lengkap ada di `POSE_LIBRARY.md`.
+
+| Look | Pose | Energi |
+|------|------|--------|
+| 01 | THE STRIDE — berjalan agresif ke kamera | HIGH |
+| 02 | THE STANCE — berdiri center, confrontational | HIGH |
+| 03 | THE LEAN — bersandar di pillar/dinding | MEDIUM |
+| 04 | THE TURN — caught mid-turn, lihat belakang | MEDIUM |
+| 05 | THE CROUCH — crouching rendah, animal energy | MEDIUM |
+| 06 | THE REACH — meraih ke atas, tubuh elongated | MEDIUM |
+| 07 | THE SLUMP — merosot di dinding, exhausted | LOW |
+| 08 | THE PROWL — berjalan lateral, profile view | MEDIUM |
+| 09 | THE PLANT — boxer stance, agresif | HIGH |
+| 10 | THE DRAG — dragging sesuatu, tension | MEDIUM |
+| 11 | THE PERCH — duduk/berdiri di permukaan tinggi | MEDIUM |
+| 12 | THE CROSS — tangan交叉 di dada, contained | MEDIUM |
+| 13 | THE SPREAD — kaki lebar, tangan terbuka, territorial | HIGH |
+| 14 | THE HUNCH — bungkuk ke depan, hands in pockets | LOW |
+| 15 | THE PIVOT — berputar mid-rotation | MEDIUM |
+| 16 | THE SINK — lowering ke bawah, halfway | MEDIUM |
+| 17 | THE REST — santai, one hand on hip | LOW |
+| 18 | THE RECLINE — bersandar 45°, almost lying | LOW |
+| 19 | THE MARCH — high-knee walk, military energy | HIGH |
+| 20 | THE CONTRAPPOSTO — classical S-curve, hip popped | MEDIUM |
+| 21 | THE BRACE — kedua tangan di dinding, pushing | MEDIUM |
+| 22 | THE SLINK — low, smooth, predatory movement | MEDIUM |
+| 23 | THE ARCH — lengkung ke belakang, chest open | MEDIUM |
+| 24 | THE FOLD — duduk di tanah, knees to chest | LOW |
+| 25 | THE STRIDE REVERSE — berjalan menjauh, lihat belakang | MEDIUM |
+| 26 | THE ELEVATE — berdiri di tiptoe, reaching height | MEDIUM |
+| 27 | THE SHIELD — one arm across body, defensive | MEDIUM |
+| 28 | THE SWAY — weight shifting, S-curve, rhythmic | MEDIUM |
+| 29 | THE LUNGE — lunging forward, full commit | HIGH |
+| 30 | THE FINALE — diam sempurna, center, final statement | STILL |
 
 ---
 
 ## FAQ
 
-**Q: Apakah lighting dan color grade akan sama terus di semua season?**
-A: Tidak. Kamu yang tentukan di Season Config. Kalau S12 pakai Portra 400 Warm, S13 bisa
-pakai Raw Flash, S14 bisa pakai Fuji Cool. Setiap season bisa beda vibe. Dalam satu season —
-semua foto konsisten. Antar season — bisa beda total.
+**Q: Lokasi sama tapi pose beda-beda — bisa?**
+A: Bisa. Set `LOCATION MODE: Force` + `POSE MODE: Direction`. Tulis lokasi yang sama di setiap generate, ganti pose direction per look.
 
-**Q: Apakah lokasi yang dipilih AI akan sama terus?**
-A: Tidak. AI analisa outfit setiap foto. Racing suit → rooftop, tailoring → gallery,
-couture → theatre. Tapi lighting dan color grade-nya konsisten (dari Season Config).
-Jadi: lokasi beda, vibe sama.
+**Q: Kalau mau lokasi beda tapi pose beda juga?**
+A: Set `LOCATION MODE: Auto` + `POSE MODE: Direction`. AI pilih lokasi berdasarkan outfit, kamu tambah pose direction per look.
 
-**Q: Mau semua look di season yang sama lokasinya?**
-A: Tambahkan di bagian AUTONOMOUS ENVIRONMENT SELECTION:
-"IGNORE the decision tree above. ALL images must be shot in: [deskripsikan lokasi]."
+**Q: Kalau mau lokasi sama dan pose sama (ikut foto sumber)?**
+A: Set `LOCATION MODE: Force` + `POSE MODE: Keep`. Semua foto di satu lokasi, pose ikut foto yang di-upload.
 
-**Q: Pose model berubah?**
-A: Tidak. Prompt sudah specify: "Keep the model's pose as it appears." AI hanya render
-ulang lingkungan + lighting + color grade.
+**Q: Pose direction harus ditulis sendiri atau bisa copy dari POSE_LIBRARY.md?**
+A: Bisa copy langsung dari `POSE_LIBRARY.md`. Setiap pose sudah ditulis detail sebagai arahan fotografer.
 
 ---
 
