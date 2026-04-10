@@ -54,6 +54,38 @@ Male subject MUST NOT pose like a normal person or catalog model. Every pose sho
 - 50mm-85mm lens, shallow depth of field
 - Best for: intimate campaigns, narrative fashion
 
+### 08 HIGH ANGLE (DYNAMIC STANDING STANCE)
+- Moderate high angle (40-55 degrees), camera above subject looking down
+- Subject standing with dynamic anti-stiff pose, NOT bird's eye view
+- 35mm-50mm lens, natural perspective from elevated viewpoint
+- Best for: elevated perspective shots, anti-model stances
+
+### 09 HIGH ANGLE (HANDS REACHING TOWARD CAMERA)
+- Camera positioned above subject, looking down
+- Subject looking UP at camera with BOTH hands reaching toward lens
+- 24mm-35mm wide angle, slight distortion for dramatic effect
+- Best for: bold editorial statements, confrontational poses
+
+### 10 EXTREME LOW ANGLE (GROUND PERSPECTIVE)
+- Camera at GROUND LEVEL looking UP (10-25 degrees)
+- 14mm-24mm ultra-wide/fisheye with massive barrel distortion
+- Subject standing and leaning forward, feet appear enormous
+- Ground/floor visible in foreground, sky visible above
+- Best for: Y2K streetwear, dramatic fisheye shots, bold outdoor
+
+### 11 LOW ANGLE (HAND FORWARD TO LENS)
+- Moderate low angle (25-40 degrees), camera at knee/thigh level
+- 24mm-35mm wide angle, ONE hand extended toward camera
+- Foreground hand appears 3-4x larger than body (iconic pose)
+- Best for: iconic hand-forward poses, edgy editorial, streetwear
+
+### 12 LOW ANGLE (ELEGANT MOVEMENT)
+- Moderate low angle (camera at knee/mid-thigh level) looking up
+- 35mm-50mm clean lens, NO distortion
+- Subject captured mid-movement with flowing fabric/gesture
+- Sophisticated, refined, luxury fashion campaign feel
+- Best for: elegant editorials, movement shots, luxury campaigns
+
 ---
 
 ## Designer Style Randomization (Included in Every File)
@@ -117,4 +149,9 @@ Every file enforces:
 - **Detail Focus**: Use 04 for raw texture and attitude emphasis
 - **Mystery Building**: Use 06 for teaser content
 - **Classic Editorial**: Use 02 or 05 for timeless fashion shots
+- **Elevated Perspective**: Use 08 for high-angle standing shots
+- **Bold Statement**: Use 09 for high-angle with hands reaching toward camera
+- **Y2K Edge**: Use 10 for extreme low angle fisheye streetwear shots
+- **Iconic Hand**: Use 11 for low angle with hand forward to lens
+- **Elegant Flow**: Use 12 for low angle with elegant movement and fabric flow
 - **Full Range**: Generate 5+ images cycling through all files for complete campaign
