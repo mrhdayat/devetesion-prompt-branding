@@ -1,8 +1,86 @@
 # DEVETESION — 30 POSE & ANGLE LIBRARY
 
-**Berdasarkan analisis 43 foto editorial di folder inspo-pose/.**
+**Berdasarkan data resmi `devetesion_pose_library_30.csv`.**
 
-Setiap pose dilengkapi dengan **camera angle spesifik** — ini yang bikin foto terlihat real dan bukan "AI slop".
+Setiap pose dilengkapi dengan **camera angle spesifik**, **detail unik diferensiasi**, dan **TRIPLE LOCK SYSTEM** (Face + Outfit + Scene) agar 30 pose menghasilkan satu set foto yang konsisten.
+
+---
+
+## 🔒 TRIPLE LOCK SYSTEM — WAJIB DI PAKAI
+
+**Gunakan blok ini di AWAL setiap generate pose:**
+
+```
+================================
+IMAGE REFERENCE LOCK (ABSOLUTE)
+================================
+
+INPUT IMAGES (3 REQUIRED):
+- Image 1 = FACE REFERENCE (primary identity lock)
+- Image 2 = OUTFIT REFERENCE (full outfit, front view)
+- Image 3 = SCENE/LOCATION REFERENCE (environment, background, lighting)
+
+---
+
+FACE LOCK (STRICT):
+- preserve EXACT face structure, features, proportions from Image 1
+- keep EXACT facial bone structure (jawline, cheekbones, nose shape)
+- maintain original hairstyle, hair color, hair texture
+- do NOT beautify, stylize, or alter face appearance
+- do NOT change skin tone, skin texture, or facial marks
+- face MUST look identical to Image 1
+- only expression and head angle may change per pose
+
+---
+
+OUTFIT LOCK (STRICT):
+- keep EXACT outfit from Image 2 — no redesign, no replacement
+- preserve every garment piece (tops, bottoms, outerwear, accessories)
+- maintain original outfit color, material, and texture
+- do NOT add or remove any clothing items
+- do NOT change outfit styling, layering, or fit
+- outfit MUST look identical to Image 2
+- only outfit movement/flow may change per pose
+
+---
+
+SCENE LOCK (SAME LOCATION SET):
+- exact same environment and location from Image 3
+- same background elements (walls, floor, sky, architecture)
+- same lighting setup and light direction
+- same time of day and weather conditions (if outdoor)
+- same props and objects in the location
+- do NOT change location, do NOT relocate subject
+- do NOT add or remove background elements
+- scene MUST look like the same photoshoot session as Image 3
+- only camera angle and framing may change per pose
+
+---
+
+OUTPUT RULE:
+- ONE image only per pose
+- no collage
+- all 30 poses must feel like ONE continuous photoshoot session
+```
+
+---
+
+## CARA PAKAI (WORKFLOW 30 POSE):
+
+1. **Siapkan 3 gambar referensi:**
+   - Image 1 = Foto close-up wajah model (face lock)
+   - Image 2 = Foto full outfit/model (outfit lock)
+   - Image 3 = Foto lokasi/scene tanpa model (scene lock)
+
+2. **Upload ketiga gambar ke AI image generator**
+
+3. **Copy-paste blok "TRIPLE LOCK SYSTEM" di atas**
+
+4. **Copy-paste pose yang diinginkan (Pose 01-30)**
+
+5. **Generate** — AI akan menjaga face, outfit, dan scene tetap konsisten
+
+6. **Ulangi** untuk semua 30 pose — hasilnya akan terasa seperti satu set editorial photoshoot
 
 ---
 
@@ -10,587 +88,551 @@ Setiap pose dilengkapi dengan **camera angle spesifik** — ini yang bikin foto 
 
 | Pose Type | Camera Angle | Jumlah | Energi |
 |-----------|-------------|--------|--------|
-| Hands reaching toward camera | High angle looking down | 5 | HIGH |
-| Crouching/squatting | Ground level | 4 | HIGH |
-| Sitting on ground | Top-down bird's eye | 4 | MEDIUM |
-| Standing with hip pop | Eye level 3/4 angle | 5 | MEDIUM |
-| Wide stance / legs spread | Low angle looking up | 3 | HIGH |
-| Hand framing face | Eye level front-on | 3 | LOW |
-| Leaning against surface | Eye level 3/4 angle | 2 | LOW |
-| Walking / mid-stride | Ground level | 2 | MEDIUM |
-| One leg lifted | Eye level front-on | 1 | HIGH |
-| Head tilted, looking away | Eye level 3/4 angle | 1 | LOW |
+| High-Angle Hands Reaching / Fisheye Head-Reach / Diagonal Reach | High angle / Extreme High Angle | 3 | HIGH |
+| Feral Crawl / Compact Crouch / Focused Squat | Ground level | 3 | HIGH / MEDIUM |
+| Top-Down V-Shape / Meditative / Vulnerable Float | Top-down 90° | 3 | MEDIUM |
+| Broken Doll / Classical Sculpture / Inward Lean / Contemplative / Slumped / Reclined / Tension Brace | Eye level 3/4 | 7 | MEDIUM / LOW |
+| Leaning Giant / Aggressive Lunge / Territorial Expansion | Low angle looking up | 3 | HIGH |
+| Window Framing / Viewfinder / Soft Temple / Isolated Shoulder / Finale / Purposeful Lean | Eye level front | 6 | LOW / STILL / MEDIUM |
+| Advanced Mid-Stride / Lateral Passing / Rhythmic Sway | Ground level | 3 | MEDIUM |
+| Floating One-Leg / Elevated Step | Eye level front/side | 2 | HIGH / MEDIUM |
 
 ---
 
-## POSE 01 — HANDS REACHING (High Angle)
+## POSE 01 — HIGH-ANGLE HANDS REACHING (ASYMMETRIC)
 
 ```
-CAMERA ANGLE: High angle looking down — camera positioned above the model looking down at approximately 45-60 degrees. Wide-angle lens feel. Model appears smaller, hands appear larger due to perspective distortion.
+CAMERA ANGLE: High angle (looking down) — camera positioned above the model looking down. Wide-angle lens feel.
 
-POSE: Model reaching both hands toward the camera lens, fingers spread. Body crouching slightly, knees bent, torso leaning forward. Direct, confrontational eye contact looking up at camera. The hands dominate the foreground — fingers appear large and prominent due to the perspective. Model appears to be grabbing or reaching for the viewer. Energy is aggressive, dynamic, Y2K editorial.
+POSE: Body leaning forward, camera above. ONE hand reaching extremely close to the lens, the other hand pulled back behind the hip. Asymmetric composition — one hand dominant in foreground, other hand hidden to create depth.
 
-KEY DETAILS:
-- Both hands extended toward lens, fingers splayed
-- Hands blurred slightly in foreground (depth of field)
-- Face sharp, looking up at camera
-- Body low, crouching stance
-- Wide-angle perspective distortion
-
-ENERGY: HIGH
-```
-
----
-
-## POSE 02 — CROUCHING (Ground Level)
-
-```
-CAMERA ANGLE: Ground level — camera positioned at ground level, parallel to the floor. The ground/pavement fills the lower 30% of the frame. Long shadows cast on ground are visible.
-
-POSE: Model in a low crouch, both knees bent, body close to the ground. One hand resting on the ground for support, other hand on knee or reaching forward. Head tilted slightly, eyes looking directly at camera. Shoulders relaxed but squared. The model looks grounded, feral, animal energy.
-
-KEY DETAILS:
-- Both knees deeply bent, body low
-- One hand on ground, other on knee
-- Direct eye contact
-- Shadows visible on ground in front of model
-- Ground visible in lower portion of frame
-
-ENERGY: HIGH
-```
-
----
-
-## POSE 03 — SITTING ON GROUND (Top-Down)
-
-```
-CAMERA ANGLE: Top-down bird's eye — camera positioned directly above the model, looking straight down at 90 degrees. The entire body is visible from above, spread out on the ground.
-
-POSE: Model sitting on the ground with legs spread wide apart. One arm resting on the ground behind for support, other arm extended to the side or resting on knee. Head tilted back looking up at camera. Body forms a geometric, almost sculptural shape. The pose is bold, unapologetic, taking up maximum space.
-
-KEY DETAILS:
-- Legs spread wide, forming V shape
-- One hand behind for support
-- Head tilted back, looking up
-- Body forming geometric composition
-- Full body visible from above
-
-ENERGY: MEDIUM
-```
-
----
-
-## POSE 04 — STANDING HIP POP (Eye Level 3/4)
-
-```
-CAMERA ANGLE: Eye level but model at 3/4 angle to camera — model's body is turned approximately 45 degrees from the lens. One shoulder is closer to camera than the other. Model is NOT looking directly at the lens — looking past camera or slightly away.
-
-POSE: Model standing with weight on one leg, hip popped outward to the side creating an S-curve in the body. Free leg relaxed with toe slightly pointed. One hand in pocket or resting on hip, other arm hanging naturally. Head turned slightly away from camera, eyes looking past the lens. Shoulders relaxed but structured. The pose is effortless, editorial, sophisticated.
-
-KEY DETAILS:
-- Weight on one leg, hip pushed outward
-- Body at 45-degree angle to camera
-- Eyes looking past camera, not at it
-- One hand in pocket or on hip
-- S-curve through the body
-- Effortless, relaxed energy
-
-ENERGY: MEDIUM
-```
-
----
-
-## POSE 05 — WIDE STANCE (Low Angle)
-
-```
-CAMERA ANGLE: Low angle looking up — camera positioned below the model, approximately at knee or shin level, looking upward. Model towers over the camera. Sky, ceiling, or upper architecture visible in the background above the model's head.
-
-POSE: Model standing with feet planted wider than shoulder width, creating a powerful, wide stance. Arms extended slightly outward from the body, hands loosely fisted or open. Chest open, shoulders back, torso upright. Chin slightly lifted, eyes looking down at camera with a commanding, dominant expression. The model appears large, imposing, territorial.
-
-KEY DETAILS:
-- Feet planted wider than shoulder width
-- Arms slightly extended from body
-- Chest open, shoulders back
-- Chin slightly lifted
-- Looking down at camera
-- Model appears towering and powerful
-
-ENERGY: HIGH
-```
-
----
-
-## POSE 06 — HAND FRAMING FACE (Eye Level Front)
-
-```
-CAMERA ANGLE: Eye level, front-on — camera at model's eye height, model facing camera directly. Both shoulders equidistant from the lens. Clean, editorial portrait framing.
-
-POSE: Model with one or both hands framing the face. One hand resting on cheekbone, fingers gently touching the side of the face, or both hands cupping the lower face. Head tilted slightly. Direct, intense eye contact with camera. Lips slightly parted or neutral. The pose is intimate, beauty-focused, high-fashion portrait.
-
-KEY DETAILS:
-- Hand(s) touching or framing the face
-- Head slightly tilted
-- Direct, intense eye contact
-- Lips slightly parted or neutral
-- Intimate, close-up energy
-
-ENERGY: LOW
-```
-
----
-
-## POSE 07 — LEANING AGAINST WALL (Eye Level 3/4)
-
-```
-CAMERA ANGLE: Eye level but model at 3/4 angle to camera. Model leaning against a vertical surface (wall, pillar). One shoulder in contact with the surface.
-
-POSE: Model leaning against a wall or pillar with one shoulder making full contact. Weight shifted entirely onto the leaning shoulder and hip. Front leg straight, back leg bent at the knee with toe pointing. Arm on leaning side: hand in pocket or resting on hip. Free arm hanging loosely. Head turned toward camera, body at angle. The pose is casual, effortless, urban.
-
-KEY DETAILS:
-- One shoulder against wall/pillar
-- Weight entirely on leaning side
-- Back leg bent, toe pointing
-- Hand in pocket or on hip
-- Head turned toward camera
-- Effortless, relaxed energy
-
-ENERGY: LOW
-```
-
----
-
-## POSE 08 — WALKING MID-STRIDE (Ground Level)
-
-```
-CAMERA ANGLE: Ground level — camera positioned at ground level, parallel to the floor. The ground/pavement fills the lower portion of the frame. Long shadows from the model are visible stretching across the ground.
-
-POSE: Model walking toward the camera, captured mid-stride. Front foot planted forward, back foot pushing off the ground. Arms swinging naturally — front arm slightly forward, back arm trailing. Torso slightly leaned forward into the stride. Head facing forward with direct eye contact. Hair and clothing showing slight motion — fabric flowing behind from forward momentum. The model is advancing, coming at the lens.
-
-KEY DETAILS:
-- Front foot planted, back foot pushing off
-- Arms swinging naturally with walk
-- Torso leaned forward
-- Hair/clothing in motion
-- Direct eye contact, advancing
-- Long shadows visible on ground
-
-ENERGY: MEDIUM
-```
-
----
-
-## POSE 09 — ONE LEG LIFTED (Eye Level Front)
-
-```
-CAMERA ANGLE: Eye level, front-on — camera at model's eye height, model facing camera directly. Both shoulders equidistant from the lens.
-
-POSE: Model standing on one leg with the other leg lifted — knee bent and foot off the ground, or leg extended to the side. Arms positioned for balance or style — one hand on hip, other arm extended or reaching. Head tilted slightly, expression confident or playful. The pose is dynamic, sculptural, high-fashion. The model appears light, almost floating on one foot.
-
-KEY DETAILS:
-- Standing on one leg
-- Other leg lifted (knee bent or extended)
-- Arms positioned for balance/style
-- Head slightly tilted
-- Dynamic, sculptural energy
-
-ENERGY: HIGH
-```
-
----
-
-## POSE 10 — HEAD TILTED, LOOKING AWAY (Eye Level 3/4)
-
-```
-CAMERA ANGLE: Eye level but model at 3/4 angle to camera. Model's head turned approximately 60-90 degrees away from the lens.
-
-POSE: Model with head tilted and looking away from camera — eyes looking past the frame or toward something outside the shot. Body at angle to camera, one shoulder closer than the other. Arms crossed loosely in front of body or hanging naturally. Slight, contemplative expression. The pose is introspective, sophisticated, editorial.
-
-KEY DETAILS:
-- Head turned 60-90 degrees from camera
-- Eyes looking away, not at lens
-- Body at angle
-- Contemplative expression
-- Introspective, sophisticated
-
-ENERGY: LOW
-```
-
----
-
-## POSE 11 — HANDS REACHING VARIANT (High Angle)
-
-```
-CAMERA ANGLE: High angle looking down — camera above model at approximately 60 degrees. Slight fisheye/wide-angle distortion.
-
-POSE: Model reaching ONE hand toward the camera lens, the other hand resting on hip or in pocket. Body standing but leaning slightly forward. Direct eye contact looking up. The reaching hand dominates the foreground, fingers slightly blurred from proximity to lens. The pose is confrontational but controlled — one hand reaches, the other stays composed.
-
-KEY DETAILS:
-- One hand reaching toward lens
-- Other hand on hip or in pocket
+KEY DIFFERENTIATOR:
+- Extreme asymmetry; one hand dominates foreground
+- Other hand hidden behind hip for depth
+- Body leaning forward, not crouching
 - Direct eye contact looking up
-- Slight fisheye distortion
-- Confrontational but controlled
 
 ENERGY: HIGH
 ```
 
 ---
 
-## POSE 12 — CROUCHING VARIANT (Ground Level)
+## POSE 02 — THE FERAL CRAWL
 
 ```
-CAMERA ANGLE: Ground level — camera parallel to ground, shadows visible on pavement.
+CAMERA ANGLE: Ground level — camera parallel to floor, at ground level.
 
-POSE: Model in a compact crouch, knees pulled up toward chest, arms wrapped around knees. Head resting on or near knees, eyes looking up at camera from under brow. Body is as compact as possible — minimum space, maximum volume of fabric. The pose is self-contained, defensive but not afraid.
+POSE: Crouching with one knee touching the floor, other leg spread wide to the side. Fingers clawing/gripping the floor. Spider-like leg positioning. Body weight supported on fingertips (claw-like grip).
 
-KEY DETAILS:
-- Knees pulled to chest
-- Arms wrapped around knees
-- Head looking up from under brow
-- Compact, self-contained
-- Defensive but composed
+KEY DIFFERENTIATOR:
+- Spider-like leg spread
+- Weight on fingertips (claw grip)
+- One knee on floor, other leg wide
+- Feral, animalistic energy
 
 ENERGY: HIGH
 ```
 
 ---
 
-## POSE 13 — SITTING VARIANT (Top-Down)
+## POSE 03 — TOP-DOWN V-SHAPE
 
 ```
-CAMERA ANGLE: Top-down bird's eye — camera directly above at 90 degrees.
+CAMERA ANGLE: Top-down (90 degrees) — camera directly above model, looking straight down.
 
-POSE: Model sitting on ground with legs crossed or tucked under. Both hands resting on knees or lap. Head tilted back looking straight up at camera. Body forms a compact, symmetrical shape from above. The pose is meditative, calm, intentional.
+POSE: Sitting on floor with legs spread wide forming a V-shape. Hands supporting on floor behind body. Head tilted fully back looking up at camera.
 
-KEY DETAILS:
-- Legs crossed or tucked
-- Hands on knees or lap
+KEY DIFFERENTIATOR:
+- Legs forming clear V-shape
+- Head looking straight up at camera
+- Symmetrical geometric composition from bird's eye
+- Hands behind for support
+
+ENERGY: MEDIUM
+```
+
+---
+
+## POSE 04 — THE BROKEN DOLL CONTRAPPOSTO
+
+```
+CAMERA ANGLE: Eye level 3/4 — model at approximately 45 degrees to camera.
+
+POSE: Weight on one leg. Hip pushed outward to the side. Shoulders tilted in the SAME direction as the hip (not opposite like classical contrapposto). Creates unnatural neck tension — artistic broken doll impression.
+
+KEY DIFFERENTIATOR:
+- Hip and shoulder tilt in SAME direction (not opposite)
+- Creates unnatural neck tension
+- Broken doll aesthetic, not classical
+- S-curve but distorted
+
+ENERGY: MEDIUM
+```
+
+---
+
+## POSE 05 — THE LEANING GIANT
+
+```
+CAMERA ANGLE: Low angle (looking up) — camera extremely low, at ground or shin level.
+
+POSE: Model leaning against an imaginary wall, hip pushed toward camera. Body leaning forward past the camera lens. Arms hanging dead/limp (dead arms) for contrast with dominant posture.
+
+KEY DIFFERENTIATOR:
+- Body leaning forward PAST the camera
+- Arms hanging dead/limp (contrast with dominant posture)
+- Hip pushed toward camera
+- Towering presence from low angle
+
+ENERGY: HIGH
+```
+
+---
+
+## POSE 06 — WINDOW FRAMING FACE
+
+```
+CAMERA ANGLE: Eye level front — camera at model's eye height, model facing directly.
+
+POSE: Both hands forming a window/frame in front of face WITHOUT touching the skin. Eyes staring intensely through the hand gap. Hands floating, not contacting face.
+
+KEY DIFFERENTIATOR:
+- Hands do NOT touch face (floating hands)
+- Eyes visible through hand-created window
+- Focus on eye clarity and intensity
+- Clean, graphic framing
+
+ENERGY: LOW
+```
+
+---
+
+## POSE 07 — THE INWARD LEAN WALL
+
+```
+CAMERA ANGLE: Eye level 3/4 — model at angle to a vertical surface.
+
+POSE: Leaning against a wall. Outer leg crossed in front of the weight-bearing leg. Head turned straight to the side (full profile view). Hands hidden behind the back.
+
+KEY DIFFERENTIATOR:
+- Hands hidden behind back (mysterious)
+- Head in full profile to the side
+- Outer leg crossed in front
+- Quiet, mysterious energy
+
+ENERGY: LOW
+```
+
+---
+
+## POSE 08 — THE ADVANCED MID-STRIDE
+
+```
+CAMERA ANGLE: Ground level — camera parallel to ground.
+
+POSE: Walking straight toward camera. Capture the moment the front foot has just planted straight in front of the lens. Clothing/coat showing strong lateral movement (movement blur on fabric).
+
+KEY DIFFERENTIATOR:
+- Front foot planted straight in front of lens
+- Fabric/clothing showing lateral movement blur
+- Walking directly at camera
+- Advancing energy
+
+ENERGY: MEDIUM
+```
+
+---
+
+## POSE 09 — THE FLOATING ONE-LEG
+
+```
+CAMERA ANGLE: Eye level front — camera at model's eye height, model facing directly.
+
+POSE: Standing on one leg, other leg lifted high with knee bent at 90 degrees. One arm raised for balance, palm open facing the camera.
+
+KEY DIFFERENTIATOR:
+- Leg lifted high, knee at 90 degrees
+- One arm raised for balance
+- Palm open facing camera
+- Dynamic, floating energy
+
+ENERGY: HIGH
+```
+
+---
+
+## POSE 10 — THE CONTEMPLATIVE SIDE-TILT
+
+```
+CAMERA ANGLE: Eye level 3/4 — model at angle to camera.
+
+POSE: Head tilted 60 degrees away from camera. Eyes looking toward light/outside the frame. Torso still facing camera — only neck and head rotated extremely.
+
+KEY DIFFERENTIATOR:
+- Head tilted 60° away (extreme rotation)
+- Torso faces camera, only head turned
+- Eyes looking toward light source
+- Contemplative, introspective
+
+ENERGY: LOW
+```
+
+---
+
+## POSE 11 — FISHEYE HEAD-REACH
+
+```
+CAMERA ANGLE: Extreme High Angle — camera directly above, face extremely close to lens.
+
+POSE: Face very close to lens (head dominant in frame). Both hands spread wide framing the edges of the frame. Wide-angle distortion makes forehead/head appear large and futuristic.
+
+KEY DIFFERENTIATOR:
+- Face extremely close to lens (head dominant)
+- Both hands framing frame edges
+- Fisheye distortion enlarges head/forehead
+- Futuristic, distorted perspective
+
+ENERGY: HIGH
+```
+
+---
+
+## POSE 12 — THE COMPACT DEFENSIVE CROUCH
+
+```
+CAMERA ANGLE: Ground level — camera parallel to floor.
+
+POSE: Curled up small. Knees pulled to chest, arms hugging knees. Head bowed down, eyes looking up at lens. Use oversized clothing volume to make model look like a fabric bundle.
+
+KEY DIFFERENTIATOR:
+- Knees pulled tight to chest
+- Arms hugging knees (defensive)
+- Head bowed, eyes looking up
+- Oversized clothing creates fabric bundle shape
+
+ENERGY: HIGH
+```
+
+---
+
+## POSE 13 — MEDITATIVE TOP-DOWN
+
+```
+CAMERA ANGLE: Top-down (90 degrees) — camera directly above.
+
+POSE: Sitting cross-legged or legs symmetrically bent. Hands resting on knees. Head looking straight up. Very calm (zen) pose amidst harsh/industrial floor composition.
+
+KEY DIFFERENTIATOR:
+- Cross-legged or symmetrical leg position
+- Hands resting on knees
 - Head looking straight up
-- Symmetrical from above
-- Meditative, calm
+- Zen calmness in industrial setting
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 14 — STANDING CONTRAPPOSTO (Eye Level 3/4)
+## POSE 14 — CLASSICAL SCULPTURE POP
 
 ```
-CAMERA ANGLE: Eye level, 3/4 angle. Model at approximately 30 degrees to camera.
+CAMERA ANGLE: Eye level 3/4 — model at angle to camera.
 
-POSE: Classical contrapposto — weight entirely on one leg (the engaged leg), free leg relaxed with toe touching ground. Hip on weight-bearing side pushed outward creating an S-curve through the body. Shoulders counter-tilted to hips at an opposite angle. Head aligned with spine, slight tilt. One hand in pocket, other hanging naturally. The pose is classical sculpture energy — Renaissance body in contemporary clothing.
+POSE: Perfect contrapposto. One leg straight, one leg bent with toe touching floor. One hand holding jacket collar, other hand in back pocket.
 
-KEY DETAILS:
-- Weight on one leg only
-- Hip pushed outward on weight side
-- Shoulders counter-tilted
-- S-curve through body
-- Classical, sculptural
+KEY DIFFERENTIATOR:
+- Perfect classical contrapposto
+- One hand holding collar
+- Other hand in back pocket
+- Renaissance sculpture energy
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 15 — WIDE STANCE VARIANT (Low Angle)
+## POSE 15 — THE AGGRESSIVE LUNGE
 
 ```
-CAMERA ANGLE: Low angle looking up from below — camera at knee level.
+CAMERA ANGLE: Low angle (looking up) — camera below model.
 
-POSE: Model in a wide lunge stance — front leg bent at 90 degrees, back leg extended straight behind. Torso leaning forward over front leg. Arms driving forward with the lunge — one arm forward, one back. Head forward, eyes locked ahead looking past the camera. The pose is aggressive, committed, attack energy.
+POSE: Lunge position. Front knee bent sharply, back leg extended straight far behind. Body leaning low over front knee. Arms driving forward.
 
-KEY DETAILS:
-- Lunge stance, front knee bent
-- Back leg extended straight
-- Torso leaning forward
+KEY DIFFERENTIATOR:
+- Deep lunge stance
+- Body leaning low over front knee
 - Arms driving forward
-- Looking past camera, committed
+- Attack energy, committed
 
 ENERGY: HIGH
 ```
 
 ---
 
-## POSE 16 — HAND FRAMING VARIANT (Eye Level Front)
+## POSE 16 — THE VIEWFINDER FRAME
 
 ```
-CAMERA ANGLE: Eye level, front-on, direct.
+CAMERA ANGLE: Eye level front — camera at model's eye height, direct.
 
-POSE: Model with BOTH hands framing the face — fingers spread, palms facing inward, hands forming a frame around the face without touching it. Direct eye contact through the "window" created by the hands. Expression is neutral or slightly challenging. The pose is bold, graphic, almost like looking through a viewfinder.
+POSE: Hands forming an 'L' shape in front of the eye, mimicking a camera viewfinder frame. Bold/challenging expression behind the hand frame.
 
-KEY DETAILS:
-- Both hands framing face
-- Hands not touching, creating a window
-- Eyes visible through the frame
-- Bold, graphic, challenging
+KEY DIFFERENTIATOR:
+- 'L' shape hand frame (viewfinder mimic)
+- Expression bold/challenging through frame
+- Meta-reference to photography
+- Graphic, intentional
 
 ENERGY: LOW
 ```
 
 ---
 
-## POSE 17 — LEANING VARIANT (Eye Level 3/4)
+## POSE 17 — THE TENSION BRACE
 
 ```
-CAMERA ANGLE: Eye level, 3/4 angle to a vertical surface.
+CAMERA ANGLE: Eye level 3/4 — model at angle to a vertical surface.
 
-POSE: Model bracing against a wall or pillar with BOTH hands planted on the vertical surface. Arms extended, body at approximately 45 degrees to the surface. Weight leaning into the brace — pushing or holding. Head turned toward camera over the shoulder. The pose is full of tension — the model is pushing against something immovable.
+POSE: Both hands pressed against a wall as if pushing heavy weight. Elbows straight. Head turned over shoulder looking at camera. Focus on arm muscle tension.
 
-KEY DETAILS:
-- Both hands on vertical surface
-- Arms extended, body leaning in
-- Weight pushing into the brace
+KEY DIFFERENTIATOR:
+- Both hands on wall, pushing
+- Elbows straight (full extension)
 - Head turned over shoulder
-- Full of tension
+- Focus on arm tension
 
 ENERGY: LOW
 ```
 
 ---
 
-## POSE 18 — WALKING VARIANT (Ground Level)
+## POSE 18 — LATERAL PASSING PROFILE
 
 ```
-CAMERA ANGLE: Ground level, camera parallel to ground.
+CAMERA ANGLE: Ground level side — camera parallel to ground, capturing side profile.
 
-POSE: Model walking LATERALLY across the frame — perpendicular to the camera, in full profile view. Body moving left to right (or right to left). Head facing forward in direction of walk, not looking at camera. Arms swinging naturally in profile. The model is passing through, indifferent to the lens. Clothing in full motion showing how it moves laterally.
+POSE: Walking across the frame (laterally). Full profile view. NOT looking at camera. Use slow shutter speed feel for motion blur on legs.
 
-KEY DETAILS:
-- Walking laterally, full profile
-- Body perpendicular to camera
-- Head facing direction of walk
-- Arms swinging in profile
-- Indifferent to lens, passing through
+KEY DIFFERENTIATOR:
+- Walking laterally across frame
+- Full profile, not looking at camera
+- Motion blur on legs
+- Passing through, indifferent
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 19 — ONE LEG LIFTED VARIANT (Eye Level Front)
+## POSE 19 — THE ELEVATED STEP
 
 ```
-CAMERA ANGLE: Eye level, front-on.
+CAMERA ANGLE: Eye level side — camera at model's side height.
 
-POSE: Model standing on one leg with the other leg lifted high — knee bent at 90 degrees, foot off ground and visible. One arm extended outward for balance, other hand on hip. Head tilted slightly, expression confident or playful. The pose is dynamic, almost like a dance move frozen in time.
+POSE: One foot placed on a box or step. Body leaning forward over the high knee. Both hands resting on the high knee. Purposeful, tough pose.
 
-KEY DETAILS:
-- Standing on one leg
-- Other leg lifted high, knee bent
-- One arm extended for balance
-- Other hand on hip
-- Dynamic, dance-like
+KEY DIFFERENTIATOR:
+- One foot elevated on box/step
+- Both hands on raised knee
+- Body leaning forward
+- Purposeful, grounded energy
 
-ENERGY: HIGH
+ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 20 — HEAD TILTED VARIANT (Eye Level 3/4)
+## POSE 20 — THE SLUMPED DEFEAT
 
 ```
-CAMERA ANGLE: Eye level, 3/4 angle.
+CAMERA ANGLE: Eye level 3/4 — model at angle, leaning against wall.
 
-POSE: Model slumping against a wall or pillar, body sliding downward slightly. Legs extended forward, feet splayed outward. Arms hanging loose, hands on floor or in lap. Head dropped forward, chin to chest, or tilted back against wall. Eyes closed or looking at the ground. The pose is exhausted, defeated — the anti-hero moment.
+POSE: Slumped limply against a wall. Legs extended straight forward. Chin to chest, eyes closed. 'Anti-hero' exhausted energy after action.
 
-KEY DETAILS:
-- Slumping against surface
-- Legs extended, feet splayed
-- Head dropped or tilted back
-- Eyes closed or looking down
-- Exhausted, defeated energy
+KEY DIFFERENTIATOR:
+- Slumped against wall, defeated
+- Legs extended straight
+- Chin to chest, eyes closed
+- Exhausted anti-hero energy
 
 ENERGY: LOW
 ```
 
 ---
 
-## POSE 21 — HANDS REACHING VARIANT 2 (High Angle)
+## POSE 21 — THE DIAGONAL REACH
 
 ```
-CAMERA ANGLE: High angle looking down at approximately 45 degrees.
+CAMERA ANGLE: High Angle — camera above model looking down.
 
-POSE: Model crouching with ONE hand reaching toward camera, the other hand resting on the ground for support. Body low, knees deeply bent. Head looking up at camera, direct eye contact. The reaching hand is in the foreground, slightly blurred from proximity. The pose is animalistic, grounded, reaching upward.
+POSE: Standing at an angle, one hand reaching diagonally toward camera at the bottom corner of the frame. Breaking the vertical body line with sharp diagonal arm reach.
 
-KEY DETAILS:
-- Crouching low, one hand reaching
-- Other hand on ground for support
-- Head looking up at camera
-- Reaching hand in foreground
-- Animalistic, grounded
+KEY DIFFERENTIATOR:
+- Diagonal reach to bottom frame corner
+- Breaks vertical body line
+- Standing, not crouching
+- Sharp diagonal composition
 
 ENERGY: HIGH
 ```
 
 ---
 
-## POSE 22 — CROUCHING VARIANT 2 (Ground Level)
+## POSE 22 — THE FOCUSED SQUAT
 
 ```
-CAMERA ANGLE: Ground level, camera parallel to ground.
+CAMERA ANGLE: Ground level — camera parallel to floor.
 
-POSE: Model in a low squat, body leaning forward from the waist. Both forearms resting on knees, hands loosely clasped or open. Head up, direct eye contact with camera. Torso upright. The pose is focused, alert, ready — like an athlete in the starting position.
+POSE: Full squat (flat feet on ground). Arms resting on knees. Sharp gaze straight into lens. Hands clasped or fisted. Ready/alert pose.
 
-KEY DETAILS:
-- Low squat, leaning forward
-- Forearms on knees
-- Hands clasped or open
-- Head up, direct eye contact
-- Focused, alert, ready
+KEY DIFFERENTIATOR:
+- Full squat, flat feet
+- Arms on knees
+- Sharp gaze straight at lens
+- Alert, ready to act
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 23 — SITTING VARIANT 2 (Top-Down)
+## POSE 23 — THE VULNERABLE FLOAT
 
 ```
-CAMERA ANGLE: Top-down bird's eye, camera directly above.
+CAMERA ANGLE: Top-down (90 degrees) — camera directly above.
 
-POSE: Model lying on back on the ground, arms spread out to the sides, legs slightly bent. Head turned to look up at camera. Body forming a relaxed, open shape from above. The pose is vulnerable, open, almost like floating.
+POSE: Lying on back on floor. Arms and legs spread wide open. Head turned slightly toward camera. Open and vulnerable appearance.
 
-KEY DETAILS:
-- Lying on back
-- Arms spread to sides
-- Head turned looking up
-- Open, vulnerable shape
-- Floating energy
+KEY DIFFERENTIATOR:
+- Lying on back, limbs spread
+- Head turned slightly to camera
+- Open, vulnerable composition
+- Floating energy from above
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 24 — STANDING VARIANT (Eye Level 3/4)
+## POSE 24 — THE ISOLATED SHOULDER POP
 
 ```
-CAMERA ANGLE: Eye level, 3/4 angle.
+CAMERA ANGLE: Eye level front — camera at model's eye height, direct.
 
-POSE: Model with arms crossed firmly across chest, one over the other, hands tucked or visible. Weight on one hip creating slight S-curve in body. Shoulders relaxed despite crossed arms — not defensive, just contained. Head tilted slightly, expression neutral or slightly challenging. The pose is contained power — nothing to prove.
+POSE: Standing upright, feet wide. One shoulder raised very high, partially covering the jawline. Head tilted toward the lowered shoulder. Sharp asymmetrical line on torso.
 
-KEY DETAILS:
-- Arms crossed firmly
-- Weight on one hip
-- S-curve through body
-- Head slightly tilted
-- Contained power, nothing to prove
+KEY DIFFERENTIATOR:
+- One shoulder raised extremely high
+- Shoulder partially covers jawline
+- Head tilted to lowered shoulder
+- Sharp asymmetrical torso line
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 25 — WIDE STANCE VARIANT 2 (Low Angle)
+## POSE 25 — THE TERRITORIAL EXPANSION
 
 ```
-CAMERA ANGLE: Low angle looking up from below.
+CAMERA ANGLE: Low angle (looking up) — camera below model.
 
-POSE: Model standing with legs extremely wide apart, arms extended fully out to sides at 45 degrees from the body. Palms open or loosely fisted. Chest open, shoulders back, expansive posture. Head centered, direct eye contact looking down at camera. The pose is territorial — this is MY space, maximum occupation.
+POSE: Legs extremely wide apart. Arms fully extended to sides below (45 degrees). Dominating maximum space in frame. Looking down at camera.
 
-KEY DETAILS:
+KEY DIFFERENTIATOR:
 - Legs extremely wide apart
-- Arms fully extended to sides
-- Chest open, shoulders back
-- Looking down at camera
-- Territorial, maximum space
+- Arms fully extended at 45° below
+- Maximum space domination
+- Looking down, territorial
 
 ENERGY: HIGH
 ```
 
 ---
 
-## POSE 26 — HAND FRAMING VARIANT 2 (Eye Level Front)
+## POSE 26 — THE SOFT TEMPLE TOUCH
 
 ```
-CAMERA ANGLE: Eye level, front-on.
+CAMERA ANGLE: Eye level front — camera at model's eye height, direct.
 
-POSE: Model with one hand raised to the side of the head, fingers touching or near the temple/hair. Other hand resting on hip or hanging naturally. Head tilted toward the raised hand. Eyes looking at camera with a soft but confident expression. The pose is beauty-focused, editorial portrait, intimate.
+POSE: One hand touching the temple/hair. Head tilted toward the hand. Soft but confident expression. Focus on facial/beauty details.
 
-KEY DETAILS:
-- One hand near temple/hair
-- Other hand on hip or hanging
+KEY DIFFERENTIATOR:
+- Hand touching temple/hair
 - Head tilted toward hand
 - Soft but confident expression
-- Beauty-focused portrait
+- Beauty/facial focus
 
 ENERGY: LOW
 ```
 
 ---
 
-## POSE 27 — LEANING VARIANT 2 (Eye Level 3/4)
+## POSE 27 — THE RECLINED LUXURY
 
 ```
-CAMERA ANGLE: Eye level, 3/4 angle.
+CAMERA ANGLE: Eye level 3/4 — model at angle to a vertical surface.
 
-POSE: Model reclining against a wall at approximately 45-degree angle. One leg extended, one leg bent with foot against the wall. One arm overhead resting on wall, other arm on bent knee. Head resting or tilted back, eyes toward camera or closed. The pose is the closest to rest without being horizontal — reclined luxury.
+POSE: Reclining against a wall at 45-degree angle. One leg bent, foot against wall. One arm overhead resting on wall. Luxurious relaxed energy.
 
-KEY DETAILS:
-- Reclining at 45-degree angle
-- One leg extended, one bent
+KEY DIFFERENTIATOR:
+- Reclining at 45° angle
+- One leg bent, foot on wall
 - One arm overhead on wall
-- Head resting or tilted back
-- Reclined luxury
+- Luxurious relaxation
 
 ENERGY: LOW
 ```
 
 ---
 
-## POSE 28 — WALKING VARIANT 2 (Ground Level)
+## POSE 28 — THE RHYTHMIC SWAY
 
 ```
-CAMERA ANGLE: Ground level, camera parallel to ground.
+CAMERA ANGLE: Ground level — camera parallel to floor.
 
-POSE: Model standing still but with body weight shifting side to side, caught mid-sway. One hip pushed out, body curved in S-shape. Shoulders counter-tilted to hips. Arms loose, hanging naturally with slight outward extension. Head tilted in the direction opposite to hip. Eyes on camera, expression relaxed, almost dancing. The pose is rhythmic — the model is in motion, barely.
+POSE: Hip pushed to one side, head tilted to the opposite direction. Pose as if dancing. Arms hanging limp following body rhythm.
 
-KEY DETAILS:
-- Weight shifting side to side
-- Hip pushed out, S-curve
-- Shoulders counter-tilted
-- Arms loose, slight extension
-- Rhythmic, almost dancing
+KEY DIFFERENTIATOR:
+- Hip and head tilted opposite directions
+- Dancing, rhythmic energy
+- Arms hanging limp with rhythm
+- Musical movement feel
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 29 — ONE LEG LIFTED VARIANT 2 (Eye Level Front)
+## POSE 29 — THE PURPOSEFUL LEAN
 
 ```
-CAMERA ANGLE: Eye level, front-on.
+CAMERA ANGLE: Eye level front — camera at model's eye height, direct.
 
-POSE: Model with one foot planted on a raised surface (step, box, low wall), other foot on ground. Body leaning forward over the raised leg. Both arms resting on the raised knee. Head looking at camera. The pose is grounded, elevated, purposeful — the model is using the environment actively.
+POSE: Leaning toward camera with hands on thighs. Body weight leaning forward. Chin tucked in, eyes staring sharply from under brows.
 
-KEY DETAILS:
-- One foot on raised surface
-- Other foot on ground
-- Arms resting on raised knee
-- Looking at camera
-- Grounded, elevated, purposeful
+KEY DIFFERENTIATOR:
+- Leaning forward toward camera
+- Hands on thighs
+- Chin tucked in
+- Sharp stare from under brows
 
 ENERGY: MEDIUM
 ```
 
 ---
 
-## POSE 30 — THE FINALE (Eye Level Front)
+## POSE 30 — THE FINALE (STILLNESS)
 
 ```
-CAMERA ANGLE: Eye level, front-on, perfectly centered. The final, definitive shot.
+CAMERA ANGLE: Eye level front — perfectly centered. The final, definitive shot.
 
-POSE: Model standing absolutely still, arms hanging completely naturally at sides, zero tension. Weight perfectly balanced on both feet. Shoulders level, spine straight, head centered. Direct, unwavering eye contact with camera. Expression: neutral, almost blank — letting the garment be the entire statement. The pose is the period at the end of the sentence — the collection has spoken, silence after this image.
+POSE: Standing perfectly upright, feet together, hands at sides with zero tension. No movement at all. Let the garment speak. Blank/empty gaze.
 
-KEY DETAILS:
-- Standing absolutely still
-- Arms hanging naturally, zero tension
-- Weight perfectly balanced
-- Direct, unwavering eye contact
-- Neutral expression, garment is the statement
-- The final word, silence after
+KEY DIFFERENTIATOR:
+- Perfectly still, zero tension
+- Feet together, hands at sides
+- Blank gaze
+- Garment is the entire statement
 
 ENERGY: STILL
 ```
@@ -601,38 +643,39 @@ ENERGY: STILL
 
 | Look | Pose Name | Camera Angle | Energy |
 |------|-----------|-------------|--------|
-| 01 | Hands Reaching | High angle looking down | HIGH |
-| 02 | Crouching | Ground level | HIGH |
-| 03 | Sitting on Ground | Top-down bird's eye | MEDIUM |
-| 04 | Standing Hip Pop | Eye level 3/4 angle | MEDIUM |
-| 05 | Wide Stance | Low angle looking up | HIGH |
-| 06 | Hand Framing Face | Eye level front-on | LOW |
-| 07 | Leaning Against Wall | Eye level 3/4 angle | LOW |
-| 08 | Walking Mid-Stride | Ground level | MEDIUM |
-| 09 | One Leg Lifted | Eye level front-on | HIGH |
-| 10 | Head Tilted Looking Away | Eye level 3/4 angle | LOW |
-| 11 | Hands Reaching V2 | High angle looking down | HIGH |
-| 12 | Crouching V2 | Ground level | HIGH |
-| 13 | Sitting V2 | Top-down bird's eye | MEDIUM |
-| 14 | Standing Contrapposto | Eye level 3/4 angle | MEDIUM |
-| 15 | Wide Stance V2 | Low angle looking up | HIGH |
-| 16 | Hand Framing V2 | Eye level front-on | LOW |
-| 17 | Leaning V2 | Eye level 3/4 angle | LOW |
-| 18 | Walking V2 | Ground level | MEDIUM |
-| 19 | One Leg Lifted V2 | Eye level front-on | HIGH |
-| 20 | Head Tilted V2 | Eye level 3/4 angle | LOW |
-| 21 | Hands Reaching V3 | High angle looking down | HIGH |
-| 22 | Crouching V3 | Ground level | MEDIUM |
-| 23 | Sitting V3 | Top-down bird's eye | MEDIUM |
-| 24 | Standing V2 | Eye level 3/4 angle | MEDIUM |
-| 25 | Wide Stance V3 | Low angle looking up | HIGH |
-| 26 | Hand Framing V3 | Eye level front-on | LOW |
-| 27 | Leaning V3 | Eye level 3/4 angle | LOW |
-| 28 | Walking V3 | Ground level | MEDIUM |
-| 29 | One Leg Lifted V3 | Eye level front-on | MEDIUM |
-| 30 | The Finale | Eye level front-on | STILL |
+| 01 | High-Angle Hands Reaching (Asymmetric) | High angle looking down | HIGH |
+| 02 | The Feral Crawl | Ground level | HIGH |
+| 03 | Top-Down V-Shape | Top-down 90° | MEDIUM |
+| 04 | The Broken Doll Contrapposto | Eye level 3/4 | MEDIUM |
+| 05 | The Leaning Giant | Low angle looking up | HIGH |
+| 06 | Window Framing Face | Eye level front | LOW |
+| 07 | The Inward Lean Wall | Eye level 3/4 | LOW |
+| 08 | The Advanced Mid-Stride | Ground level | MEDIUM |
+| 09 | The Floating One-Leg | Eye level front | HIGH |
+| 10 | The Contemplative Side-Tilt | Eye level 3/4 | LOW |
+| 11 | Fisheye Head-Reach | Extreme High Angle | HIGH |
+| 12 | The Compact Defensive Crouch | Ground level | HIGH |
+| 13 | Meditative Top-Down | Top-down 90° | MEDIUM |
+| 14 | Classical Sculpture Pop | Eye level 3/4 | MEDIUM |
+| 15 | The Aggressive Lunge | Low angle looking up | HIGH |
+| 16 | The Viewfinder Frame | Eye level front | LOW |
+| 17 | The Tension Brace | Eye level 3/4 | LOW |
+| 18 | Lateral Passing Profile | Ground level side | MEDIUM |
+| 19 | The Elevated Step | Eye level side | MEDIUM |
+| 20 | The Slumped Defeat | Eye level 3/4 | LOW |
+| 21 | The Diagonal Reach | High Angle | HIGH |
+| 22 | The Focused Squat | Ground level | MEDIUM |
+| 23 | The Vulnerable Float | Top-down 90° | MEDIUM |
+| 24 | The Isolated Shoulder Pop | Eye level front | MEDIUM |
+| 25 | The Territorial Expansion | Low angle looking up | HIGH |
+| 26 | The Soft Temple Touch | Eye level front | LOW |
+| 27 | The Reclined Luxury | Eye level 3/4 | LOW |
+| 28 | The Rhythmic Sway | Ground level | MEDIUM |
+| 29 | The Purposeful Lean | Eye level front | MEDIUM |
+| 30 | The Finale (Stillness) | Eye level front | STILL |
 
 ---
 
-**This pose library is based on analysis of 43 real editorial fashion photographs.**
-**Every pose includes specific camera angle — this is what separates real editorial from AI slop.**
+**This pose library is based on official `devetesion_pose_library_30.csv` data.**
+**Triple Lock System ensures Face + Outfit + Scene remain identical across all 30 poses.**
+**Every pose includes specific camera angle and unique differentiator — this is what separates real editorial from AI slop.**
