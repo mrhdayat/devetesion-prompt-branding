@@ -2,100 +2,81 @@
 
 **Berdasarkan data resmi `devetesion_pose_library_30.csv`.**
 
-Setiap pose dilengkapi dengan **camera angle spesifik**, **detail unik diferensiasi**, dan **TRIPLE LOCK SYSTEM** (Face + Outfit + Scene) agar 30 pose menghasilkan satu set foto yang konsisten.
+Setiap pose dilengkapi dengan **camera angle spesifik**, **detail unik diferensiasi**, dan **SINGLE IMAGE LOCK SYSTEM** (Face + Outfit + Scene dari 1 gambar) agar 30 pose menghasilkan satu set foto yang konsisten.
 
 ---
 
-## 🔒 TRIPLE LOCK SYSTEM — WAJIB DI PAKAI
+## 🔒 SINGLE IMAGE LOCK SYSTEM — WAJIB DI PAKAI
 
-**Gunakan blok ini di AWAL setiap generate pose:**
+**Cukup upload 1 gambar referensi. AI akan mengunci face, outfit, dan scene dari gambar yang sama.**
 
 ```
-================================
-IMAGE REFERENCE LOCK (ABSOLUTE)
-================================
-
-INPUT IMAGES (3 REQUIRED):
-- Image 1 = FACE REFERENCE (primary identity lock)
-- Image 2 = OUTFIT REFERENCE (full outfit, front view)
-- Image 3 = SCENE/LOCATION REFERENCE (environment, background, lighting)
-
----
-
 FACE LOCK (STRICT):
-- preserve EXACT face structure, features, proportions from Image 1
+- preserve EXACT face structure, features, proportions dari reference image
 - keep EXACT facial bone structure (jawline, cheekbones, nose shape)
 - maintain original hairstyle, hair color, hair texture
-- do NOT beautify, stylize, or alter face appearance
-- do NOT change skin tone, skin texture, or facial marks
-- face MUST look identical to Image 1
-- only expression and head angle may change per pose
+- do NOT beautify, stylize, atau alter face appearance
+- do NOT change skin tone, skin texture, atau facial marks
+- face MUST look identical ke reference image
+- only expression dan head angle boleh berubah sesuai pose
 
 ---
 
 OUTFIT LOCK (STRICT):
-- keep EXACT outfit from Image 2 — no redesign, no replacement
-- preserve every garment piece (tops, bottoms, outerwear, accessories)
-- maintain original outfit color, material, and texture
-- do NOT add or remove any clothing items
-- do NOT change outfit styling, layering, or fit
-- outfit MUST look identical to Image 2
-- only outfit movement/flow may change per pose
+- keep EXACT outfit dari reference image — no redesign, no replacement
+- preserve setiap garment piece (tops, bottoms, outerwear, accessories)
+- maintain original outfit color, material, dan texture
+- do NOT add atau remove any clothing items
+- do NOT change outfit styling, layering, atau fit
+- outfit MUST look identical ke reference image
+- only outfit movement/flow boleh berubah sesuai pose
 
 ---
 
 SCENE LOCK (SAME LOCATION SET):
-- exact same environment and location from Image 3
+- exact same environment dan location dari reference image
 - same background elements (walls, floor, sky, architecture)
-- same lighting setup and light direction
-- same time of day and weather conditions (if outdoor)
-- same props and objects in the location
+- same lighting setup dan light direction
+- same time of day dan weather conditions (if outdoor)
+- same props dan objects di location
 - do NOT change location, do NOT relocate subject
-- do NOT add or remove background elements
-- scene MUST look like the same photoshoot session as Image 3
-- only camera angle and framing may change per pose
+- do NOT add atau remove background elements
+- scene MUST look like the same photoshoot session
+- only camera angle dan framing boleh berubah per pose
 
 ---
 
 OUTPUT RULE:
 - ONE image only per pose
 - no collage
-- all 30 poses must feel like ONE continuous photoshoot session
+- semua 30 poses harus terasa seperti ONE continuous photoshoot session
 ```
 
 ---
 
 ## CARA PAKAI (WORKFLOW 30 POSE):
 
-1. **Siapkan 3 gambar referensi:**
-   - Image 1 = Foto close-up wajah model (face lock)
-   - Image 2 = Foto full outfit/model (outfit lock)
-   - Image 3 = Foto lokasi/scene tanpa model (scene lock)
-
-2. **Upload ketiga gambar ke AI image generator**
-
-3. **Copy-paste blok "TRIPLE LOCK SYSTEM" di atas**
-
-4. **Copy-paste pose yang diinginkan (Pose 01-30)**
-
+1. **Siapkan 1 gambar referensi** yang berisi wajah model + outfit lengkap + lokasi
+2. **Upload gambar tersebut ke AI image generator**
+3. **Copy-paste blok "SINGLE IMAGE LOCK SYSTEM" di atas**
+4. **Copy-paste pose yang diinginkan** (Pose 01-30)
 5. **Generate** — AI akan menjaga face, outfit, dan scene tetap konsisten
-
 6. **Ulangi** untuk semua 30 pose — hasilnya akan terasa seperti satu set editorial photoshoot
 
 ---
 
 ## DISTRIBUSI 30 LOOK
 
-| Pose Type | Camera Angle | Jumlah | Energi |
-|-----------|-------------|--------|--------|
-| High-Angle Hands Reaching / Fisheye Head-Reach / Diagonal Reach | High angle / Extreme High Angle | 3 | HIGH |
-| Feral Crawl / Compact Crouch / Focused Squat | Ground level | 3 | HIGH / MEDIUM |
-| Top-Down V-Shape / Meditative / Vulnerable Float | Top-down 90° | 3 | MEDIUM |
-| Broken Doll / Classical Sculpture / Inward Lean / Contemplative / Slumped / Reclined / Tension Brace | Eye level 3/4 | 7 | MEDIUM / LOW |
-| Leaning Giant / Aggressive Lunge / Territorial Expansion | Low angle looking up | 3 | HIGH |
-| Window Framing / Viewfinder / Soft Temple / Isolated Shoulder / Finale / Purposeful Lean | Eye level front | 6 | LOW / STILL / MEDIUM |
-| Advanced Mid-Stride / Lateral Passing / Rhythmic Sway | Ground level | 3 | MEDIUM |
-| Floating One-Leg / Elevated Step | Eye level front/side | 2 | HIGH / MEDIUM |
+| Pose Type                                                                                            | Camera Angle                    | Jumlah | Energi               |
+| ---------------------------------------------------------------------------------------------------- | ------------------------------- | ------ | -------------------- |
+| High-Angle Hands Reaching / Fisheye Head-Reach / Diagonal Reach                                      | High angle / Extreme High Angle | 3      | HIGH                 |
+| Feral Crawl / Compact Crouch / Architectural Tilt                                                    | Ground level                    | 3      | HIGH / MEDIUM        |
+| Top-Down V-Shape / Meditative / Vulnerable Float                                                     | Top-down 90°                   | 3      | MEDIUM               |
+| Broken Doll / Classical Sculpture / Inward Lean / Contemplative / Slumped / Reclined / Tension Brace | Eye level 3/4                   | 7      | MEDIUM / LOW         |
+| Leaning Giant / Aggressive Lunge / Territorial Expansion                                             | Low angle looking up            | 3      | HIGH                 |
+| Window Framing / Viewfinder / Soft Temple / Isolated Shoulder / Finale / Purposeful Lean             | Eye level front                 | 6      | LOW / STILL / MEDIUM |
+| Advanced Mid-Stride / Lateral Passing / Rhythmic Sway                                                | Ground level                    | 3      | MEDIUM               |
+| Floating One-Leg / Elevated Step                                                                     | Eye level front/side            | 2      | HIGH / MEDIUM        |
 
 ---
 
@@ -477,38 +458,73 @@ ENERGY: HIGH
 
 ---
 
-## POSE 22 — THE FOCUSED SQUAT
+## POSE 22 — THE ARCHITECTURAL TILT (EDITORIAL STANCE)
 
 ```
-CAMERA ANGLE: Ground level — camera parallel to floor.
+CAMERA ANGLE: Eye level or slightly low (waist height). Clean, sharp perspective. Focus on vertical lines and garment structure. No extreme wide/fisheye.
 
-POSE: Full squat (flat feet on ground). Arms resting on knees. Sharp gaze straight into lens. Hands clasped or fisted. Ready/alert pose.
+⚠️ CRITICAL DIRECTOR NOTE:
+FORGET THE REFERENCE POSE COMPLETELY. ONLY LOCK FACE, OUTFIT, AND SCENE. REBUILD BODY MECHANICS FROM SCRATCH USING HIGH-FASHION EDITORIAL PRINCIPLES. ZERO SYMMETRY. ZERO STOCK PHOTO STIFFNESS.
+
+POSE: "The Broken Zigzag." Model stands with weight heavily shifted to ONE leg (back leg locked straight, bearing 90% weight). The front leg is relaxed, knee slightly bent, toe pointing outward at a 45° angle. Torso is twisted sharply toward the camera, but shoulders are deliberately MISALIGNED: one shoulder is pushed up high (near the jawline), the other is dropped completely loose. Head is turned to full profile, looking away from the camera, chin slightly lifted. One arm is raised, elbow bent at a sharp 90°, hand resting loosely on the back of the neck or tangling slightly in the hair. The other arm hangs dead/relaxed at the side, fingers slightly curled, palm facing inward. The pose creates a continuous broken zigzag line from head to toe. Garment drapes heavily on the weighted hip, creating architectural folds and intentional volume.
+
+GARMENT INTERACTION (DESIGNER FOCUS):
+- Outfit must pool and fold asymmetrically on the weighted side
+- Fabric should show structural weight and intentional drape
+- No tight clinging; emphasize oversize, tailored, or deconstructed silhouette
+- Let the clothing dictate the shadow and volume, not the body
 
 KEY DIFFERENTIATOR:
-- Full squat, flat feet
-- Arms on knees
-- Sharp gaze straight at lens
-- Alert, ready to act
+- Weight 90% on back leg, front toe pointed out
+- Shoulders deliberately misaligned (one high, one dropped)
+- Head in full profile, looking away (detached gaze)
+- One arm raised to neck/hair, other arm dead/relaxed
+- Creates zigzag negative space, avoids vertical symmetry
+- Vibe: Raf Simons / Ann Demeulemeester editorial (youthful tension, poetic asymmetry)
 
-ENERGY: MEDIUM
+ANTI-FAIL RULES:
+- If shoulders are level or symmetrical → REJECT
+- If model looks directly at camera with a smile/stock face → REJECT
+- If arms are mirrored or posed "pretty" → REJECT
+- If garment looks stretched, tight, or flat → REJECT
+- MUST show asymmetric shoulder drop, profile gaze, and broken zigzag line
+
+ENERGY: MEDIUM / EDITORIAL
 ```
 
 ---
 
-## POSE 23 — THE VULNERABLE FLOAT
+## POSE 23 — THE SCULPTURAL RECLINE (EDITORIAL FLOOR)
 
 ```
-CAMERA ANGLE: Top-down (90 degrees) — camera directly above.
+CAMERA ANGLE: High angle (slightly off-center, 30-45° from vertical). Captures full diagonal line of body across floor. Avoids direct 90° top-down.
 
-POSE: Lying on back on floor. Arms and legs spread wide open. Head turned slightly toward camera. Open and vulnerable appearance.
+⚠️ CRITICAL DIRECTOR NOTE:
+FORGET THE REFERENCE POSE COMPLETELY. ONLY LOCK FACE, OUTFIT, AND SCENE. RECONSTRUCT LIMB PLACEMENT COMPLETELY. DO NOT REPLICATE REFERENCE STANCE.
+
+POSE: "The Fallen Sculpture." NOT lying flat on back. Model is reclined on side/hip, weight supported on ONE bent forearm (elbow sharp, forearm flat). Torso slightly arched or collapsed inward, creating a flowing S-curve along the floor. ONE leg is extended fully straight, pointing diagonally toward frame corner to create maximum length. The OTHER leg is bent at a sharp 90° angle, knee pointing upward, foot flat. One hand rests loosely under chin or cheek, fingers slightly curled; other arm drapes across bent knee or stomach. Head turned to full profile, hair fanned out or swept dramatically. Pose looks like a carefully arranged still-life of fabric and limbs—effortless but highly composed.
+
+GARMENT INTERACTION (EDITORIAL FOCUS):
+- Outfit must cascade and pool naturally around hips and extended leg
+- Fabric should show intentional weight, folds, and directional flow
+- No stiff stretching; emphasize fluid textile movement
 
 KEY DIFFERENTIATOR:
-- Lying on back, limbs spread
-- Head turned slightly to camera
-- Open, vulnerable composition
-- Floating energy from above
+- Reclined on side/hip, supported on bent forearm → NOT flat on back
+- One leg fully extended diagonally, other bent sharply upward → asymmetrical length
+- Hand placement under chin or across knee → intentional framing
+- Head in full profile, hair arranged dramatically
+- Creates long diagonal composition, avoids symmetry or "starfish" spread
+- Vibe: Tim Walker / Paolo Roversi editorial (dreamy but structured)
 
-ENERGY: MEDIUM
+ANTI-FAIL RULES:
+- If model lies flat on back with limbs spread wide → REJECT
+- If pose looks like sleeping or unconscious → REJECT
+- If limbs are symmetrical or stiff → REJECT
+- If garment looks tight or stretched → REJECT
+- MUST show fabric pooling and diagonal composition
+
+ENERGY: MEDIUM / ARTISTIC
 ```
 
 ---
@@ -641,41 +657,41 @@ ENERGY: STILL
 
 ## 📋 QUICK REFERENCE TABLE
 
-| Look | Pose Name | Camera Angle | Energy |
-|------|-----------|-------------|--------|
-| 01 | High-Angle Hands Reaching (Asymmetric) | High angle looking down | HIGH |
-| 02 | The Feral Crawl | Ground level | HIGH |
-| 03 | Top-Down V-Shape | Top-down 90° | MEDIUM |
-| 04 | The Broken Doll Contrapposto | Eye level 3/4 | MEDIUM |
-| 05 | The Leaning Giant | Low angle looking up | HIGH |
-| 06 | Window Framing Face | Eye level front | LOW |
-| 07 | The Inward Lean Wall | Eye level 3/4 | LOW |
-| 08 | The Advanced Mid-Stride | Ground level | MEDIUM |
-| 09 | The Floating One-Leg | Eye level front | HIGH |
-| 10 | The Contemplative Side-Tilt | Eye level 3/4 | LOW |
-| 11 | Fisheye Head-Reach | Extreme High Angle | HIGH |
-| 12 | The Compact Defensive Crouch | Ground level | HIGH |
-| 13 | Meditative Top-Down | Top-down 90° | MEDIUM |
-| 14 | Classical Sculpture Pop | Eye level 3/4 | MEDIUM |
-| 15 | The Aggressive Lunge | Low angle looking up | HIGH |
-| 16 | The Viewfinder Frame | Eye level front | LOW |
-| 17 | The Tension Brace | Eye level 3/4 | LOW |
-| 18 | Lateral Passing Profile | Ground level side | MEDIUM |
-| 19 | The Elevated Step | Eye level side | MEDIUM |
-| 20 | The Slumped Defeat | Eye level 3/4 | LOW |
-| 21 | The Diagonal Reach | High Angle | HIGH |
-| 22 | The Focused Squat | Ground level | MEDIUM |
-| 23 | The Vulnerable Float | Top-down 90° | MEDIUM |
-| 24 | The Isolated Shoulder Pop | Eye level front | MEDIUM |
-| 25 | The Territorial Expansion | Low angle looking up | HIGH |
-| 26 | The Soft Temple Touch | Eye level front | LOW |
-| 27 | The Reclined Luxury | Eye level 3/4 | LOW |
-| 28 | The Rhythmic Sway | Ground level | MEDIUM |
-| 29 | The Purposeful Lean | Eye level front | MEDIUM |
-| 30 | The Finale (Stillness) | Eye level front | STILL |
+| Look | Pose Name                              | Camera Angle            | Energy |
+| ---- | -------------------------------------- | ----------------------- | ------ |
+| 01   | High-Angle Hands Reaching (Asymmetric) | High angle looking down | HIGH   |
+| 02   | The Feral Crawl                        | Ground level            | HIGH   |
+| 03   | Top-Down V-Shape                       | Top-down 90°           | MEDIUM |
+| 04   | The Broken Doll Contrapposto           | Eye level 3/4           | MEDIUM |
+| 05   | The Leaning Giant                      | Low angle looking up    | HIGH   |
+| 06   | Window Framing Face                    | Eye level front         | LOW    |
+| 07   | The Inward Lean Wall                   | Eye level 3/4           | LOW    |
+| 08   | The Advanced Mid-Stride                | Ground level            | MEDIUM |
+| 09   | The Floating One-Leg                   | Eye level front         | HIGH   |
+| 10   | The Contemplative Side-Tilt            | Eye level 3/4           | LOW    |
+| 11   | Fisheye Head-Reach                     | Extreme High Angle      | HIGH   |
+| 12   | The Compact Defensive Crouch           | Ground level            | HIGH   |
+| 13   | Meditative Top-Down                    | Top-down 90°           | MEDIUM |
+| 14   | Classical Sculpture Pop                | Eye level 3/4           | MEDIUM |
+| 15   | The Aggressive Lunge                   | Low angle looking up    | HIGH   |
+| 16   | The Viewfinder Frame                   | Eye level front         | LOW    |
+| 17   | The Tension Brace                      | Eye level 3/4           | LOW    |
+| 18   | Lateral Passing Profile                | Ground level side       | MEDIUM |
+| 19   | The Elevated Step                      | Eye level side          | MEDIUM |
+| 20   | The Slumped Defeat                     | Eye level 3/4           | LOW    |
+| 21   | The Diagonal Reach                     | High Angle              | HIGH   |
+| 22   | The Architectural Tilt                 | Eye level / Low         | MEDIUM |
+| 23   | The Sculptural Recline                 | High angle              | MEDIUM |
+| 24   | The Isolated Shoulder Pop              | Eye level front         | MEDIUM |
+| 25   | The Territorial Expansion              | Low angle looking up    | HIGH   |
+| 26   | The Soft Temple Touch                  | Eye level front         | LOW    |
+| 27   | The Reclined Luxury                    | Eye level 3/4           | LOW    |
+| 28   | The Rhythmic Sway                      | Ground level            | MEDIUM |
+| 29   | The Purposeful Lean                    | Eye level front         | MEDIUM |
+| 30   | The Finale (Stillness)                 | Eye level front         | STILL  |
 
 ---
 
 **This pose library is based on official `devetesion_pose_library_30.csv` data.**
-**Triple Lock System ensures Face + Outfit + Scene remain identical across all 30 poses.**
+**Single Image Lock System ensures Face + Outfit + Scene remain identical across all 30 poses from 1 reference image.**
 **Every pose includes specific camera angle and unique differentiator — this is what separates real editorial from AI slop.**
