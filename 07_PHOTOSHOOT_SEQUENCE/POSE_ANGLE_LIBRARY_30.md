@@ -72,7 +72,7 @@ OUTPUT RULE:
 | High-Angle Hands Reaching / Fisheye Head-Reach / Diagonal Reach                                      | High angle / Extreme High Angle | 3      | HIGH                 |
 | Feral Crawl / Compact Crouch / Architectural Tilt                                                    | Ground level                    | 3      | HIGH / MEDIUM        |
 | Top-Down V-Shape / Meditative / Vulnerable Float                                                     | Top-down 90°                   | 3      | MEDIUM               |
-| Broken Doll / Classical Sculpture / Inward Lean / Contemplative / Slumped / Reclined / Tension Brace | Eye level 3/4                   | 7      | MEDIUM / LOW         |
+| Broken Doll / Classical Sculpture / Inward Lean / Contemplative / Slumped / Reclined / Wall Drapery | Eye level 3/4                   | 7      | MEDIUM / LOW         |
 | Leaning Giant / Aggressive Lunge / Territorial Expansion                                             | Low angle looking up            | 3      | HIGH                 |
 | Window Framing / Viewfinder / Soft Temple / Isolated Shoulder / Finale / Purposeful Lean             | Eye level front                 | 6      | LOW / STILL / MEDIUM |
 | Advanced Mid-Stride / Lateral Passing / Rhythmic Sway                                                | Ground level                    | 3      | MEDIUM               |
@@ -368,20 +368,37 @@ ENERGY: LOW
 
 ---
 
-## POSE 17 — THE TENSION BRACE
+## POSE 17 — THE ASYMMETRIC WALL DRAPERY (EDITORIAL LEAN)
 
 ```
-CAMERA ANGLE: Eye level 3/4 — model at angle to a vertical surface.
+CAMERA ANGLE: Eye level 3/4 — capturing the full diagonal line between model and surface. Focus on negative space and garment volume.
 
-POSE: Both hands pressed against a wall as if pushing heavy weight. Elbows straight. Head turned over shoulder looking at camera. Focus on arm muscle tension.
+⚠️ CRITICAL DIRECTOR NOTE:
+FORGET ATHLETIC PUSHING. THIS IS A FASHION LEAN, NOT A GYM EXERCISE. REBUILD USING ARCHITECTURAL TENSION AND GARMENT INTERACTION. ZERO BRUTE FORCE.
+
+POSE: "The Collapsed Lean." Model braces against a vertical surface (wall/pillar) using ONLY ONE forearm or elbow, bearing minimal weight. The torso is twisted slightly away from the wall, creating a sharp diagonal gap between the back and the surface. The other arm hangs completely dead/relaxed or loosely grips the lapel/hem of the outfit. Legs are asymmetrical: one leg extended straight out, touching the floor at a distance; the other leg bent, knee pointing outward or resting lightly against the wall. Head is tilted back or down, gaze detached, looking past the camera or at the floor. The pose feels like the model is sliding down or caught in a moment of architectural collapse.
+
+GARMENT INTERACTION (DESIGNER FOCUS):
+- Outfit must catch and fold against the bracing arm/elbow
+- Fabric should pool heavily at the base near the extended leg
+- Emphasize how the textile reacts to the lean (tension on one side, drape on the other)
+- No tight stretching; allow the garment to dictate the silhouette's volume
 
 KEY DIFFERENTIATOR:
-- Both hands on wall, pushing
-- Elbows straight (full extension)
-- Head turned over shoulder
-- Focus on arm tension
+- Single-point brace (forearm/elbow), NOT two-handed pushing
+- Diagonal negative space between torso and wall
+- Asymmetrical leg line (one extended, one bent)
+- Gaze is detached/downcast, NOT confrontational
+- Vibe: Helmut Newton / Juergen Teller editorial (raw, structural, effortlessly undone)
 
-ENERGY: LOW
+ANTI-FAIL RULES:
+- If model uses both hands to push like in a gym → REJECT
+- If elbows are locked straight and tense → REJECT
+- If legs are parallel or weight is evenly distributed → REJECT
+- If outfit looks tight or stretched without drape → REJECT
+- MUST show single-point lean, diagonal gap, and heavy garment pooling
+
+ENERGY: LOW / RAW
 ```
 
 ---
@@ -675,7 +692,7 @@ ENERGY: STILL
 | 14   | Classical Sculpture Pop                | Eye level 3/4           | MEDIUM |
 | 15   | The Aggressive Lunge                   | Low angle looking up    | HIGH   |
 | 16   | The Viewfinder Frame                   | Eye level front         | LOW    |
-| 17   | The Tension Brace                      | Eye level 3/4           | LOW    |
+| 17   | The Wall Drapery                       | Eye level 3/4           | LOW    |
 | 18   | Lateral Passing Profile                | Ground level side       | MEDIUM |
 | 19   | The Elevated Step                      | Eye level side          | MEDIUM |
 | 20   | The Slumped Defeat                     | Eye level 3/4           | LOW    |
