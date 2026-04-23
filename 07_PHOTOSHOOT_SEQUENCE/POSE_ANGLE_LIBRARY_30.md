@@ -67,16 +67,16 @@ OUTPUT RULE:
 
 ## DISTRIBUSI 30 LOOK
 
-| Pose Type                                                                                            | Camera Angle                    | Jumlah | Energi               |
-| ---------------------------------------------------------------------------------------------------- | ------------------------------- | ------ | -------------------- |
-| High-Angle Hands Reaching / Fisheye Head-Reach / Diagonal Reach                                      | High angle / Extreme High Angle | 3      | HIGH                 |
-| Feral Crawl / Compact Crouch / Architectural Tilt                                                    | Ground level                    | 3      | HIGH / MEDIUM        |
-| Top-Down V-Shape / Meditative / Vulnerable Float                                                     | Top-down 90°                   | 3      | MEDIUM               |
-| Broken Doll / Classical Sculpture / Inward Lean / Contemplative / Slumped / Reclined / Wall Drapery | Eye level 3/4                   | 7      | MEDIUM / LOW         |
-| Leaning Giant / Aggressive Lunge / Territorial Expansion                                             | Low angle looking up            | 3      | HIGH                 |
-| Window Framing / Viewfinder / Soft Temple / Isolated Shoulder / Finale / Purposeful Lean             | Eye level front                 | 6      | LOW / STILL / MEDIUM |
-| Advanced Mid-Stride / Lateral Passing / Rhythmic Sway                                                | Ground level                    | 3      | MEDIUM               |
-| Floating One-Leg / Elevated Step                                                                     | Eye level front/side            | 2      | HIGH / MEDIUM        |
+| Pose Type                                                                                             | Camera Angle                    | Jumlah | Energi               |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------- | ------ | -------------------- |
+| High-Angle Hands Reaching / Fisheye Head-Reach / Diagonal Reach                                       | High angle / Extreme High Angle | 3      | HIGH                 |
+| Feral Crawl / Compact Crouch / Architectural Tilt                                                     | Ground level                    | 3      | HIGH / MEDIUM        |
+| Top-Down V-Shape / Geometric Supine / Vulnerable Float                                                | Top-down 90°                   | 3      | MEDIUM               |
+| Broken Doll / Classical Sculpture / Inward Lean / Contemplative / Slumped / Reclined / Kinetic Freeze | Eye level 3/4                   | 7      | MEDIUM / LOW         |
+| Leaning Giant / Aggressive Lunge / Territorial Expansion                                              | Low angle looking up            | 3      | HIGH                 |
+| Window Framing / Viewfinder / Soft Temple / Isolated Shoulder / Finale / Purposeful Lean              | Eye level front                 | 6      | LOW / STILL / MEDIUM |
+| Advanced Mid-Stride / Lateral Passing / Rhythmic Sway                                                 | Ground level                    | 3      | MEDIUM               |
+| Floating One-Leg / Elevated Step                                                                      | Eye level front/side            | 2      | HIGH / MEDIUM        |
 
 ---
 
@@ -98,20 +98,39 @@ ENERGY: HIGH
 
 ---
 
-## POSE 02 — THE FERAL CRAWL
+## POSE 02 — THE GROUND SCULPTURE (EDITORIAL CROUCH)
 
 ```
-CAMERA ANGLE: Ground level — camera parallel to floor, at ground level.
+CAMERA ANGLE: Ground level — camera parallel to floor, at ground level. Clean perspective, focus on the geometric relationship between limbs and the floor surface.
 
-POSE: Crouching with one knee touching the floor, other leg spread wide to the side. Fingers clawing/gripping the floor. Spider-like leg positioning. Body weight supported on fingertips (claw-like grip).
+⚠️ CRITICAL DIRECTOR NOTE:
+STOP MAKING ANIMALISTIC OR FERAL POSES. THIS IS NOT A WILDLIFE DOCUMENTARY. REBUILD USING ARCHITECTURAL ANGLES, STRUCTURAL TENSION, AND GARMENT SCULPTING. ZERO CLAW-LIKE OR SPIDER-LIKE ENERGY.
+
+POSE: "The Collapsed Geometry." Model is low to the ground but in a deliberately structured, architectural pose. ONE knee rests lightly on the floor (not bearing full weight), while the other leg extends outward at a sharp 45-degree angle, foot flat or toes pointed. The torso is upright or slightly leaned forward, spine elongated, not hunched. Both hands are placed intentionally on the floor: ONE hand flat with fingers extended straight, the OTHER hand resting on the bent knee or lightly gripping the ankle. The pose creates sharp negative spaces between limbs — triangular gaps that catch light and shadow. Head is tilted slightly, gaze looking directly at or just past the camera with calm, controlled intensity. The silhouette resembles a modernist floor sculpture, not a crawling creature.
+
+GARMENT INTERACTION (DESIGNER FOCUS):
+- Outfit must pool and fold dramatically around the grounded knee and extended leg
+- Fabric should create architectural shadow patterns on the floor
+- Emphasize structural volume and intentional textile draping
+- No tight clinging; allow the garment to dictate the sculptural shape
 
 KEY DIFFERENTIATOR:
-- Spider-like leg spread
-- Weight on fingertips (claw grip)
-- One knee on floor, other leg wide
-- Feral, animalistic energy
+- Upright or slightly forward-leaning torso (NOT hunched or crawling)
+- Sharp angular leg placement (45-degree extension, NOT spider-like spread)
+- Hands placed intentionally (flat fingers or resting on knee, NOT clawing)
+- Triangular negative spaces between limbs
+- Gaze is calm, controlled, looking at or past camera
+- Vibe: Yohji Yamamoto / Issey Miyake editorial (Sculptural, architectural, grounded elegance)
 
-ENERGY: HIGH
+ANTI-FAIL RULES:
+- If pose looks animalistic, feral, or crawling → REJECT
+- If fingers are curled like claws → REJECT
+- If torso is hunched or rounded → REJECT
+- If legs are spread symmetrically like a spider → REJECT
+- If garment looks tight or stretched → REJECT
+- MUST show upright torso, angular leg placement, and architectural fabric pooling
+
+ENERGY: HIGH / SCULPTURAL
 ```
 
 ---
@@ -170,20 +189,38 @@ ENERGY: HIGH
 
 ---
 
-## POSE 06 — WINDOW FRAMING FACE
+## POSE 06 — THE SHATTERED FRAME (EDITORIAL PORTRAIT)
 
 ```
-CAMERA ANGLE: Eye level front — camera at model's eye height, model facing directly.
+CAMERA ANGLE: Eye level front — camera at model's eye height, direct. Tight to medium framing, focus on the graphic relationship between hands, face, and garment. Sharp, clean perspective.
 
-POSE: Both hands forming a window/frame in front of face WITHOUT touching the skin. Eyes staring intensely through the hand gap. Hands floating, not contacting face.
+⚠️ CRITICAL DIRECTOR NOTE:
+STOP MAKING CUTE "FACE FRAMING" OR BEAUTY-STYLE POSES. THIS IS NOT A SKINCARE AD. REBUILD USING SHARP ANGLES, STRUCTURAL TENSION, AND GARMENT INTERACTION. ZERO SOFT OR APPROACHABLE ENERGY.
+
+POSE: "The Architectural Mask." Model faces camera directly, but the hands create a DECONSTRUCTED, asymmetrical frame — NOT a neat rectangle. ONE hand forms a sharp angular shape near one eye or cheekbone (fingers extended, palm flat or slightly cupped), while the OTHER hand intersects from a different angle — perhaps crossing diagonally over the mouth, resting on the chin, or framing the opposite temple. The hands NEVER mirror each other. Fingers may be slightly splayed or curled with intentional tension. The gaze is piercing, detached, looking THROUGH the hand gaps with intensity — not a soft beauty stare. Lips are neutral or slightly parted, jaw relaxed but defined. The shoulders are visible and asymmetrical (one slightly raised), creating a broken vertical line.
+
+GARMENT INTERACTION (DESIGNER FOCUS):
+- Outfit collar or neckline should be visible and structured, framing the lower face
+- Fabric may bunch or drape at the shoulders, adding architectural volume
+- Emphasize how the garment's structure complements the hand geometry
+- No soft, flowing fabrics; prefer structured, tailored, or deconstructed silhouettes
 
 KEY DIFFERENTIATOR:
-- Hands do NOT touch face (floating hands)
-- Eyes visible through hand-created window
-- Focus on eye clarity and intensity
-- Clean, graphic framing
+- Asymmetrical hand framing (NOT mirrored or symmetrical)
+- Hands create sharp angles, NOT soft curves
+- Gaze is piercing and detached, looking THROUGH gaps (NOT soft beauty stare)
+- Shoulders asymmetrical, visible in frame
+- Vibe: Nick Knight / Mert & Marcus editorial (Sharp, graphic, confrontational)
 
-ENERGY: LOW
+ANTI-FAIL RULES:
+- If hands form a symmetrical rectangle or heart shape → REJECT
+- If pose looks like a beauty/skincare advertisement → REJECT
+- If gaze is soft, warm, or approachable → REJECT
+- If shoulders are level and relaxed → REJECT
+- If garment looks soft, floral, or feminine → REJECT
+- MUST show asymmetrical hand geometry, sharp angles, and structured garment
+
+ENERGY: LOW / CONFRONTATIONAL
 ```
 
 ---
@@ -224,20 +261,38 @@ ENERGY: MEDIUM
 
 ---
 
-## POSE 09 — THE FLOATING ONE-LEG
+## POSE 09 — THE VERTICAL TENSION (EDITORIAL BALANCE)
 
 ```
-CAMERA ANGLE: Eye level front — camera at model's eye height, model facing directly.
+CAMERA ANGLE: Eye level front — camera at model's eye height, direct. Clean perspective, focus on the extended leg line and vertical garment drape.
 
-POSE: Standing on one leg, other leg lifted high with knee bent at 90 degrees. One arm raised for balance, palm open facing the camera.
+⚠️ CRITICAL DIRECTOR NOTE:
+STOP MAKING HUNCHED, BENT, OR ANIMALISTIC POSTURES. THIS IS A HIGH-FASHION STANCE, NOT A CROUCH. REBUILD USING VERTICAL ELONGATION, STRAIGHT LINES, AND CONTROLLED TENSION. ZERO BENT KNEES ON THE WEIGHT-BEARING LEG.
+
+POSE: "The Architectural Extension." Model stands on one leg with the knee completely straight and weight centered (locked but not stiff). The spine is fully elongated, neck long, shoulders level but relaxed. The other leg is extended forward or to the side, knee straight, toe sharply pointed downward, hovering just above the floor or lightly grazing it. The torso remains upright with a subtle twist away from the extended leg, creating clean diagonal tension. One arm extends diagonally upward or outward with a straight line; the other arm rests lightly on the hip or crosses the torso loosely. Head tilts slightly, gaze detached but confident, looking past the camera. The silhouette is tall, sharp, and controlled — like a modernist sculpture.
+
+GARMENT INTERACTION (DESIGNER FOCUS):
+- Outfit must follow the vertical line of the body, draping cleanly without hiding the leg extension
+- Fabric pools slightly at the base of the standing leg, showing weight and structure
+- Emphasize clean lines, architectural drape, and intentional textile flow
+- No bunching or hiding the silhouette; let the garment enhance the vertical tension
 
 KEY DIFFERENTIATOR:
-- Leg lifted high, knee at 90 degrees
-- One arm raised for balance
-- Palm open facing camera
-- Dynamic, floating energy
+- Weight-bearing leg completely straight and vertical (NOT bent or rolled)
+- Extended leg straight with sharply pointed toe (NOT dangling or crouched)
+- Spine fully elongated, torso upright with subtle twist
+- Clean diagonal arm line, other arm resting lightly on hip
+- Gaze is detached, confident, looking past camera
+- Vibe: Jil Sander / Phoebe Philo editorial (Minimalist, architectural, controlled elegance)
 
-ENERGY: HIGH
+ANTI-FAIL RULES:
+- If supporting knee is bent or ankle rolls inward → REJECT
+- If torso is hunched, leaning, or collapsed → REJECT
+- If lifted leg is bent at knee or foot hangs loose → REJECT
+- If pose looks animalistic, crouched, or awkward → REJECT
+- MUST show vertical extension, straight lines, and architectural drape
+
+ENERGY: HIGH / MINIMALIST
 ```
 
 ---
@@ -296,20 +351,37 @@ ENERGY: HIGH
 
 ---
 
-## POSE 13 — MEDITATIVE TOP-DOWN
+## POSE 13 — THE GEOMETRIC SUPINE (EDITORIAL TOP-DOWN)
 
 ```
-CAMERA ANGLE: Top-down (90 degrees) — camera directly above.
+CAMERA ANGLE: Top-down (90 degrees) — camera directly above model. Sharp, graphic composition. Focus on the geometric relationship between limbs and the floor.
 
-POSE: Sitting cross-legged or legs symmetrically bent. Hands resting on knees. Head looking straight up. Very calm (zen) pose amidst harsh/industrial floor composition.
+⚠️ CRITICAL DIRECTOR NOTE:
+STOP MAKING YOGA/MEDITATION POSES. THIS IS NOT A ZEN SESSION. REBUILD USING SHARP ANGLES, ASYMMETRICAL LIMB PLACEMENT, AND GARMENT SCULPTING. ZERO PEACEFUL VIBES.
+
+POSE: "The Collapsed Polygon." Model lies on their back, but limbs are arranged in sharp, deliberate angles — NOT symmetrical or relaxed. ONE leg is extended fully straight, pointing diagonally toward a frame corner. The OTHER leg is bent at a sharp 90°, knee pointing straight up, foot flat on the floor. ONE arm is bent with the forearm covering the eyes or resting across the forehead; the OTHER arm extends outward at a 45° angle, palm open or fingers splayed. The head is turned to full profile, facing away from the bent knee. The overall silhouette resembles a deconstructed geometric shape — intentional, angular, and slightly uncomfortable. Garment pools, folds, and drapes heavily around the hips and extended leg, creating architectural shadow patterns on the floor.
+
+GARMENT INTERACTION (DESIGNER FOCUS):
+- Outfit must pool and fold asymmetrically around the hips and bent knee
+- Fabric should create intentional shadow patterns on the floor
+- Emphasize structural weight and directional drape
+- No tight stretching; allow the garment to dictate the geometric composition
 
 KEY DIFFERENTIATOR:
-- Cross-legged or symmetrical leg position
-- Hands resting on knees
-- Head looking straight up
-- Zen calmness in industrial setting
+- Asymmetrical limb placement (one leg straight, one bent 90° up)
+- Arm covering eyes or forehead (NOT resting peacefully on stomach)
+- Head in full profile, facing away from bent knee
+- Creates sharp polygonal silhouette, NOT symmetrical or starfish-like
+- Vibe: Tim Walker / Irving Penn editorial (Graphic, sculptural, intentionally awkward)
 
-ENERGY: MEDIUM
+ANTI-FAIL RULES:
+- If limbs are symmetrical or spread evenly → REJECT
+- If pose looks like yoga, meditation, or relaxation → REJECT
+- If arms are resting peacefully on stomach → REJECT
+- If garment looks flat or symmetrical → REJECT
+- MUST show sharp angles, asymmetry, and architectural fabric pooling
+
+ENERGY: MEDIUM / GRAPHIC
 ```
 
 ---
@@ -332,20 +404,39 @@ ENERGY: MEDIUM
 
 ---
 
-## POSE 15 — THE AGGRESSIVE LUNGE
+## POSE 15 — THE FORWARD ARCHITECTURE (DYNAMIC STANCE)
 
 ```
-CAMERA ANGLE: Low angle (looking up) — camera below model.
+CAMERA ANGLE: Low angle (knee to shin height) — looking UP at the subject. Camera positioned slightly to the side to capture the diagonal line of the body. Wide lens feel (24-35mm) for dramatic perspective.
 
-POSE: Lunge position. Front knee bent sharply, back leg extended straight far behind. Body leaning low over front knee. Arms driving forward.
+⚠️ CRITICAL DIRECTOR NOTE:
+STOP MAKING ATHLETIC/SPORTS LUNGE. THIS IS A FASHION STANCE, NOT A WORKOUT. REBUILD USING ARCHITECTURAL TENSION AND GARMENT STRUCTURE. ZERO GYM ENERGY.
+
+POSE: "The Off-Center Advance." Model stands with one leg planted firmly forward (knee bent at 90°, foot flat), the other leg extended far back (straight, heel lifted off the ground). Torso leans FORWARD over the front knee, creating a sharp diagonal line from head to back heel. Chest is open, shoulders pulled back but slightly asymmetrical (one shoulder higher than the other). Arms are positioned dynamically: one arm drives forward with elbow bent, hand loose or slightly fisted; the other arm extends backward for counterbalance, palm open or fingers spread. Head is tilted forward, chin slightly down, gaze looking straight ahead or slightly past the camera with intense, focused energy. The silhouette looks like a runner frozen mid-stride or a statue caught in forward motion.
+
+GARMENT INTERACTION (DESIGNER FOCUS):
+- Outfit must catch the wind/movement from the forward lean
+- Fabric should billow or drape dramatically behind the back leg
+- Emphasize how the textile reacts to the forward momentum
+- No tight clinging; allow the garment to flow and create volume behind the subject
 
 KEY DIFFERENTIATOR:
-- Deep lunge stance
-- Body leaning low over front knee
-- Arms driving forward
-- Attack energy, committed
+- Forward diagonal line from head to back heel (not vertical)
+- Front knee bent at 90°, back leg straight with heel lifted
+- Torso leaning forward, chest open, shoulders asymmetrical
+- Arms in dynamic counterbalance (one forward, one back)
+- Gaze is intense, focused, looking ahead
+- Vibe: Rick Owens / Gareth Pugh editorial (Brutalist, kinetic, powerful)
 
-ENERGY: HIGH
+ANTI-FAIL RULES:
+- If pose looks like a gym exercise or sports lunge → REJECT
+- If torso is upright or straight → REJECT
+- If back heel is flat on ground → REJECT
+- If arms are symmetrical or relaxed at sides → REJECT
+- If garment looks static or tight → REJECT
+- MUST show forward diagonal line, open chest, and dynamic fabric flow
+
+ENERGY: HIGH / KINETIC
 ```
 
 ---
@@ -368,37 +459,39 @@ ENERGY: LOW
 
 ---
 
-## POSE 17 — THE ASYMMETRIC WALL DRAPERY (EDITORIAL LEAN)
+## POSE 17 — THE KINETIC FREEZE (STANDALONE TENSION)
 
 ```
-CAMERA ANGLE: Eye level 3/4 — capturing the full diagonal line between model and surface. Focus on negative space and garment volume.
+CAMERA ANGLE: Eye level 3/4 — capturing the full twisted silhouette against the open background. Sharp, clean perspective. Focus on garment drape and negative space. NO external objects in frame.
 
 ⚠️ CRITICAL DIRECTOR NOTE:
-FORGET ATHLETIC PUSHING. THIS IS A FASHION LEAN, NOT A GYM EXERCISE. REBUILD USING ARCHITECTURAL TENSION AND GARMENT INTERACTION. ZERO BRUTE FORCE.
+STOP ADDING WALLS, FURNITURE, OR SUPPORTS. THE MODEL IS COMPLETELY FREE-STANDING IN OPEN SPACE. ALL TENSION, BALANCE, AND ANGLES ARE GENERATED INTERNALLY BY MUSCLE CONTROL AND WEIGHT SHIFT. ZERO PROPS. ZERO LEANING ON ANYTHING.
 
-POSE: "The Collapsed Lean." Model braces against a vertical surface (wall/pillar) using ONLY ONE forearm or elbow, bearing minimal weight. The torso is twisted slightly away from the wall, creating a sharp diagonal gap between the back and the surface. The other arm hangs completely dead/relaxed or loosely grips the lapel/hem of the outfit. Legs are asymmetrical: one leg extended straight out, touching the floor at a distance; the other leg bent, knee pointing outward or resting lightly against the wall. Head is tilted back or down, gaze detached, looking past the camera or at the floor. The pose feels like the model is sliding down or caught in a moment of architectural collapse.
+POSE: "The Frozen Pivot." Model stands with feet shoulder-width apart, but weight is dramatically shifted to ONE hip. The torso twists 90° away from the hips, creating a sharp torsional break in the spine. Shoulders are deliberately uneven: one is pushed forward and high, the other drops back and low. One arm is bent sharply at the elbow, hand resting loosely on the opposite shoulder or crossing the chest; the other arm hangs dead/relaxed at the side, fingers slightly curled. Head is turned to full profile, looking away from the camera, neck elongated. The pose looks like a dancer caught mid-pivot or a garment model holding a complex, asymmetrical stance. Completely self-supported, no external contact.
 
 GARMENT INTERACTION (DESIGNER FOCUS):
-- Outfit must catch and fold against the bracing arm/elbow
-- Fabric should pool heavily at the base near the extended leg
-- Emphasize how the textile reacts to the lean (tension on one side, drape on the other)
-- No tight stretching; allow the garment to dictate the silhouette's volume
+- Outfit must fold and drape asymmetrically following the spinal twist
+- Fabric pools heavily at the weighted hip and dropped shoulder
+- Emphasize structural volume and intentional textile tension
+- No tight stretching; allow the clothing to dictate the silhouette's shape
 
 KEY DIFFERENTIATOR:
-- Single-point brace (forearm/elbow), NOT two-handed pushing
-- Diagonal negative space between torso and wall
-- Asymmetrical leg line (one extended, one bent)
-- Gaze is detached/downcast, NOT confrontational
-- Vibe: Helmut Newton / Juergen Teller editorial (raw, structural, effortlessly undone)
+- 100% Free-standing (no contact with any surface)
+- Sharp 90° spinal twist between hips and shoulders
+- Asymmetrical shoulder line (one forward/high, one back/low)
+- One arm crossed tightly, other arm dead/relaxed
+- Head in full profile, neck elongated
+- Vibe: Martin Margiela / Helmut Lang editorial (Deconstructed, architectural, raw tension)
 
 ANTI-FAIL RULES:
-- If model uses both hands to push like in a gym → REJECT
-- If elbows are locked straight and tense → REJECT
-- If legs are parallel or weight is evenly distributed → REJECT
-- If outfit looks tight or stretched without drape → REJECT
-- MUST show single-point lean, diagonal gap, and heavy garment pooling
+- If AI adds a wall, pillar, chair, or prop → REJECT (SCENE VIOLATION)
+- If model is touching or leaning on anything → REJECT
+- If shoulders are level or aligned → REJECT
+- If spine is straight (no twist) → REJECT
+- If garment looks tight, stretched, or symmetrical → REJECT
+- MUST show internal torsion, asymmetric weight, and garment pooling in empty space
 
-ENERGY: LOW / RAW
+ENERGY: MEDIUM / ARCHITECTURAL
 ```
 
 ---
@@ -677,22 +770,22 @@ ENERGY: STILL
 | Look | Pose Name                              | Camera Angle            | Energy |
 | ---- | -------------------------------------- | ----------------------- | ------ |
 | 01   | High-Angle Hands Reaching (Asymmetric) | High angle looking down | HIGH   |
-| 02   | The Feral Crawl                        | Ground level            | HIGH   |
+| 02   | The Ground Sculpture                   | Ground level            | HIGH   |
 | 03   | Top-Down V-Shape                       | Top-down 90°           | MEDIUM |
 | 04   | The Broken Doll Contrapposto           | Eye level 3/4           | MEDIUM |
 | 05   | The Leaning Giant                      | Low angle looking up    | HIGH   |
-| 06   | Window Framing Face                    | Eye level front         | LOW    |
+| 06   | The Shattered Frame                    | Eye level front         | LOW    |
 | 07   | The Inward Lean Wall                   | Eye level 3/4           | LOW    |
 | 08   | The Advanced Mid-Stride                | Ground level            | MEDIUM |
-| 09   | The Floating One-Leg                   | Eye level front         | HIGH   |
+| 09   | The Suspended Pivot                    | Eye level front         | HIGH   |
 | 10   | The Contemplative Side-Tilt            | Eye level 3/4           | LOW    |
 | 11   | Fisheye Head-Reach                     | Extreme High Angle      | HIGH   |
 | 12   | The Compact Defensive Crouch           | Ground level            | HIGH   |
-| 13   | Meditative Top-Down                    | Top-down 90°           | MEDIUM |
+| 13   | The Geometric Supine                   | Top-down 90°           | MEDIUM |
 | 14   | Classical Sculpture Pop                | Eye level 3/4           | MEDIUM |
-| 15   | The Aggressive Lunge                   | Low angle looking up    | HIGH   |
+| 15   | The Forward Architecture               | Low angle looking up    | HIGH   |
 | 16   | The Viewfinder Frame                   | Eye level front         | LOW    |
-| 17   | The Wall Drapery                       | Eye level 3/4           | LOW    |
+| 17   | The Kinetic Freeze                     | Eye level 3/4           | MEDIUM |
 | 18   | Lateral Passing Profile                | Ground level side       | MEDIUM |
 | 19   | The Elevated Step                      | Eye level side          | MEDIUM |
 | 20   | The Slumped Defeat                     | Eye level 3/4           | LOW    |
